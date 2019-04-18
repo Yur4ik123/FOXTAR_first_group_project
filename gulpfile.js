@@ -37,9 +37,10 @@ gulp.task('minCss', gulp.series('sass', 'allCss'))
 
 
 gulp.task('watch', function(){
-     gulp.watch('./app/scss/custom/*.scss', gulp.series('minCss'));
-     gulp.watch("app/*.html").on('change', browserSync.reload);
-     gulp.watch("app/css/*.css").on('change', browserSync.reload);
+    //  gulp.watch('./app/scss/custom/*.scss', gulp.series('minCss'));
+    gulp.watch('./app/scss/*.scss', gulp.series('minCss'));
+    gulp.watch("app/*.html").on('change', browserSync.reload);
+    gulp.watch("app/css/*.css").on('change', browserSync.reload);
 
 })
 
