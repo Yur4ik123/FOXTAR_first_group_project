@@ -35,6 +35,12 @@
   .ponedilok .top_bar .container .logo a img {
     padding: 26px 0; }
 
+.ponedilok .top_bar .menu_register .red_text {
+  color: #c94d3f; }
+
+.ponedilok .top_bar .menu_register .blu_text {
+  color: #5d6e79; }
+
 .ponedilok .menu_naw .container_fluid {
   background-color: #2e353a; }
   .ponedilok .menu_naw .container_fluid .naw {

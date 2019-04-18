@@ -57,6 +57,14 @@
       width: 1170px;
       margin: 0 auto;
     }
+    .menu_register{
+      .red_text{
+        color: $color-red;
+      }
+      .blu_text{
+        color: $color-blu;
+      }
+    }
   }
   .menu_naw{
     .container_fluid{
