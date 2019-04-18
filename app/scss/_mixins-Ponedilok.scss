@@ -37,6 +37,13 @@
 .ponedilok{
   .top_bar{
     .container{
+      .logo{
+        a {
+          img{
+            padding: 26px 0;
+          }
+        }
+      }
       width: 1170px;
       margin: 0 auto;
     }
@@ -58,6 +65,10 @@
         }
       }    
     }
+  }
+
+  .banner{
+    background: url(/app/img/Layer\ 219.png);
   }
 
  

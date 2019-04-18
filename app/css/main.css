@@ -25,6 +25,8 @@
 .ponedilok .top_bar .container {
   width: 1170px;
   margin: 0 auto; }
+  .ponedilok .top_bar .container .logo a img {
+    padding: 26px 0; }
 
 .ponedilok .menu_naw .container_fluid {
   background-color: #2e353a; }
@@ -37,3 +39,6 @@
         padding: 26px 23px; }
         .ponedilok .menu_naw .container_fluid .naw ul li a {
           color: #ffffff; }
+
+.ponedilok .banner {
+  background: url(/app/img/); }
