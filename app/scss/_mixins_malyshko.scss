@@ -1,0 +1,17 @@
+@mixin h1-mixin {
+  padding-top: 121px;
+  padding-bottom: 59px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 60px;
+}
+@mixin tabs-mixin{
+  margin-bottom: 59px;
+}
+@mixin tabs-li-mixin{
+  margin-right:3px;
+  margin-left: 3px;
+  padding: 14px 27px;
+  background-color: #fff;
+}
