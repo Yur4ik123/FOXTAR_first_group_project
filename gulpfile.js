@@ -6,6 +6,7 @@ const concat  =  require('gulp-concat');
 var browserSync = require('browser-sync').create();
 var postcss      = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
+var clean = require('gulp-clean');
 // Static server
 gulp.task('browser', function() {
     browserSync.init({
@@ -15,15 +16,24 @@ gulp.task('browser', function() {
     });
 });
 
-
+gulp.task('clean', function () {
+    return gulp.src('./app/css', {read: false})
+    .pipe(clean());
+})
 gulp.task('sass', function () {
     return gulp.src('./app/scss/main.scss')
       .pipe(sass().on('error', sass.logError))
-      .pipe(gulp.dest('./app/css'));
+      .pipe(postcss([ autoprefixer() ]))
+        .pipe(csso())
+        .pipe(rename({
+            basename: "allstyle",
+            suffix: '.min'
+          }))
+        .pipe(gulp.dest('./app/css'));
 });
 
 
-gulp.task('allCss', function () { 
+/* gulp.task('allCss', function () { 
     return gulp.src('./app/css/*.css')
         .pipe(concat('allstyle.css'))
         .pipe(postcss([ autoprefixer() ]))
@@ -32,15 +42,13 @@ gulp.task('allCss', function () {
             suffix: '.min'
           }))
         .pipe(gulp.dest('./app/css'));
-});
-gulp.task('minCss', gulp.series('sass', 'allCss'))
-
+}); */
+gulp.task('minCss', gulp.series('clean', 'sass'));
 
 gulp.task('watch', function(){
-    //  gulp.watch('./app/scss/custom/*.scss', gulp.series('minCss'));
-    gulp.watch('./app/scss/*.scss', gulp.series('minCss'));
-    gulp.watch("app/*.html").on('change', browserSync.reload);
-    gulp.watch("app/css/*.css").on('change', browserSync.reload);
+     gulp.watch('./app/scss/*.scss', gulp.series('minCss'));
+     gulp.watch("app/*.html").on('change', browserSync.reload);
+     gulp.watch("app/css/*.css").on('change', browserSync.reload);
 
 })
 
