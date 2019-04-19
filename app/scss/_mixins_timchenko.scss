@@ -1,0 +1,20 @@
+@mixin flexible (){
+    display:flex;
+    justify-content:center;
+}
+@mixin title-text(){
+    color:$w-color;
+    font-family:'Roboto bold',sans-serif;
+    text-align: center;
+    font-size: $font-lg;
+}
+@mixin subtitle-text(){
+    font-family:'Roboto medium',sans-serif;
+    font-size:$font-md;
+    color:$w-color;
+}
+@mixin small-text(){
+    font-family:'Roboto regular',sans-serif;
+    font-size:$font-sm;
+    color:$w-color;
+}
