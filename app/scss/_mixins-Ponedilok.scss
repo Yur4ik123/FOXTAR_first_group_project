@@ -46,6 +46,9 @@
 .ponedilok{
   .top_bar{
     .container{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       .logo{
         a {
           img{

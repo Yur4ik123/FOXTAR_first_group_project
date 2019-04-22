@@ -7,6 +7,9 @@ var browserSync = require('browser-sync').create();
 var postcss      = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 var clean = require('gulp-clean');
+const spritesmith = require('gulp.spritesmith');
+const merge = require('merge-stream');
+const tinypng = require('gulp-tinypng');
 // Static server
 gulp.task('browser', function() {
     browserSync.init({
@@ -18,18 +21,46 @@ gulp.task('browser', function() {
 
 gulp.task('clean', function () {
     return gulp.src('./app/css', {read: false})
-    .pipe(clean());
+        .pipe(clean());
+});
+
+gulp.task('sprite', function () {
+    let spritedata = 
+        gulp.src('./app/sprite/*.png')
+        .pipe(spritesmith({ // настройка спрайта
+            imgName: 'sprite.png',
+            cssName: 'sprite.css',
+            imgPath: '../img/sprite.png'
+        }));
+    
+    let imgStream = spritedata.img
+        .pipe(gulp.dest('./app/img/'))
+    
+    let cssStream = spritedata.css
+    .pipe(postcss([ autoprefixer() ]))
+    .pipe(gulp.dest('app/lib/'));
+    return merge (imgStream, cssStream)
+});
+
+
+
+gulp.task('tinypng', function() {
+    return gulp.src(['app/img/*.png', 'app/img/*.jpg'])
+        .pipe(tinypng('oCOezF3S6E0HBPgiixttZY8nZ3nEUSoc'))
+        .pipe(gulp.dest('app/img/'));
 })
+
 gulp.task('sass', function () {
     return gulp.src('./app/scss/main.scss')
       .pipe(sass().on('error', sass.logError))
       .pipe(postcss([ autoprefixer() ]))
-        .pipe(csso())
-        .pipe(rename({
-            basename: "allstyle",
-            suffix: '.min'
-          }))
-        .pipe(gulp.dest('./app/css'));
+      .pipe(csso())
+      .pipe(rename({
+        basename:"allstyle",
+          suffix: '.min'
+        }))
+      .pipe(gulp.dest('./app/css'));
+      
 });
 
 
@@ -43,13 +74,15 @@ gulp.task('sass', function () {
           }))
         .pipe(gulp.dest('./app/css'));
 }); */
-gulp.task('minCss', gulp.series('clean', 'sass'));
+
+gulp.task('minCss', gulp.series('clean', 'sass'))
+
 
 gulp.task('watch', function(){
-     gulp.watch('./app/scss/*.scss', gulp.series('minCss'));
+     gulp.watch('./app/scss/custom/*.scss', gulp.series('minCss'));
      gulp.watch("app/*.html").on('change', browserSync.reload);
      gulp.watch("app/css/*.css").on('change', browserSync.reload);
 
 })
 
-gulp.task('default', gulp.series('minCss', gulp.parallel('browser', 'watch')))
+gulp.task('default', gulp.series('minCss', gulp.parallel('browser', 'sprite','watch')))
