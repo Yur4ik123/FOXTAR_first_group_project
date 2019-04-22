@@ -60,11 +60,35 @@
       margin: 0 auto;
     }
     .menu_register{
+      display: flex;
+      align-items: center;
       .red_text{
         color: $color-red;
       }
       .blu_text{
         color: $color-blu;
+      }
+      .shopping_cart{
+        background-color: $color-white-blue;
+      }
+      .fas{
+        font-size: 14px;
+        color: $color-grayish-be;
+        // margin: 0 19px 0 27px;;
+      }
+      .btn{
+        margin-left: 7px;
+        border: none;
+        border-radius: 3px;
+        height: 32px;
+        width: 72px;
+        color: $color-white;
+      }
+      .grin_btn{
+        background-color: $color-grin;
+      }
+      .red_btn{
+        background-color: $color-red;
       }
     }
   }
