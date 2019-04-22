@@ -1,0 +1,50 @@
+@import "_variables";
+@import "_mixins";
+
+.why-choose{
+    background-color:#263238;
+    min-width:100%;
+    position: absolute;
+    left:0;
+    .w-c-container{
+        max-width:1170px;
+        margin:0 auto;
+        h3{
+            @include title-text();
+            margin-top: 125px;
+            margin-bottom:80px;
+            position:relative;
+        }
+        .flex-container{
+            margin:0 auto;
+            @include flexible ();
+            .flex-item{
+                align-items:center;
+                max-width:315px;
+                .item-picture{
+                    height:115px;
+                    width:115px;
+                    border-radius: 50%;
+                    background-color: #b5b5b5;
+                    margin-bottom:33px;
+                    margin:0 auto;
+                    text-align: center;
+                }
+                .item-title{
+                    @include subtitle-text();
+                    margin-top:33px;
+                    margin-bottom:25px;
+                    text-align: center;
+                &:hover{
+                    color:$active-color;
+                }
+                }
+                .item-description{
+                    @include small-text();
+                    margin-bottom:120px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

@@ -1,3 +1,4 @@
+
 $default-color: black;
 $color-red:#c94d3f;
 $color-blu:#5d6e79;
@@ -14,3 +15,11 @@ $size48:48px;
 $size20:20px;
 
 // /font-size......................................................
+
+@import "_variables_malyshko.scss";
+@import "_variables_timchenko.scss";
+$default-color: black;
+
+
+
+
