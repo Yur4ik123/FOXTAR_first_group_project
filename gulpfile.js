@@ -9,9 +9,8 @@ var autoprefixer = require('autoprefixer');
 var clean = require('gulp-clean');
 const spritesmith = require('gulp.spritesmith');
 const merge = require('merge-stream');
+
 var tinypng = require('gulp-tinypng');
-
-
 
 // Static server
 gulp.task('browser', function() {
@@ -23,7 +22,9 @@ gulp.task('browser', function() {
 });
 
 gulp.task('clean', function () {
-    return gulp.src('./app/css', {read: false})
+
+return gulp.src('./app/css', {read: false})
+development
         .pipe(clean());
 });
 
@@ -45,9 +46,11 @@ gulp.task('sprite', function () {
     return merge (imgStream, cssStream)
 });
 
+
 gulp.task('tinypng', function() {
     return gulp.src(['app/img/*.png', 'app/img/*.jpg'])
         .pipe(tinypng('eGwHsgRHgRYLa2syNI121TJRmNwb7J46'))
+ development
         .pipe(gulp.dest('app/img/'));
 })
 
@@ -81,8 +84,11 @@ gulp.task('minCss', gulp.series('clean', 'sass'))
 
 gulp.task('watch', function(){
      gulp.watch('./app/scss/*.scss', gulp.series('minCss'));
-     gulp.watch("app/*.html").on('change', browserSync.reload);
-     gulp.watch("app/css/*.css").on('change', browserSync.reload);
+
+    //  gulp.watch('./app/scss/*.scss', gulp.series('minCss')); по умолчанию!!!!!!!!!!!!!!!!!!!!!!!
+    gulp.watch('app/*.html').on('change', browserSync.reload);
+    gulp.watch('app/css/*.css').on('change', browserSync.reload);
+
 
 })
 
