@@ -1,9 +1,6 @@
-@import '_variables_timchenko.scss';
-
 @mixin flexible (){
     display:flex;
     justify-content:center;
-    flex-wrap:wrap;
 }
 @mixin title-text(){
     color:$w-color;
