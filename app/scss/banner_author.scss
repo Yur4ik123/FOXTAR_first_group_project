@@ -1,0 +1,64 @@
+@import "_variables";
+@import "_mixins";
+
+.banner-author{
+    background-color: #f4f6f5;
+    min-width:100%;
+    position: absolute;
+    left:0;
+    text-align: center;
+    top:615px;
+    .banner-grey-bg{
+        max-width:1105px;
+        background-color: #b5b5b5;
+        padding:145px 227px;
+        display: inline-block; 
+        margin-right: -0.25em; 
+        margin-top:113px;
+        margin-bottom:113px;
+
+        .banner-green-bg{
+            max-width:655px;
+            background-color: #8bc34a;
+            padding:70px 60px 85px 60px;
+
+            .flex-container{
+                margin:0 auto;
+                @include flexible ();
+                justify-content: space-between;
+
+                .flex-item{
+                    
+                    h3{
+                        color:$w-color;
+                        font-family:'Roboto regular',sans-serif;
+                        font-size:30px;
+                        text-align: left;
+                        display: inline-block;
+                        line-height:45px;
+
+                        .lighter{
+                            font-weight:lighter;
+                        }  
+                    }
+
+                    a{
+                        position:relative;
+                        text-decoration:none;
+                        background-color: $w-color;
+                        color:$default-color;
+                        font-family:'Roboto regular',sans-serif;
+                        font-size:18px;
+                        padding:30px 42px;
+                        max-width: 225px;
+                        margin-top:30px;
+                        margin-left:60px;
+                        display: inline-block;
+                        
+                    }
+                }
+            }
+        }
+
+    }
+}
