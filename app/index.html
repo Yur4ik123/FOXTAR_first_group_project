@@ -6,18 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>FOXTAR - market place</title>
-
-
-  <link rel="stylesheet" href="css/allstyle.min.css">
+   <link rel="stylesheet" href="css/allstyle.min.css">
+  <link rel="stylesheet" type="text/css" href="js/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" />
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/slick/slick.min.js"></script>
   <script>
     $(function () {
       $("#tabs-script").tabs();
+      $('.multiple-items').slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        infinite: true,
+        dots: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        draggable: true,
+        pauseOnDotsHover: false
+      });
     });
   </script>
 
@@ -25,6 +35,51 @@
 
 <body>
 
+ <div class="ponedilok">
+  <div class="top_bar">
+    <div class="container">
+      <div class="logo">
+        <a href=""><img src="img\logo.png" alt=""></a>
+      </div>
+      <div class="menu_register">
+        <p class="red_text">Need help?<span class="blu_text">Talk to an expert: +61 3 8376 6284</span></p>
+        <i class="fas fa-shopping-cart"></i>
+        <button class="btn grin_btn">Login</button>
+        <button class="btn red_btn">Register</button>
+      </div>
+
+    </div>
+  </div>
+  <div class="menu_naw">
+    <div class="container_fluid">
+      <div class="naw">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">WordPress</a></li>
+          <li><a href="">Joomla</a></li>
+          <li><a href="">PSD</a></li>
+          <li><a href="">Plugins</a></li>
+          <li><a href="">Components</a></li>
+          <li><a href="">Pages</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Help</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="banner">
+    <div class="container">
+      <h1 class="taitel_banner">Welcome To Foxtar Market Place!</h1>
+      <p class="default_text20">Premium WordPress Themes, Web Templates and Many More ...</p>
+      <form>
+          <input type="text" placeholder="Search Your Keywords . . .">
+          <button type="submit"><i class="fas fa-search"></i>
+          </button>
+      </form>
+    </div>
+  </div>
+  </div>
   <div class="middle_section">
     <h1>
       Let’s Check Out Our Newest Release Prodcuts
@@ -898,6 +953,321 @@
     </div>
 
 
+
+    <div class="weekly_trending_products">
+      <h1>This Week Trending Products</h1>
+      <div class="carusel">
+        <div class='slider multiple-items'>
+          <div class="slider-wrapper">
+            <div class="card">
+              <div class="card_img">
+                <img src="" alt="">
+                <div class="bolt">
+                  <i class="fas fa-bolt"></i>
+                </div>
+              </div>
+              <div class="card_content">
+                <div class="card_info">
+                  <h3>
+                    Responsive Mobile APP
+                  </h3>
+                  <span>Site Template</span>
+                  <div class="price">$19</div>
+                </div>
+                <div class="card_author">
+                  <div class="author-title">
+                    <div class="author-img">
+                      <img src="" alt="">
+                    </div>
+                    <span>Radiustheme</span>
+                  </div>
+                  <div class="author-stars">
+                    <ul>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li>(<span>05</span>)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="slider-wrapper">
+            <div class="card">
+              <div class="card_img">
+                <img src="" alt="">
+                <div class="bolt">
+                  <i class="fas fa-bolt"></i>
+                </div>
+              </div>
+              <div class="card_content">
+                <div class="card_info">
+                  <h3>
+                    Responsive Mobile APP
+                  </h3>
+                  <span>Site Template</span>
+                  <div class="price">$19</div>
+                </div>
+                <div class="card_author">
+                  <div class="author-title">
+                    <div class="author-img">
+                      <img src="" alt="">
+                    </div>
+                    <span>Radiustheme</span>
+                  </div>
+                  <div class="author-stars">
+                    <ul>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li>(<span>05</span>)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="slider-wrapper">
+            <div class="card">
+              <div class="card_img">
+                <img src="" alt="">
+                <div class="bolt">
+                  <i class="fas fa-bolt"></i>
+                </div>
+              </div>
+              <div class="card_content">
+                <div class="card_info">
+                  <h3>
+                    Responsive Mobile APP
+                  </h3>
+                  <span>Site Template</span>
+                  <div class="price">$19</div>
+                </div>
+                <div class="card_author">
+                  <div class="author-title">
+                    <div class="author-img">
+                      <img src="" alt="">
+                    </div>
+                    <span>Radiustheme</span>
+                  </div>
+                  <div class="author-stars">
+                    <ul>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li>(<span>05</span>)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="slider-wrapper">
+            <div class="card">
+              <div class="card_img">
+                <img src="" alt="">
+                <div class="bolt">
+                  <i class="fas fa-bolt"></i>
+                </div>
+              </div>
+              <div class="card_content">
+                <div class="card_info">
+                  <h3>
+                    Responsive Mobile APP
+                  </h3>
+                  <span>Site Template</span>
+                  <div class="price">$19</div>
+                </div>
+                <div class="card_author">
+                  <div class="author-title">
+                    <div class="author-img">
+                      <img src="" alt="">
+                    </div>
+                    <span>Radiustheme</span>
+                  </div>
+                  <div class="author-stars">
+                    <ul>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li>(<span>05</span>)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="slider-wrapper">
+            <div class="card">
+              <div class="card_img">
+                <img src="" alt="">
+                <div class="bolt">
+                  <i class="fas fa-bolt"></i>
+                </div>
+              </div>
+              <div class="card_content">
+                <div class="card_info">
+                  <h3>
+                    Responsive Mobile APP
+                  </h3>
+                  <span>Site Template</span>
+                  <div class="price">$19</div>
+                </div>
+                <div class="card_author">
+                  <div class="author-title">
+                    <div class="author-img">
+                      <img src="" alt="">
+                    </div>
+                    <span>Radiustheme</span>
+                  </div>
+                  <div class="author-stars">
+                    <ul>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li>(<span>05</span>)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="slider-wrapper">
+            <div class="card">
+              <div class="card_img">
+                <img src="" alt="">
+                <div class="bolt">
+                  <i class="fas fa-bolt"></i>
+                </div>
+              </div>
+              <div class="card_content">
+                <div class="card_info">
+                  <h3>
+                    Responsive Mobile APP
+                  </h3>
+                  <span>Site Template</span>
+                  <div class="price">$19</div>
+                </div>
+                <div class="card_author">
+                  <div class="author-title">
+                    <div class="author-img">
+                      <img src="" alt="">
+                    </div>
+                    <span>Radiustheme</span>
+                  </div>
+                  <div class="author-stars">
+                    <ul>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li>(<span>05</span>)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="slider-wrapper">
+            <div class="card">
+              <div class="card_img">
+                <img src="" alt="">
+                <div class="bolt">
+                  <i class="fas fa-bolt"></i>
+                </div>
+              </div>
+              <div class="card_content">
+                <div class="card_info">
+                  <h3>
+                    Responsive Mobile APP
+                  </h3>
+                  <span>Site Template</span>
+                  <div class="price">$19</div>
+                </div>
+                <div class="card_author">
+                  <div class="author-title">
+                    <div class="author-img">
+                      <img src="" alt="">
+                    </div>
+                    <span>Radiustheme</span>
+                  </div>
+                  <div class="author-stars">
+                    <ul>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li>(<span>05</span>)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="slider-wrapper">
+            <div class="card">
+              <div class="card_img">
+                <img src="" alt="">
+                <div class="bolt">
+                  <i class="fas fa-bolt"></i>
+                </div>
+              </div>
+              <div class="card_content">
+                <div class="card_info">
+                  <h3>
+                    Responsive Mobile APP
+                  </h3>
+                  <span>Site Template</span>
+                  <div class="price">$19</div>
+                </div>
+                <div class="card_author">
+                  <div class="author-title">
+                    <div class="author-img">
+                      <img src="" alt="">
+                    </div>
+                    <span>Radiustheme</span>
+                  </div>
+                  <div class="author-stars">
+                    <ul>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li>(<span>05</span>)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
   </div>
     <!-- Why choose start -->
     <div class="why-choose">

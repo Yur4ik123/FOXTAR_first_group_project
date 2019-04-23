@@ -10,9 +10,6 @@ var clean = require('gulp-clean');
 const spritesmith = require('gulp.spritesmith');
 const merge = require('merge-stream');
 var tinypng = require('gulp-tinypng');
-
-
-
 // Static server
 gulp.task('browser', function() {
     browserSync.init({
@@ -23,10 +20,11 @@ gulp.task('browser', function() {
 });
 
 gulp.task('clean', function () {
-    return gulp.src('./app/css', {read: false})
+return gulp.src('./app/css', {read: false})
+development
+
         .pipe(clean());
 });
-
 gulp.task('sprite', function () {
     let spritedata = 
         gulp.src('./app/sprite/*.png')
@@ -48,9 +46,9 @@ gulp.task('sprite', function () {
 gulp.task('tinypng', function() {
     return gulp.src(['app/img/*.png', 'app/img/*.jpg'])
         .pipe(tinypng('eGwHsgRHgRYLa2syNI121TJRmNwb7J46'))
+ development
         .pipe(gulp.dest('app/img/'));
 })
-
 gulp.task('sass', function () {
     return gulp.src('./app/scss/main.scss')
       .pipe(sass().on('error', sass.logError))
@@ -77,13 +75,14 @@ gulp.task('sass', function () {
 }); */
 
 gulp.task('minCss', gulp.series('clean', 'sass'))
-
-
 gulp.task('watch', function(){
      gulp.watch('./app/scss/*.scss', gulp.series('minCss'));
-     gulp.watch("app/*.html").on('change', browserSync.reload);
-     gulp.watch("app/css/*.css").on('change', browserSync.reload);
+
+    //  gulp.watch('./app/scss/*.scss', gulp.series('minCss')); по умолчанию!!!!!!!!!!!!!!!!!!!!!!!
+    gulp.watch('app/*.html').on('change', browserSync.reload);
+    gulp.watch('app/css/*.css').on('change', browserSync.reload);
+
 
 })
-
 gulp.task('default', gulp.series('minCss', gulp.parallel('browser', 'sprite','watch')))
+

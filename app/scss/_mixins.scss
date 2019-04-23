@@ -1,11 +1,6 @@
-<<<<<<< HEAD
-@import "_mixins_timchenko.scss";
-=======
-
+@import "_mixins-Ponedilok";
 @import "_mixins_timchenko";
 @import "mixins_malyshko.scss";
-
->>>>>>> a524a54a452fae5daf9d862a4391db59a4a3fc7e
 @mixin default-text(){
   font-family: 'Courier New', Courier, monospace;
   font-size: 14px;
