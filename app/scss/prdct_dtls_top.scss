@@ -1,0 +1,132 @@
+@import "_variables";
+@import "_mixins";
+@font-face {
+	font-family: 'MyriadPro';
+	src:url('../fonts/MyriadPro-Regular/MyriadPro-Regular.eot'),
+		url('../fonts/MyriadPro-Regular/MyriadPro-Regular.woff') format('woff'),
+		url('../fonts/MyriadPro-Regular/MyriadPro-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/* Reset start */
+*{
+  box-sizing: border-box;
+  
+  *:focus {
+    outline: none;
+  }
+  
+  body {
+  font-family: 'MyriadPro';
+  margin: 0;
+  padding: 0;
+  }
+  h1, h2, h3, h4, h5, h6, p{
+  margin: 0;
+  }
+  a{
+  color: inherit;
+  text-decoration: none;
+  }
+  a:hover, a:active{
+  text-decoration: none;
+  }
+  ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  }
+  img {
+  max-width: 100%;
+  }
+}
+/* Reset end */
+
+.prdct_dtls_top{
+    .top_bar{
+      .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+          a {
+            img{
+              padding: 26px 0;
+            }
+          }
+        }
+        width: 1170px;
+        margin: 0 auto;
+      }
+      .menu_register{
+        display: flex;
+        align-items: center;
+        .red_text{
+          color: $color-red;
+        }
+        .blu_text{
+          color: $color-blu;
+        }
+        
+        .fa-shopping-cart{
+          font-size: 14px;
+          color: $color-grayish-be;
+          background-color: $color-white-blue;
+          padding: 11px;
+          border-radius: 50%;
+          margin: 0 26px 0 26px;
+          position: relative;
+  
+          &::after {
+            content: "8";
+            position: absolute;
+            background: #95c85a;
+            color: $color-white;
+            border-radius: 50%;
+            width: 18px;
+            height: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: -5px;
+            right: -5px;
+          }
+  
+        }
+        .btn{
+          margin-left: 7px;
+          border: none;
+          border-radius: 3px;
+          height: 32px;
+          width: 72px;
+          color: $color-white;
+        }
+        .grin_btn{
+          background-color: $color-grin;
+        }
+        .red_btn{
+          background-color: $color-red;
+        }
+      }
+    }
+    .menu_naw{
+      .container_fluid{
+        background-color:$color-hex;
+        .naw{
+          width: 1170px;
+          margin: 0 auto;
+        ul{
+          display: flex;
+            li{
+              padding: 26px 46px 26px 0;
+              a{
+                color: $color-white;
+              }
+            }
+          }
+        }    
+      }
+    }
+  
