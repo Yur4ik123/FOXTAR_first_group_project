@@ -68,7 +68,56 @@
         }
         .blu_text{
           color: $color-blu;
+          margin-right:20px;
         }
+        .fa-bell{
+            font-size: 14px;
+          color: $color-grayish-be;
+          background-color: $color-white-blue;
+          padding: 11px;
+          border-radius: 50%;
+          margin: 0 10px 0 10px;
+          position: relative;
+
+          &::after {
+            content: "8";
+            position: absolute;
+            background: #fdd17a;
+            color: $color-white;
+            border-radius: 50%;
+            width: 18px;
+            height: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: -5px;
+            right: -5px;
+          }
+        }
+          .fa-envelope{
+            font-size: 14px;
+            color: $color-grayish-be;
+            background-color: $color-white-blue;
+            padding: 11px;
+            border-radius: 50%;
+            margin: 0 10px 0 10px;
+            position: relative;
+    
+            &::after {
+              content: "5";
+              position: absolute;
+              background: #ef6c00;
+              color: $color-white;
+              border-radius: 50%;
+              width: 18px;
+              height: 18px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              top: -5px;
+              right: -5px;
+            }
+          }
         
         .fa-shopping-cart{
           font-size: 14px;
@@ -76,7 +125,7 @@
           background-color: $color-white-blue;
           padding: 11px;
           border-radius: 50%;
-          margin: 0 26px 0 26px;
+          margin: 0 10px 0 10px;
           position: relative;
   
           &::after {
@@ -95,6 +144,45 @@
           }
   
         }
+        .account-card{
+            margin-right:30px;
+          display:flex;
+          flex-direction: row;
+          align-items: center;
+            .img-area{
+             display: inline-block;
+                border-radius:50%;
+                width:35px;
+                height:35px;
+                background-color:#b5b5b5;
+                margin:30px 17px 30px 10px;
+            }
+            .account-short-info{
+                display:inline-block;
+
+                .client-name{
+                    display:block;
+                    font-family: 'Roboto medium',sans-serif;
+                    font-weight:bold;
+                    font-size:14px;
+                    color:#282828;
+                    line-height: 14px;
+                    .fa-angle-down{
+                        margin-left:10px;
+                        color:#b5b5b5;
+                        font-size:16px;
+                        line-height: 14px;
+                    }
+                    
+                }
+                .purchase{
+                    font-family:'Roboto bold', sans-serif;
+                    font-size:14px;
+                    color:#8bc34a;
+                    font-weight:bold;
+                }
+            }
+        }
         .btn{
           margin-left: 7px;
           border: none;
@@ -102,6 +190,8 @@
           height: 32px;
           width: 72px;
           color: $color-white;
+          font-size:12px;
+          font-family:'Roboto', sans-serif;
         }
         .grin_btn{
           background-color: $color-grin;
@@ -129,4 +219,50 @@
         }    
       }
     }
-  
+    .banner{
+        background: url(../img/Layer.png)center top / cover no-repeat;
+        .container{
+          padding: 60px 0 67px 0;
+          text-align: center;
+          .taitel_banner{
+            font-size: $size48;
+            color:$color-white;
+            letter-spacing: 4px;
+    
+          }
+          .default_text20{
+            font-size:$size20;
+            color:$color-white;
+            margin-top: 35px;
+          }
+          * {box-sizing: border-box;}
+              form {
+                position: relative;
+                width: 670px;
+                margin: 0 auto;
+                padding-top: 58px;
+              }
+              input, button {
+                border: none;
+                outline: none;
+                border-radius: 3px;
+              }
+              input {
+                box-shadow: 0 0 10px $color-pistachio;
+                width: 100%;
+                height: 42px;
+                padding-left: 26px;
+              }
+              button {
+                width: 42px;
+                height: 42px;
+                background: none;
+                border: none;
+                position: absolute;
+                top: 58px;
+                right: 0;
+                color: $color-grayish-blue;
+              }
+        }
+    }
+}

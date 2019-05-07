@@ -1,0 +1,376 @@
+@import "_variables";
+@import "_mixins";
+.prdct-dtls-main{
+    background-color: #f4f6f5;
+        .container{
+            max-width:1170px;
+            margin: auto;
+                .breadcrumb{
+                    background-color: #f4f6f5; 
+                    .breadcrumb-item{
+                        &::before{
+                            content: " -";
+                    }
+                }  
+            }     
+                .main-container{
+                    .row{
+                        .col-md-9{
+                            width:75%;
+                            display:flex;
+                            flex-direction:column;
+                            
+                    .img-wrapper{
+                        max-width:870px;
+                        max-height:460px;
+                        background-color:#ffffff;
+                        border: 1px solid #dfdfdf;
+                        padding:16px 16px 16px 16px;
+                        margin-bottom:40px;
+                        .item-img{
+                            
+                            max-width:828px;
+                            min-height:420px;
+                            background-color: #d4d4d4;
+                        }
+                    }
+                    h1{
+                        font-family:'Roboto medium', sans-serif;
+                        font-size:30px;
+                        color:#263238;
+                        font-weight:bold;
+                        margin-bottom:33px;
+                    }
+                    h3{
+                        font-family:'Roboto regular', sans-serif;  
+                        font-size:16px;
+                        color:#707070;
+                        margin-bottom:49px;
+                    }
+                    .item-btn-row{
+                       display:flex;
+                       margin-bottom:55px;
+                        .btn-live{
+                            min-width:138px;
+                            min-height:50px;
+                            padding:20px auto 20px auto;
+                            color:#ffffff;
+                            font-family:'Roboto medium',sans-serif;
+                            font-size:16px;
+                            background-color: #e74c3c;
+                            margin-right:17px;
+                            text-align: center;
+                            line-height:50px;
+                           
+                            
+                        }
+                        .btn-screenshots{
+                            background-color: #455a64;
+                            min-width:160px;
+                            min-height:50px;
+                            padding:20px auto 20px auto;
+                            color:#ffffff;
+                            font-family:'Roboto medium',sans-serif;
+                            font-size:16px;
+                            margin-right:17px;
+                            text-align: center;
+                            line-height:50px;
+                        }
+                        .btn-doc{
+                            background-color: #8bc34a;
+                            min-width:157px;
+                            min-height:50px;
+                            padding:20px auto 20px auto;
+                            color:#ffffff;
+                            font-family:'Roboto medium',sans-serif;
+                            font-size:16px;
+                            margin-right:110px;
+                            text-align: center;
+                            line-height:50px;
+                        }
+                    
+                            .btn-fb{
+                                min-width:57px;
+                                min-height:40px;
+                                padding: 15px auto 15px auto;
+                                text-align:center;
+                                color:#ffffff;
+                                line-height:40px;
+                                margin-right:3px;
+                                background-color: #6370b6;
+                            }
+                            .btn-twitter{
+                                min-width:57px;
+                                min-height:40px;
+                                padding: 15px auto 15px auto;
+                                text-align:center;
+                                color:#ffffff;
+                                line-height:40px;
+                                margin-right:3px;
+                                background-color: #64b5f6;
+                            }
+                            .btn-linkedin{
+                                min-width:57px;
+                                min-height:40px;
+                                padding: 15px auto 15px auto;
+                                text-align:center;
+                                color:#ffffff;
+                                line-height:40px;
+                                margin-right:3px;
+                                background-color: #4f71ce;
+                            }
+                            .btn-pinterest{
+                                min-width:57px;
+                                min-height:40px;
+                                padding: 15px auto 15px auto;
+                                text-align:center;
+                                color:#ffffff;
+                                line-height:40px;
+                               
+                                background-color: #d32f2f;
+                            }
+                        }
+                    }
+                    .col-md-3{
+                        width:25%;
+                        display:flex;
+                        flex-direction:column;
+                            .product-price-wrap{
+                                background-color: #ffffff;
+                                border:1px solid #dfdfdf;
+                                margin-bottom:30px;
+                                .product-price-card{
+                                    padding: 30px;
+                                    .card-title{
+                                        font-family:'Roboto bold',sans-serif;
+                                        font-size:20px;
+                                        border-bottom:1px solid#dfdfdf;
+                                        padding-bottom:25px;
+                                    }
+                                    .product-price{
+                                        font-family:'Roboto medium',sans-serif;
+                                        font-weight:bold;
+                                        font-size:22px;
+                                        color:#e74c3c;
+                                        margin-top:34px;
+                                        margin-bottom:34px;
+                                        
+                                        
+                                    }
+                                }
+                            }
+                            .dropdown-open{
+                                font-family:'Roboto regular', sans-serif;
+                                font-size:13px;
+                                float:right;
+                                 
+                                .btn-secondary {
+                                    color:  #6c757d;
+                                    background-color:#fff;
+                                    border-color: #d6d6d6;
+                                    border-radius:0px;
+                                }
+                                .dropdown-toggle::after {
+                                    display: inline-block;
+                                    color:#b2d786;
+                                    margin-left: .255em;
+                                    vertical-align: .255em;
+                                    content: "";
+                                    border-top: .3em solid;
+                                    border-right: .3em solid transparent;
+                                    border-bottom: 0;
+                                    border-left: .3em solid transparent;
+                                }
+                                
+                            }
+                            .price-card-btns{
+                                display:flex;
+                                flex-direction: column;
+                                margin-top:30px;
+                                .add-btn{
+                                    background-color: #8bc34a;
+                                    color:#ffffff;
+                                    min-width:210px;
+                                    min-height:50px;
+                                    line-height:50px;
+                                    font-family:'Roboto bold',sans-serif;
+                                    margin-right:7px;
+                                    font-size:16px;
+                                    text-align:center;
+                                    margin-bottom:9px;
+                                }
+                                .fav-btn{
+                                    background-color: #42a5f5;
+                                    color:#ffffff;
+                                    min-width:210px;
+                                    min-height:50px;
+                                    line-height:50px;
+                                    font-family:'Roboto bold',sans-serif;
+                                    margin-right:7px;
+                                    font-size:16px;
+                                    text-align:center;
+                                    margin-bottom:9px;
+                                }
+                                .buy-btn{
+                                    background-color: #546e7a;
+                                    color:#ffffff;
+                                    min-width:210px;
+                                    min-height:50px;
+                                    line-height:50px;
+                                    font-family:'Roboto bold',sans-serif;
+                                    
+                                    font-size:16px;
+                                    text-align:center;
+                                
+                                }
+                            }
+                    }
+                    .product-author-wrap{
+                                background-color: #ffffff;
+                                border:1px solid #dfdfdf;
+                                margin-bottom:30px;
+                                .product-author-card{
+                                   
+         
+                                    padding: 30px;
+                                    .author-title{
+                                        font-family:'Roboto bold',sans-serif;
+                                        font-size:20px;
+                                        font-weight: bold;
+                                        border-bottom:1px solid#dfdfdf;
+                                        padding-bottom:25px;
+
+                                    }
+                                    .short-info{
+                                        margin-top:25px;
+                                        display: flex;
+                                        align-items: center;
+                                        .author-img{
+                                            background-color: #d4d4d4;
+                                            min-width:73px;
+                                            min-height:63px;
+                                            display: inline-block;
+                                            margin-right:13px;
+                                        }
+                                        .author-sub{
+                                            display: inline-block;
+                                            
+                                            .author-name{
+                                                font-family:'Roboto regular', sans-serif;
+                                                font-size:18px;
+                                                color:#263238;
+                                                display:block;
+                                                
+                                            }
+                                            .view-profile{
+                                                background-color: #ffffff;
+                                                border:1px solid #d6d6d6;
+                                                padding:9px 10px 9px 10px;
+                                                display:block;
+                                                font-family:'Roboto regular', sans-serif;
+                                                font-size:13px;
+                                                color:#707070;
+                                            }
+                                        }
+                                    }
+                                    .icons-row{
+                                        margin-top:25px;
+                                        .icons-list{
+                                            .icons{
+                                            list-style:none;
+                                            margin:0;
+                                            padding:0;
+                                            background:url(../img/sprite.png) no-repeat;
+                                            display:inline-block;
+                                            width:34px;
+                                            height:36px;
+                                            cursor:pointer;}
+                                                .icon-first{
+                                                    background-position:-34px 0px;
+                                                }  
+                                                .icon-second{
+                                                    background-position:-1px -37px;
+
+                                                }
+                                                .icon-third{
+                                                    background-position: 0px 0px;
+
+                                                }
+                                                .icon-fourth{
+                                                    background-position: -68px 0px;
+                                                }
+                                                .icon-fifth{
+                                                    background-position: -34px -37px;
+                                                }
+
+                                            
+                                            
+                                        }
+                                    }
+                                }
+
+                    }
+                    .sales-wrap{
+                        background-color: #ffffff;
+                        border:1px solid #dfdfdf;
+                        margin-bottom:30px;
+                        .sales-card{
+                            padding:20px 30px 20px 30px;
+                            .fa-shopping-cart{
+                                color:#a6b5bb;
+                                margin-right:20px;
+                            }
+                            .quantity{
+                                color:263238;
+                                font-family:'Roboto bold',sans-serif;
+                                font-size:20px;
+                                font-weight:bold;
+                                margin-right:20px;
+                            }
+                            .text{
+                                font-family:'Roboto light', sans-serif;
+                                font-size:16px;
+                                color:#707070;
+                            }
+                        }
+                    }
+                    .product-info-wrap{
+                        background-color: #ffffff;
+                        border:1px solid #dfdfdf;
+                        margin-bottom:30px;
+                        .sales-info-card{
+                            padding:30px 30px 5px 30px;
+                            .info-title{
+                                        font-family:'Roboto bold',sans-serif;
+                                        font-size:20px;
+                                        font-weight: bold;
+                                        border-bottom:1px solid#dfdfdf;
+                                        padding-bottom:25px;
+
+                            }
+                            .product-characters{
+                                .info-li{
+                                    font-size:14px;
+                                    margin-bottom:25px;
+                                    margin-top:25px;
+                                    .bold-txt{
+                                        font-family: 'Roboto medium', sans-serif;
+                                        font-weight:bold;
+                                        color:#263238;
+                                    }
+                                    .normal-txt{
+                                        font-family: 'Roboto regular', sans-serif;
+                                      
+                                        color:#70838d;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }       
+        }
+    
+
+    }
+   
