@@ -1,7 +1,7 @@
 
-@import "_mixins-Ponedilok";
-@import "_mixins_timchenko";
-@import "mixins_malyshko.scss";
+@import "custom/mixins-Ponedilok";
+@import "custom/mixins_timchenko";
+@import "custom/mixins_malyshko";
 @mixin default-text(){
   font-family: 'Courier New', Courier, monospace;
   font-size: 14px;

@@ -83,7 +83,7 @@ gulp.task('minCss', gulp.series('clean', 'sass'))
 
 
 gulp.task('watch', function(){
-     gulp.watch('./app/scss/*.scss', gulp.series('minCss'));
+     gulp.watch('./app/scss/custom/*.scss', gulp.series('minCss'));
 
     //  gulp.watch('./app/scss/*.scss', gulp.series('minCss')); по умолчанию!!!!!!!!!!!!!!!!!!!!!!!
     gulp.watch('app/*.html').on('change', browserSync.reload);
