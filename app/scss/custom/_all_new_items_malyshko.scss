@@ -85,9 +85,7 @@ body {
       }
     }
 
-    .price-range {
-      @include left-block(245px);
-    }
+   
 
     h3 {
       @include h3-items;
@@ -111,9 +109,7 @@ body {
       }
     }
 
-    section.range-slider {
-      @include range-slider(100%, 100%, 50px, #F1EFEF, #413F41, left);
-    }
+    
 
     .top-10-sallers {
       @include left-block(1000px);

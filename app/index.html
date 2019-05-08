@@ -7,35 +7,21 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>FOXTAR - market place</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-   <link rel="stylesheet" href="css/allstyle.min.css">
+  
   <link rel="stylesheet" type="text/css" href="js/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/allstyle.min.css">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="js/slick/slick.min.js"></script>
-  <script>
-    $(function () {
-      $("#tabs-script").tabs();
-      $('.multiple-items').slick({
-        autoplay: true,
-        autoplaySpeed: 3000,
-        infinite: true,
-        dots: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        draggable: true,
-        pauseOnDotsHover: false
-      });
-      
-    });
-   
-  </script>
+
 
 </head>
 
@@ -45,7 +31,7 @@
   <div class="top_bar">
     <div class="container">
       <div class="logo">
-        <a href=""><img src="img\logo.png" alt=""></a>
+        <a href="index.html"><img src="img\logo.png" alt=""></a>
       </div>
       <div class="menu_register">
         <p class="red_text">Need help?<span class="blu_text">Talk to an expert: +61 3 8376 6284</span></p>
@@ -85,1195 +71,1170 @@
       </form>
     </div>
   </div>
-  </div>
+  </div> 
   <div class="middle_section">
-    <h1>
-      Let’s Check Out Our Newest Release Prodcuts
-    </h1>
-    <div id="tabs-script">
-      <div class="tabs">
-        <ul>
-          <li><a href="#All">All</a></li>
-          <li><a href="#WordPress">WordPress</a></li>
-          <li><a href="#Joomla">Joomla</a></li>
-          <li><a href="#Plugins">Plugins</a></li>
-          <li><a href="#Component">Component</a></li>
-          <li><a href="#PSD">PSD</a></li>
+    <div class="crd-container">
+      <h1>
+        Let’s Check Out Our Newest Release Prodcuts
+      </h1>
+      <!-- Bootstrap-tab -->
+      <div id="tabs-script">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="All-tab" data-toggle="pill" href="#All" role="tab" aria-controls="pills-home" aria-selected="true">All</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" id="WordPress-tab" data-toggle="pill" href="#WordPress" role="tab" aria-controls="pills-contact" aria-selected="false">WordPress</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="Joomla-tab" data-toggle="pill" href="#Joomla" role="tab" aria-controls="pills-contact" aria-selected="false">Joomla</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="Plugins-tab" data-toggle="pill" href="#Plugins" role="tab" aria-controls="pills-contact" aria-selected="false">Plugins</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="Component-tab" data-toggle="pill" href="#Component" role="tab" aria-controls="pills-profile" aria-selected="false">Component</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="PSD-tab" data-toggle="pill" href="#PSD" role="tab" aria-controls="pills-contact" aria-selected="false">PSD</a>
+          </li>
         </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <!-- All -->
+          <div class="tab-pane fade show active" id="All" role="tabpanel" aria-labelledby="All-tab">
+            <div class="card">
+              <div class="card_img"><img src="" alt=""></div>
+              <div class="card_content">
+                <div class="card_info">
+                  <h3>
+                    Responsive Mobile APP
+                  </h3>
+                  <span>Site Template</span>
+                  <div class="price">$19</div>
+                </div>
+                <div class="card_author">
+                  <div class="author-title">
+                    <div class="author-img">
+                      <img src="" alt="">
+                    </div>
+                    <span>Radiustheme</span>
+                  </div>
+                  <div class="author-stars">
+                    <ul>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li>(<span>05</span>)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+            <div class="card">
+                <div class="card_img">
+                  <img src="" alt="">
+                  <div class="bolt">
+                    <i class="fas fa-bolt"></i>
+                  </div>
+                </div>
+                <div class="card_content">
+                  <div class="card_info">
+                    <h3>
+                      Responsive Mobile APP
+                    </h3>
+                    <span>Site Template</span>
+                    <div class="price">$19</div>
+                  </div>
+                  <div class="card_author">
+                    <div class="author-title">
+                      <div class="author-img">
+                        <img src="" alt="">
+                      </div>
+                      <span>Radiustheme</span>
+                    </div>
+                    <div class="author-stars">
+                      <ul>
+                        <li><a href=""><i class="fas fa-star"></i></a></li>
+                        <li><a href=""><i class="fas fa-star"></i></a></li>
+                        <li><a href=""><i class="fas fa-star"></i></a></li>
+                        <li><a href=""><i class="fas fa-star"></i></a></li>
+                        <li><a href=""><i class="fas fa-star"></i></a></li>
+                        <li>(<span>05</span>)</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+  
+              </div>
+            <div class="card">
+              <div class="card_img"><img src="" alt=""></div>
+              <div class="card_content">
+                <div class="card_info">
+                  <h3>
+                    Responsive Mobile APP
+                  </h3>
+                  <span>Site Template</span>
+                  <div class="price">$19</div>
+                </div>
+                <div class="card_author">
+                  <div class="author-title">
+                    <div class="author-img">
+                      <img src="" alt="">
+                    </div>
+                    <span>Radiustheme</span>
+                  </div>
+                  <div class="author-stars">
+                    <ul>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li>(<span>05</span>)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+            <div class="card">
+              <div class="card_img"><img src="" alt=""></div>
+              <div class="card_content">
+                <div class="card_info">
+                  <h3>
+                    Responsive Mobile APP
+                  </h3>
+                  <span>Site Template</span>
+                  <div class="price">$19</div>
+                </div>
+                <div class="card_author">
+                  <div class="author-title">
+                    <div class="author-img">
+                      <img src="" alt="">
+                    </div>
+                    <span>Radiustheme</span>
+                  </div>
+                  <div class="author-stars">
+                    <ul>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li>(<span>05</span>)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+            <div class="card">
+              <div class="card_img"><img src="" alt=""></div>
+              <div class="card_content">
+                <div class="card_info">
+                  <h3>
+                    Responsive Mobile APP
+                  </h3>
+                  <span>Site Template</span>
+                  <div class="price">$19</div>
+                </div>
+                <div class="card_author">
+                  <div class="author-title">
+                    <div class="author-img">
+                      <img src="" alt="">
+                    </div>
+                    <span>Radiustheme</span>
+                  </div>
+                  <div class="author-stars">
+                    <ul>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li>(<span>05</span>)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+            <div class="card">
+              <div class="card_img"><img src="" alt=""></div>
+              <div class="card_content">
+                <div class="card_info">
+                  <h3>
+                    Responsive Mobile APP
+                  </h3>
+                  <span>Site Template</span>
+                  <div class="price">$19</div>
+                </div>
+                <div class="card_author">
+                  <div class="author-title">
+                    <div class="author-img">
+                      <img src="" alt="">
+                    </div>
+                    <span>Radiustheme</span>
+                  </div>
+                  <div class="author-stars">
+                    <ul>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li>(<span>05</span>)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+            <div class="card">
+                <div class="card_img">
+                  <img src="" alt="">
+                  <div class="bolt">
+                    <i class="fas fa-bolt"></i>
+                  </div>
+                </div>
+                <div class="card_content">
+                  <div class="card_info">
+                    <h3>
+                      Responsive Mobile APP
+                    </h3>
+                    <span>Site Template</span>
+                    <div class="price">$19</div>
+                  </div>
+                  <div class="card_author">
+                    <div class="author-title">
+                      <div class="author-img">
+                        <img src="" alt="">
+                      </div>
+                      <span>Radiustheme</span>
+                    </div>
+                    <div class="author-stars">
+                      <ul>
+                        <li><a href=""><i class="fas fa-star"></i></a></li>
+                        <li><a href=""><i class="fas fa-star"></i></a></li>
+                        <li><a href=""><i class="fas fa-star"></i></a></li>
+                        <li><a href=""><i class="fas fa-star"></i></a></li>
+                        <li><a href=""><i class="fas fa-star"></i></a></li>
+                        <li>(<span>05</span>)</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+  
+              </div>
+            <div class="card">
+              <div class="card_img"><img src="" alt=""></div>
+              <div class="card_content">
+                <div class="card_info">
+                  <h3>
+                    Responsive Mobile APP
+                  </h3>
+                  <span>Site Template</span>
+                  <div class="price">$19</div>
+                </div>
+                <div class="card_author">
+                  <div class="author-title">
+                    <div class="author-img">
+                      <img src="" alt="">
+                    </div>
+                    <span>Radiustheme</span>
+                  </div>
+                  <div class="author-stars">
+                    <ul>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li>(<span>05</span>)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+          </div>
+          <!-- /All -->
+
+          <!-- WordPress -->
+          <div class="tab-pane fade" id="WordPress" role="tabpanel" aria-labelledby="WordPress-tab">
+              <div class="card">
+                  <div class="card_img"><img src="" alt=""></div>
+                  <div class="card_content">
+                    <div class="card_info">
+                      <h3>
+                        Responsive Mobile APP
+                      </h3>
+                      <span>Site Template</span>
+                      <div class="price">$19</div>
+                    </div>
+                    <div class="card_author">
+                      <div class="author-title">
+                        <div class="author-img">
+                          <img src="" alt="">
+                        </div>
+                        <span>Radiustheme</span>
+                      </div>
+                      <div class="author-stars">
+                        <ul>
+                          <li><a href=""><i class="fas fa-star"></i></a></li>
+                          <li><a href=""><i class="fas fa-star"></i></a></li>
+                          <li><a href=""><i class="fas fa-star"></i></a></li>
+                          <li><a href=""><i class="fas fa-star"></i></a></li>
+                          <li><a href=""><i class="fas fa-star"></i></a></li>
+                          <li>(<span>05</span>)</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+        
+                </div><div class="card">
+                    <div class="card_img"><img src="" alt=""></div>
+                    <div class="card_content">
+                      <div class="card_info">
+                        <h3>
+                          Responsive Mobile APP
+                        </h3>
+                        <span>Site Template</span>
+                        <div class="price">$19</div>
+                      </div>
+                      <div class="card_author">
+                        <div class="author-title">
+                          <div class="author-img">
+                            <img src="" alt="">
+                          </div>
+                          <span>Radiustheme</span>
+                        </div>
+                        <div class="author-stars">
+                          <ul>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li>(<span>05</span>)</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+          
+                  </div><div class="card">
+                      <div class="card_img"><img src="" alt=""></div>
+                      <div class="card_content">
+                        <div class="card_info">
+                          <h3>
+                            Responsive Mobile APP
+                          </h3>
+                          <span>Site Template</span>
+                          <div class="price">$19</div>
+                        </div>
+                        <div class="card_author">
+                          <div class="author-title">
+                            <div class="author-img">
+                              <img src="" alt="">
+                            </div>
+                            <span>Radiustheme</span>
+                          </div>
+                          <div class="author-stars">
+                            <ul>
+                              <li><a href=""><i class="fas fa-star"></i></a></li>
+                              <li><a href=""><i class="fas fa-star"></i></a></li>
+                              <li><a href=""><i class="fas fa-star"></i></a></li>
+                              <li><a href=""><i class="fas fa-star"></i></a></li>
+                              <li><a href=""><i class="fas fa-star"></i></a></li>
+                              <li>(<span>05</span>)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+            
+                    </div><div class="card">
+                        <div class="card_img"><img src="" alt=""></div>
+                        <div class="card_content">
+                          <div class="card_info">
+                            <h3>
+                              Responsive Mobile APP
+                            </h3>
+                            <span>Site Template</span>
+                            <div class="price">$19</div>
+                          </div>
+                          <div class="card_author">
+                            <div class="author-title">
+                              <div class="author-img">
+                                <img src="" alt="">
+                              </div>
+                              <span>Radiustheme</span>
+                            </div>
+                            <div class="author-stars">
+                              <ul>
+                                <li><a href=""><i class="fas fa-star"></i></a></li>
+                                <li><a href=""><i class="fas fa-star"></i></a></li>
+                                <li><a href=""><i class="fas fa-star"></i></a></li>
+                                <li><a href=""><i class="fas fa-star"></i></a></li>
+                                <li><a href=""><i class="fas fa-star"></i></a></li>
+                                <li>(<span>05</span>)</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+              
+                      </div>
+          </div>
+          <!-- /WordPress -->
+
+          <!-- Joomla -->
+          <div class="tab-pane fade" id="Joomla" role="tabpanel" aria-labelledby="Joomla-tab">
+              <div class="card">
+                  <div class="card_img"><img src="" alt=""></div>
+                  <div class="card_content">
+                    <div class="card_info">
+                      <h3>
+                        Responsive Mobile APP
+                      </h3>
+                      <span>Site Template</span>
+                      <div class="price">$19</div>
+                    </div>
+                    <div class="card_author">
+                      <div class="author-title">
+                        <div class="author-img">
+                          <img src="" alt="">
+                        </div>
+                        <span>Radiustheme</span>
+                      </div>
+                      <div class="author-stars">
+                        <ul>
+                          <li><a href=""><i class="fas fa-star"></i></a></li>
+                          <li><a href=""><i class="fas fa-star"></i></a></li>
+                          <li><a href=""><i class="fas fa-star"></i></a></li>
+                          <li><a href=""><i class="fas fa-star"></i></a></li>
+                          <li><a href=""><i class="fas fa-star"></i></a></li>
+                          <li>(<span>05</span>)</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+        
+                </div><div class="card">
+                    <div class="card_img"><img src="" alt=""></div>
+                    <div class="card_content">
+                      <div class="card_info">
+                        <h3>
+                          Responsive Mobile APP
+                        </h3>
+                        <span>Site Template</span>
+                        <div class="price">$19</div>
+                      </div>
+                      <div class="card_author">
+                        <div class="author-title">
+                          <div class="author-img">
+                            <img src="" alt="">
+                          </div>
+                          <span>Radiustheme</span>
+                        </div>
+                        <div class="author-stars">
+                          <ul>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li>(<span>05</span>)</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+          
+                  </div><div class="card">
+              <div class="card_img"><img src="" alt=""></div>
+              <div class="card_content">
+                <div class="card_info">
+                  <h3>
+                    Responsive Mobile APP
+                  </h3>
+                  <span>Site Template</span>
+                  <div class="price">$19</div>
+                </div>
+                <div class="card_author">
+                  <div class="author-title">
+                    <div class="author-img">
+                      <img src="" alt="">
+                    </div>
+                    <span>Radiustheme</span>
+                  </div>
+                  <div class="author-stars">
+                    <ul>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li>(<span>05</span>)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+          </div>
+          <!-- /Joomla -->
+
+          <!-- Plugins -->
+          <div class="tab-pane fade" id="Plugins" role="tabpanel" aria-labelledby="Plugins-tab">
+              <div class="card">
+                  <div class="card_img"><img src="" alt=""></div>
+                  <div class="card_content">
+                    <div class="card_info">
+                      <h3>
+                        Responsive Mobile APP
+                      </h3>
+                      <span>Site Template</span>
+                      <div class="price">$19</div>
+                    </div>
+                    <div class="card_author">
+                      <div class="author-title">
+                        <div class="author-img">
+                          <img src="" alt="">
+                        </div>
+                        <span>Radiustheme</span>
+                      </div>
+                      <div class="author-stars">
+                        <ul>
+                          <li><a href=""><i class="fas fa-star"></i></a></li>
+                          <li><a href=""><i class="fas fa-star"></i></a></li>
+                          <li><a href=""><i class="fas fa-star"></i></a></li>
+                          <li><a href=""><i class="fas fa-star"></i></a></li>
+                          <li><a href=""><i class="fas fa-star"></i></a></li>
+                          <li>(<span>05</span>)</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+        
+                </div><div class="card">
+                    <div class="card_img"><img src="" alt=""></div>
+                    <div class="card_content">
+                      <div class="card_info">
+                        <h3>
+                          Responsive Mobile APP
+                        </h3>
+                        <span>Site Template</span>
+                        <div class="price">$19</div>
+                      </div>
+                      <div class="card_author">
+                        <div class="author-title">
+                          <div class="author-img">
+                            <img src="" alt="">
+                          </div>
+                          <span>Radiustheme</span>
+                        </div>
+                        <div class="author-stars">
+                          <ul>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li>(<span>05</span>)</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+          
+                  </div><div class="card">
+                      <div class="card_img"><img src="" alt=""></div>
+                      <div class="card_content">
+                        <div class="card_info">
+                          <h3>
+                            Responsive Mobile APP
+                          </h3>
+                          <span>Site Template</span>
+                          <div class="price">$19</div>
+                        </div>
+                        <div class="card_author">
+                          <div class="author-title">
+                            <div class="author-img">
+                              <img src="" alt="">
+                            </div>
+                            <span>Radiustheme</span>
+                          </div>
+                          <div class="author-stars">
+                            <ul>
+                              <li><a href=""><i class="fas fa-star"></i></a></li>
+                              <li><a href=""><i class="fas fa-star"></i></a></li>
+                              <li><a href=""><i class="fas fa-star"></i></a></li>
+                              <li><a href=""><i class="fas fa-star"></i></a></li>
+                              <li><a href=""><i class="fas fa-star"></i></a></li>
+                              <li>(<span>05</span>)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+            
+                    </div><div class="card">
+                        <div class="card_img"><img src="" alt=""></div>
+                        <div class="card_content">
+                          <div class="card_info">
+                            <h3>
+                              Responsive Mobile APP
+                            </h3>
+                            <span>Site Template</span>
+                            <div class="price">$19</div>
+                          </div>
+                          <div class="card_author">
+                            <div class="author-title">
+                              <div class="author-img">
+                                <img src="" alt="">
+                              </div>
+                              <span>Radiustheme</span>
+                            </div>
+                            <div class="author-stars">
+                              <ul>
+                                <li><a href=""><i class="fas fa-star"></i></a></li>
+                                <li><a href=""><i class="fas fa-star"></i></a></li>
+                                <li><a href=""><i class="fas fa-star"></i></a></li>
+                                <li><a href=""><i class="fas fa-star"></i></a></li>
+                                <li><a href=""><i class="fas fa-star"></i></a></li>
+                                <li>(<span>05</span>)</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+              
+                      </div><div class="card">
+                          <div class="card_img"><img src="" alt=""></div>
+                          <div class="card_content">
+                            <div class="card_info">
+                              <h3>
+                                Responsive Mobile APP
+                              </h3>
+                              <span>Site Template</span>
+                              <div class="price">$19</div>
+                            </div>
+                            <div class="card_author">
+                              <div class="author-title">
+                                <div class="author-img">
+                                  <img src="" alt="">
+                                </div>
+                                <span>Radiustheme</span>
+                              </div>
+                              <div class="author-stars">
+                                <ul>
+                                  <li><a href=""><i class="fas fa-star"></i></a></li>
+                                  <li><a href=""><i class="fas fa-star"></i></a></li>
+                                  <li><a href=""><i class="fas fa-star"></i></a></li>
+                                  <li><a href=""><i class="fas fa-star"></i></a></li>
+                                  <li><a href=""><i class="fas fa-star"></i></a></li>
+                                  <li>(<span>05</span>)</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                
+                        </div>
+          </div>
+          <!-- /Plugins -->
+
+          <!-- Component -->
+          <div class="tab-pane fade" id="Component" role="tabpanel" aria-labelledby="Component-tab">
+              <div class="card">
+                  <div class="card_img"><img src="" alt=""></div>
+                  <div class="card_content">
+                    <div class="card_info">
+                      <h3>
+                        Responsive Mobile APP
+                      </h3>
+                      <span>Site Template</span>
+                      <div class="price">$19</div>
+                    </div>
+                    <div class="card_author">
+                      <div class="author-title">
+                        <div class="author-img">
+                          <img src="" alt="">
+                        </div>
+                        <span>Radiustheme</span>
+                      </div>
+                      <div class="author-stars">
+                        <ul>
+                          <li><a href=""><i class="fas fa-star"></i></a></li>
+                          <li><a href=""><i class="fas fa-star"></i></a></li>
+                          <li><a href=""><i class="fas fa-star"></i></a></li>
+                          <li><a href=""><i class="fas fa-star"></i></a></li>
+                          <li><a href=""><i class="fas fa-star"></i></a></li>
+                          <li>(<span>05</span>)</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+        
+                </div><div class="card">
+              <div class="card_img"><img src="" alt=""></div>
+              <div class="card_content">
+                <div class="card_info">
+                  <h3>
+                    Responsive Mobile APP
+                  </h3>
+                  <span>Site Template</span>
+                  <div class="price">$19</div>
+                </div>
+                <div class="card_author">
+                  <div class="author-title">
+                    <div class="author-img">
+                      <img src="" alt="">
+                    </div>
+                    <span>Radiustheme</span>
+                  </div>
+                  <div class="author-stars">
+                    <ul>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li>(<span>05</span>)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+          </div>
+          <!-- /Component -->
+
+          <!-- PSD -->
+          <div class="tab-pane fade" id="PSD" role="tabpanel" aria-labelledby="PSD-tab">
+              <div class="card">
+                  <div class="card_img"><img src="" alt=""></div>
+                  <div class="card_content">
+                    <div class="card_info">
+                      <h3>
+                        Responsive Mobile APP
+                      </h3>
+                      <span>Site Template</span>
+                      <div class="price">$19</div>
+                    </div>
+                    <div class="card_author">
+                      <div class="author-title">
+                        <div class="author-img">
+                          <img src="" alt="">
+                        </div>
+                        <span>Radiustheme</span>
+                      </div>
+                      <div class="author-stars">
+                        <ul>
+                          <li><a href=""><i class="fas fa-star"></i></a></li>
+                          <li><a href=""><i class="fas fa-star"></i></a></li>
+                          <li><a href=""><i class="fas fa-star"></i></a></li>
+                          <li><a href=""><i class="fas fa-star"></i></a></li>
+                          <li><a href=""><i class="fas fa-star"></i></a></li>
+                          <li>(<span>05</span>)</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+        
+                </div><div class="card">
+                    <div class="card_img"><img src="" alt=""></div>
+                    <div class="card_content">
+                      <div class="card_info">
+                        <h3>
+                          Responsive Mobile APP
+                        </h3>
+                        <span>Site Template</span>
+                        <div class="price">$19</div>
+                      </div>
+                      <div class="card_author">
+                        <div class="author-title">
+                          <div class="author-img">
+                            <img src="" alt="">
+                          </div>
+                          <span>Radiustheme</span>
+                        </div>
+                        <div class="author-stars">
+                          <ul>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li>(<span>05</span>)</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+          
+                  </div><div class="card">
+                      <div class="card_img"><img src="" alt=""></div>
+                      <div class="card_content">
+                        <div class="card_info">
+                          <h3>
+                            Responsive Mobile APP
+                          </h3>
+                          <span>Site Template</span>
+                          <div class="price">$19</div>
+                        </div>
+                        <div class="card_author">
+                          <div class="author-title">
+                            <div class="author-img">
+                              <img src="" alt="">
+                            </div>
+                            <span>Radiustheme</span>
+                          </div>
+                          <div class="author-stars">
+                            <ul>
+                              <li><a href=""><i class="fas fa-star"></i></a></li>
+                              <li><a href=""><i class="fas fa-star"></i></a></li>
+                              <li><a href=""><i class="fas fa-star"></i></a></li>
+                              <li><a href=""><i class="fas fa-star"></i></a></li>
+                              <li><a href=""><i class="fas fa-star"></i></a></li>
+                              <li>(<span>05</span>)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+            
+                    </div>
+          </div>
+          <!-- /PSD -->
+        </div>
+        </div>
+        <!-- /Bootstrap-tab -->
+    
       </div>
-      <div id="All" class="card-container">
-
-        <div class="card">
-          <div class="card_img"><img src="" alt=""></div>
-          <div class="card_content">
-            <div class="card_info">
-              <h3>
-                Responsive Mobile APP
-              </h3>
-              <span>Site Template</span>
-              <div class="price">$19</div>
-            </div>
-            <div class="card_author">
-              <div class="author-title">
-                <div class="author-img">
-                  <img src="" alt="">
-                </div>
-                <span>Radiustheme</span>
-              </div>
-              <div class="author-stars">
-                <ul>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li>(<span>05</span>)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="card">
-          <div class="card_img"><img src="" alt="">
-            <div class="bolt">
-              <i class="fas fa-bolt"></i>
-            </div>
-          </div>
-          <div class="card_content">
-            <div class="card_info">
-              <h3>
-                Responsive Mobile APP
-              </h3>
-              <span>Site Template</span>
-              <div class="price">$19</div>
-            </div>
-            <div class="card_author">
-              <div class="author-title">
-                <div class="author-img">
-                  <img src="" alt="">
-
-                </div>
-                <span>Radiustheme</span>
-              </div>
-              <div class="author-stars">
-                <ul>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li>(<span>05</span>)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="card">
-          <div class="card_img"><img src="" alt=""></div>
-          <div class="card_content">
-            <div class="card_info">
-              <h3>
-                Responsive Mobile APP
-              </h3>
-              <span>Site Template</span>
-              <div class="price">$19</div>
-            </div>
-            <div class="card_author">
-              <div class="author-title">
-                <div class="author-img">
-                  <img src="" alt="">
-                </div>
-                <span>Radiustheme</span>
-              </div>
-              <div class="author-stars">
-                <ul>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li>(<span>05</span>)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="card">
-          <div class="card_img"><img src="" alt=""></div>
-          <div class="card_content">
-            <div class="card_info">
-              <h3>
-                Responsive Mobile APP
-              </h3>
-              <span>Site Template</span>
-              <div class="price">$19</div>
-            </div>
-            <div class="card_author">
-              <div class="author-title">
-                <div class="author-img">
-                  <img src="" alt="">
-                </div>
-                <span>Radiustheme</span>
-              </div>
-              <div class="author-stars">
-                <ul>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li>(<span>05</span>)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="card">
-          <div class="card_img"><img src="" alt=""></div>
-          <div class="card_content">
-            <div class="card_info">
-              <h3>
-                Responsive Mobile APP
-              </h3>
-              <span>Site Template</span>
-              <div class="price">$19</div>
-            </div>
-            <div class="card_author">
-              <div class="author-title">
-                <div class="author-img">
-                  <img src="" alt="">
-                </div>
-                <span>Radiustheme</span>
-              </div>
-              <div class="author-stars">
-                <ul>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li>(<span>05</span>)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="card">
-          <div class="card_img"><img src="" alt=""></div>
-          <div class="card_content">
-            <div class="card_info">
-              <h3>
-                Responsive Mobile APP
-              </h3>
-              <span>Site Template</span>
-              <div class="price">$19</div>
-            </div>
-            <div class="card_author">
-              <div class="author-title">
-                <div class="author-img">
-                  <img src="" alt="">
-                </div>
-                <span>Radiustheme</span>
-              </div>
-              <div class="author-stars">
-                <ul>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li>(<span>05</span>)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="card">
-          <div class="card_img">
-            <img src="" alt="">
-            <div class="bolt">
-              <i class="fas fa-bolt"></i>
-            </div>
-          </div>
-          <div class="card_content">
-            <div class="card_info">
-              <h3>
-                Responsive Mobile APP
-              </h3>
-              <span>Site Template</span>
-              <div class="price">$19</div>
-            </div>
-            <div class="card_author">
-              <div class="author-title">
-                <div class="author-img">
-                  <img src="" alt="">
-                </div>
-                <span>Radiustheme</span>
-              </div>
-              <div class="author-stars">
-                <ul>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li>(<span>05</span>)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="card">
-          <div class="card_img"><img src="" alt=""></div>
-          <div class="card_content">
-            <div class="card_info">
-              <h3>
-                Responsive Mobile APP
-              </h3>
-              <span>Site Template</span>
-              <div class="price">$19</div>
-            </div>
-            <div class="card_author">
-              <div class="author-title">
-                <div class="author-img">
-                  <img src="" alt="">
-                </div>
-                <span>Radiustheme</span>
-              </div>
-              <div class="author-stars">
-                <ul>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li>(<span>05</span>)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-
+  
+      <div class="btn">
+  
+        <div class="new-items"><a href="all_new_items.html">All New Items</a></div>
+        <div class="popular-items"><a href="">Popular Items</a></div>
       </div>
-      <div id="WordPress" class="card-container">
-
-        <div class="card">
-          <div class="card_img"><img src="" alt=""></div>
-          <div class="card_content">
-            <div class="card_info">
-              <h3>
-                Responsive Mobile APP
-              </h3>
-              <span>Site Template</span>
-              <div class="price">$19</div>
-            </div>
-            <div class="card_author">
-              <div class="author-title">
-                <div class="author-img">
-                  <img src="" alt="">
-                </div>
-                <span>Radiustheme</span>
-              </div>
-              <div class="author-stars">
-                <ul>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li>(<span>05</span>)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="card">
-          <div class="card_img"><img src="" alt=""></div>
-          <div class="card_content">
-            <div class="card_info">
-              <h3>
-                Responsive Mobile APP
-              </h3>
-              <span>Site Template</span>
-              <div class="price">$19</div>
-            </div>
-            <div class="card_author">
-              <div class="author-title">
-                <div class="author-img">
-                  <img src="" alt="">
-                </div>
-                <span>Radiustheme</span>
-              </div>
-              <div class="author-stars">
-                <ul>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li>(<span>05</span>)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="card">
-          <div class="card_img"><img src="" alt=""></div>
-          <div class="card_content">
-            <div class="card_info">
-              <h3>
-                Responsive Mobile APP
-              </h3>
-              <span>Site Template</span>
-              <div class="price">$19</div>
-            </div>
-            <div class="card_author">
-              <div class="author-title">
-                <div class="author-img">
-                  <img src="" alt="">
-                </div>
-                <span>Radiustheme</span>
-              </div>
-              <div class="author-stars">
-                <ul>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li>(<span>05</span>)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="card">
-          <div class="card_img"><img src="" alt=""></div>
-          <div class="card_content">
-            <div class="card_info">
-              <h3>
-                Responsive Mobile APP
-              </h3>
-              <span>Site Template</span>
-              <div class="price">$19</div>
-            </div>
-            <div class="card_author">
-              <div class="author-title">
-                <div class="author-img">
-                  <img src="" alt="">
-                </div>
-                <span>Radiustheme</span>
-              </div>
-              <div class="author-stars">
-                <ul>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li>(<span>05</span>)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="card">
-          <div class="card_img"><img src="" alt=""></div>
-          <div class="card_content">
-            <div class="card_info">
-              <h3>
-                Responsive Mobile APP
-              </h3>
-              <span>Site Template</span>
-              <div class="price">$19</div>
-            </div>
-            <div class="card_author">
-              <div class="author-title">
-                <div class="author-img">
-                  <img src="" alt="">
-                </div>
-                <span>Radiustheme</span>
-              </div>
-              <div class="author-stars">
-                <ul>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li>(<span>05</span>)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-
-      </div>
-      <div id="Joomla" class="card-container">
-
-
-        <div class="card">
-          <div class="card_img"><img src="" alt=""></div>
-          <div class="card_content">
-            <div class="card_info">
-              <h3>
-                Responsive Mobile APP
-              </h3>
-              <span>Site Template</span>
-              <div class="price">$19</div>
-            </div>
-            <div class="card_author">
-              <div class="author-title">
-                <div class="author-img">
-                  <img src="" alt="">
-                </div>
-                <span>Radiustheme</span>
-              </div>
-              <div class="author-stars">
-                <ul>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li>(<span>05</span>)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="card">
-          <div class="card_img"><img src="" alt=""></div>
-          <div class="card_content">
-            <div class="card_info">
-              <h3>
-                Responsive Mobile APP
-              </h3>
-              <span>Site Template</span>
-              <div class="price">$19</div>
-            </div>
-            <div class="card_author">
-              <div class="author-title">
-                <div class="author-img">
-                  <img src="" alt="">
-                </div>
-                <span>Radiustheme</span>
-              </div>
-              <div class="author-stars">
-                <ul>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li>(<span>05</span>)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="card">
-          <div class="card_img"><img src="" alt=""></div>
-          <div class="card_content">
-            <div class="card_info">
-              <h3>
-                Responsive Mobile APP
-              </h3>
-              <span>Site Template</span>
-              <div class="price">$19</div>
-            </div>
-            <div class="card_author">
-              <div class="author-title">
-                <div class="author-img">
-                  <img src="" alt="">
-                </div>
-                <span>Radiustheme</span>
-              </div>
-              <div class="author-stars">
-                <ul>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li>(<span>05</span>)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="card">
-          <div class="card_img"><img src="" alt=""></div>
-          <div class="card_content">
-            <div class="card_info">
-              <h3>
-                Responsive Mobile APP
-              </h3>
-              <span>Site Template</span>
-              <div class="price">$19</div>
-            </div>
-            <div class="card_author">
-              <div class="author-title">
-                <div class="author-img">
-                  <img src="" alt="">
-                </div>
-                <span>Radiustheme</span>
-              </div>
-              <div class="author-stars">
-                <ul>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li>(<span>05</span>)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-
-        </div>
-
-
-      </div>
-      <div id="Plugins" class="card-container">
-
-        <div class="card">
-          <div class="card_img"><img src="" alt=""></div>
-          <div class="card_content">
-            <div class="card_info">
-              <h3>
-                Responsive Mobile APP
-              </h3>
-              <span>Site Template</span>
-              <div class="price">$19</div>
-            </div>
-            <div class="card_author">
-              <div class="author-title">
-                <div class="author-img">
-                  <img src="" alt="">
-                </div>
-                <span>Radiustheme</span>
-              </div>
-              <div class="author-stars">
-                <ul>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li>(<span>05</span>)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="card">
-          <div class="card_img"><img src="" alt=""></div>
-          <div class="card_content">
-            <div class="card_info">
-              <h3>
-                Responsive Mobile APP
-              </h3>
-              <span>Site Template</span>
-              <div class="price">$19</div>
-            </div>
-            <div class="card_author">
-              <div class="author-title">
-                <div class="author-img">
-                  <img src="" alt="">
-                </div>
-                <span>Radiustheme</span>
-              </div>
-              <div class="author-stars">
-                <ul>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li>(<span>05</span>)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="card">
-          <div class="card_img"><img src="" alt=""></div>
-          <div class="card_content">
-            <div class="card_info">
-              <h3>
-                Responsive Mobile APP
-              </h3>
-              <span>Site Template</span>
-              <div class="price">$19</div>
-            </div>
-            <div class="card_author">
-              <div class="author-title">
-                <div class="author-img">
-                  <img src="" alt="">
-                </div>
-                <span>Radiustheme</span>
-              </div>
-              <div class="author-stars">
-                <ul>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li>(<span>05</span>)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-
-      </div>
-      <div id="Component" class="card-container">
-
-        <div class="card">
-          <div class="card_img"><img src="" alt=""></div>
-          <div class="card_content">
-            <div class="card_info">
-              <h3>
-                Responsive Mobile APP
-              </h3>
-              <span>Site Template</span>
-              <div class="price">$19</div>
-            </div>
-            <div class="card_author">
-              <div class="author-title">
-                <div class="author-img">
-                  <img src="" alt="">
-                </div>
-                <span>Radiustheme</span>
-              </div>
-              <div class="author-stars">
-                <ul>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li>(<span>05</span>)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="card">
-          <div class="card_img"><img src="" alt=""></div>
-          <div class="card_content">
-            <div class="card_info">
-              <h3>
-                Responsive Mobile APP
-              </h3>
-              <span>Site Template</span>
-              <div class="price">$19</div>
-            </div>
-            <div class="card_author">
-              <div class="author-title">
-                <div class="author-img">
-                  <img src="" alt="">
-                </div>
-                <span>Radiustheme</span>
-              </div>
-              <div class="author-stars">
-                <ul>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li>(<span>05</span>)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="card">
-          <div class="card_img"><img src="" alt=""></div>
-          <div class="card_content">
-            <div class="card_info">
-              <h3>
-                Responsive Mobile APP
-              </h3>
-              <span>Site Template</span>
-              <div class="price">$19</div>
-            </div>
-            <div class="card_author">
-              <div class="author-title">
-                <div class="author-img">
-                  <img src="" alt="">
-                </div>
-                <span>Radiustheme</span>
-              </div>
-              <div class="author-stars">
-                <ul>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li>(<span>05</span>)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="card">
-          <div class="card_img"><img src="" alt=""></div>
-          <div class="card_content">
-            <div class="card_info">
-              <h3>
-                Responsive Mobile APP
-              </h3>
-              <span>Site Template</span>
-              <div class="price">$19</div>
-            </div>
-            <div class="card_author">
-              <div class="author-title">
-                <div class="author-img">
-                  <img src="" alt="">
-                </div>
-                <span>Radiustheme</span>
-              </div>
-              <div class="author-stars">
-                <ul>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li>(<span>05</span>)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="card">
-          <div class="card_img"><img src="" alt=""></div>
-          <div class="card_content">
-            <div class="card_info">
-              <h3>
-                Responsive Mobile APP
-              </h3>
-              <span>Site Template</span>
-              <div class="price">$19</div>
-            </div>
-            <div class="card_author">
-              <div class="author-title">
-                <div class="author-img">
-                  <img src="" alt="">
-                </div>
-                <span>Radiustheme</span>
-              </div>
-              <div class="author-stars">
-                <ul>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li>(<span>05</span>)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-
-      </div>
-      <div id="PSD" class="card-container">
-
-        <div class="card">
-          <div class="card_img"><img src="" alt=""></div>
-          <div class="card_content">
-            <div class="card_info">
-              <h3>
-                Responsive Mobile APP
-              </h3>
-              <span>Site Template</span>
-              <div class="price">$19</div>
-            </div>
-            <div class="card_author">
-              <div class="author-title">
-                <div class="author-img">
-                  <img src="" alt="">
-                </div>
-                <span>Radiustheme</span>
-              </div>
-              <div class="author-stars">
-                <ul>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li><a href=""><i class="fas fa-star"></i></a></li>
-                  <li>(<span>05</span>)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-
-
-      </div>
+  
     </div>
-
-    <div class="btn">
-
-      <div class="new-items"><a href="">All New Items</a></div>
-      <div class="popular-items"><a href="">Popular Items</a></div>
-    </div>
-
 
 
     <div class="weekly_trending_products">
       <h1>This Week Trending Products</h1>
-      <div class="carusel">
-        <div class='slider multiple-items'>
-          <div class="slider-wrapper">
-            <div class="card">
-              <div class="card_img">
-                <img src="" alt="">
-                <div class="bolt">
-                  <i class="fas fa-bolt"></i>
-                </div>
-              </div>
-              <div class="card_content">
-                <div class="card_info">
-                  <h3>
-                    Responsive Mobile APP
-                  </h3>
-                  <span>Site Template</span>
-                  <div class="price">$19</div>
-                </div>
-                <div class="card_author">
-                  <div class="author-title">
-                    <div class="author-img">
+      
+      <div class="carousel-wrapper">
+          <div class="carusel">
+              <div class='slider multiple-items'>
+                <div class="slider-wrapper">
+                  <div class="card">
+                    <div class="card_img">
                       <img src="" alt="">
+                      <div class="bolt">
+                        <i class="fas fa-bolt"></i>
+                      </div>
                     </div>
-                    <span>Radiustheme</span>
+                    <div class="card_content">
+                      <div class="card_info">
+                        <h3>
+                          Responsive Mobile APP
+                        </h3>
+                        <span>Site Template</span>
+                        <div class="price">$19</div>
+                      </div>
+                      <div class="card_author">
+                        <div class="author-title">
+                          <div class="author-img">
+                            <img src="" alt="">
+                          </div>
+                          <span>Radiustheme</span>
+                        </div>
+                        <div class="author-stars">
+                          <ul>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li>(<span>05</span>)</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+      
                   </div>
-                  <div class="author-stars">
-                    <ul>
-                      <li><a href=""><i class="fas fa-star"></i></a></li>
-                      <li><a href=""><i class="fas fa-star"></i></a></li>
-                      <li><a href=""><i class="fas fa-star"></i></a></li>
-                      <li><a href=""><i class="fas fa-star"></i></a></li>
-                      <li><a href=""><i class="fas fa-star"></i></a></li>
-                      <li>(<span>05</span>)</li>
-                    </ul>
+                </div>
+                <div class="slider-wrapper">
+                    <div class="card">
+                      <div class="card_img">
+                        <img src="" alt="">
+                        <div class="bolt">
+                          <i class="fas fa-bolt"></i>
+                        </div>
+                      </div>
+                      <div class="card_content">
+                        <div class="card_info">
+                          <h3>
+                            Responsive Mobile APP
+                          </h3>
+                          <span>Site Template</span>
+                          <div class="price">$19</div>
+                        </div>
+                        <div class="card_author">
+                          <div class="author-title">
+                            <div class="author-img">
+                              <img src="" alt="">
+                            </div>
+                            <span>Radiustheme</span>
+                          </div>
+                          <div class="author-stars">
+                            <ul>
+                              <li><a href=""><i class="fas fa-star"></i></a></li>
+                              <li><a href=""><i class="fas fa-star"></i></a></li>
+                              <li><a href=""><i class="fas fa-star"></i></a></li>
+                              <li><a href=""><i class="fas fa-star"></i></a></li>
+                              <li><a href=""><i class="fas fa-star"></i></a></li>
+                              <li>(<span>05</span>)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+        
+                    </div>
                   </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-          <div class="slider-wrapper">
-            <div class="card">
-              <div class="card_img">
-                <img src="" alt="">
-                <div class="bolt">
-                  <i class="fas fa-bolt"></i>
-                </div>
-              </div>
-              <div class="card_content">
-                <div class="card_info">
-                  <h3>
-                    Responsive Mobile APP
-                  </h3>
-                  <span>Site Template</span>
-                  <div class="price">$19</div>
-                </div>
-                <div class="card_author">
-                  <div class="author-title">
-                    <div class="author-img">
+                <div class="slider-wrapper">
+                  <div class="card">
+                    <div class="card_img">
                       <img src="" alt="">
+                      <div class="bolt">
+                        <i class="fas fa-bolt"></i>
+                      </div>
                     </div>
-                    <span>Radiustheme</span>
+                    <div class="card_content">
+                      <div class="card_info">
+                        <h3>
+                          Responsive Mobile APP
+                        </h3>
+                        <span>Site Template</span>
+                        <div class="price">$19</div>
+                      </div>
+                      <div class="card_author">
+                        <div class="author-title">
+                          <div class="author-img">
+                            <img src="" alt="">
+                          </div>
+                          <span>Radiustheme</span>
+                        </div>
+                        <div class="author-stars">
+                          <ul>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li>(<span>05</span>)</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+      
                   </div>
-                  <div class="author-stars">
-                    <ul>
-                      <li><a href=""><i class="fas fa-star"></i></a></li>
-                      <li><a href=""><i class="fas fa-star"></i></a></li>
-                      <li><a href=""><i class="fas fa-star"></i></a></li>
-                      <li><a href=""><i class="fas fa-star"></i></a></li>
-                      <li><a href=""><i class="fas fa-star"></i></a></li>
-                      <li>(<span>05</span>)</li>
-                    </ul>
-                  </div>
                 </div>
-              </div>
-
-            </div>
-          </div>
-          <div class="slider-wrapper">
-            <div class="card">
-              <div class="card_img">
-                <img src="" alt="">
-                <div class="bolt">
-                  <i class="fas fa-bolt"></i>
-                </div>
-              </div>
-              <div class="card_content">
-                <div class="card_info">
-                  <h3>
-                    Responsive Mobile APP
-                  </h3>
-                  <span>Site Template</span>
-                  <div class="price">$19</div>
-                </div>
-                <div class="card_author">
-                  <div class="author-title">
-                    <div class="author-img">
+                <div class="slider-wrapper">
+                  <div class="card">
+                    <div class="card_img">
                       <img src="" alt="">
+                      <div class="bolt">
+                        <i class="fas fa-bolt"></i>
+                      </div>
                     </div>
-                    <span>Radiustheme</span>
+                    <div class="card_content">
+                      <div class="card_info">
+                        <h3>
+                          Responsive Mobile APP
+                        </h3>
+                        <span>Site Template</span>
+                        <div class="price">$19</div>
+                      </div>
+                      <div class="card_author">
+                        <div class="author-title">
+                          <div class="author-img">
+                            <img src="" alt="">
+                          </div>
+                          <span>Radiustheme</span>
+                        </div>
+                        <div class="author-stars">
+                          <ul>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li>(<span>05</span>)</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+      
                   </div>
-                  <div class="author-stars">
-                    <ul>
-                      <li><a href=""><i class="fas fa-star"></i></a></li>
-                      <li><a href=""><i class="fas fa-star"></i></a></li>
-                      <li><a href=""><i class="fas fa-star"></i></a></li>
-                      <li><a href=""><i class="fas fa-star"></i></a></li>
-                      <li><a href=""><i class="fas fa-star"></i></a></li>
-                      <li>(<span>05</span>)</li>
-                    </ul>
-                  </div>
                 </div>
-              </div>
-
-            </div>
-          </div>
-          <div class="slider-wrapper">
-            <div class="card">
-              <div class="card_img">
-                <img src="" alt="">
-                <div class="bolt">
-                  <i class="fas fa-bolt"></i>
-                </div>
-              </div>
-              <div class="card_content">
-                <div class="card_info">
-                  <h3>
-                    Responsive Mobile APP
-                  </h3>
-                  <span>Site Template</span>
-                  <div class="price">$19</div>
-                </div>
-                <div class="card_author">
-                  <div class="author-title">
-                    <div class="author-img">
+                <div class="slider-wrapper">
+                  <div class="card">
+                    <div class="card_img">
                       <img src="" alt="">
+                      <div class="bolt">
+                        <i class="fas fa-bolt"></i>
+                      </div>
                     </div>
-                    <span>Radiustheme</span>
+                    <div class="card_content">
+                      <div class="card_info">
+                        <h3>
+                          Responsive Mobile APP
+                        </h3>
+                        <span>Site Template</span>
+                        <div class="price">$19</div>
+                      </div>
+                      <div class="card_author">
+                        <div class="author-title">
+                          <div class="author-img">
+                            <img src="" alt="">
+                          </div>
+                          <span>Radiustheme</span>
+                        </div>
+                        <div class="author-stars">
+                          <ul>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li>(<span>05</span>)</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+      
                   </div>
-                  <div class="author-stars">
-                    <ul>
-                      <li><a href=""><i class="fas fa-star"></i></a></li>
-                      <li><a href=""><i class="fas fa-star"></i></a></li>
-                      <li><a href=""><i class="fas fa-star"></i></a></li>
-                      <li><a href=""><i class="fas fa-star"></i></a></li>
-                      <li><a href=""><i class="fas fa-star"></i></a></li>
-                      <li>(<span>05</span>)</li>
-                    </ul>
-                  </div>
                 </div>
-              </div>
-
-            </div>
-          </div>
-          <div class="slider-wrapper">
-            <div class="card">
-              <div class="card_img">
-                <img src="" alt="">
-                <div class="bolt">
-                  <i class="fas fa-bolt"></i>
-                </div>
-              </div>
-              <div class="card_content">
-                <div class="card_info">
-                  <h3>
-                    Responsive Mobile APP
-                  </h3>
-                  <span>Site Template</span>
-                  <div class="price">$19</div>
-                </div>
-                <div class="card_author">
-                  <div class="author-title">
-                    <div class="author-img">
+                <div class="slider-wrapper">
+                  <div class="card">
+                    <div class="card_img">
                       <img src="" alt="">
+                      <div class="bolt">
+                        <i class="fas fa-bolt"></i>
+                      </div>
                     </div>
-                    <span>Radiustheme</span>
+                    <div class="card_content">
+                      <div class="card_info">
+                        <h3>
+                          Responsive Mobile APP
+                        </h3>
+                        <span>Site Template</span>
+                        <div class="price">$19</div>
+                      </div>
+                      <div class="card_author">
+                        <div class="author-title">
+                          <div class="author-img">
+                            <img src="" alt="">
+                          </div>
+                          <span>Radiustheme</span>
+                        </div>
+                        <div class="author-stars">
+                          <ul>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li>(<span>05</span>)</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+      
                   </div>
-                  <div class="author-stars">
-                    <ul>
-                      <li><a href=""><i class="fas fa-star"></i></a></li>
-                      <li><a href=""><i class="fas fa-star"></i></a></li>
-                      <li><a href=""><i class="fas fa-star"></i></a></li>
-                      <li><a href=""><i class="fas fa-star"></i></a></li>
-                      <li><a href=""><i class="fas fa-star"></i></a></li>
-                      <li>(<span>05</span>)</li>
-                    </ul>
-                  </div>
                 </div>
-              </div>
-
-            </div>
-          </div>
-          <div class="slider-wrapper">
-            <div class="card">
-              <div class="card_img">
-                <img src="" alt="">
-                <div class="bolt">
-                  <i class="fas fa-bolt"></i>
-                </div>
-              </div>
-              <div class="card_content">
-                <div class="card_info">
-                  <h3>
-                    Responsive Mobile APP
-                  </h3>
-                  <span>Site Template</span>
-                  <div class="price">$19</div>
-                </div>
-                <div class="card_author">
-                  <div class="author-title">
-                    <div class="author-img">
+                <div class="slider-wrapper">
+                  <div class="card">
+                    <div class="card_img">
                       <img src="" alt="">
+                      <div class="bolt">
+                        <i class="fas fa-bolt"></i>
+                      </div>
                     </div>
-                    <span>Radiustheme</span>
+                    <div class="card_content">
+                      <div class="card_info">
+                        <h3>
+                          Responsive Mobile APP
+                        </h3>
+                        <span>Site Template</span>
+                        <div class="price">$19</div>
+                      </div>
+                      <div class="card_author">
+                        <div class="author-title">
+                          <div class="author-img">
+                            <img src="" alt="">
+                          </div>
+                          <span>Radiustheme</span>
+                        </div>
+                        <div class="author-stars">
+                          <ul>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li>(<span>05</span>)</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+      
                   </div>
-                  <div class="author-stars">
-                    <ul>
-                      <li><a href=""><i class="fas fa-star"></i></a></li>
-                      <li><a href=""><i class="fas fa-star"></i></a></li>
-                      <li><a href=""><i class="fas fa-star"></i></a></li>
-                      <li><a href=""><i class="fas fa-star"></i></a></li>
-                      <li><a href=""><i class="fas fa-star"></i></a></li>
-                      <li>(<span>05</span>)</li>
-                    </ul>
-                  </div>
                 </div>
-              </div>
-
-            </div>
-          </div>
-          <div class="slider-wrapper">
-            <div class="card">
-              <div class="card_img">
-                <img src="" alt="">
-                <div class="bolt">
-                  <i class="fas fa-bolt"></i>
-                </div>
-              </div>
-              <div class="card_content">
-                <div class="card_info">
-                  <h3>
-                    Responsive Mobile APP
-                  </h3>
-                  <span>Site Template</span>
-                  <div class="price">$19</div>
-                </div>
-                <div class="card_author">
-                  <div class="author-title">
-                    <div class="author-img">
+                <div class="slider-wrapper">
+                  <div class="card">
+                    <div class="card_img">
                       <img src="" alt="">
+                      <div class="bolt">
+                        <i class="fas fa-bolt"></i>
+                      </div>
                     </div>
-                    <span>Radiustheme</span>
-                  </div>
-                  <div class="author-stars">
-                    <ul>
-                      <li><a href=""><i class="fas fa-star"></i></a></li>
-                      <li><a href=""><i class="fas fa-star"></i></a></li>
-                      <li><a href=""><i class="fas fa-star"></i></a></li>
-                      <li><a href=""><i class="fas fa-star"></i></a></li>
-                      <li><a href=""><i class="fas fa-star"></i></a></li>
-                      <li>(<span>05</span>)</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-          <div class="slider-wrapper">
-            <div class="card">
-              <div class="card_img">
-                <img src="" alt="">
-                <div class="bolt">
-                  <i class="fas fa-bolt"></i>
-                </div>
-              </div>
-              <div class="card_content">
-                <div class="card_info">
-                  <h3>
-                    Responsive Mobile APP
-                  </h3>
-                  <span>Site Template</span>
-                  <div class="price">$19</div>
-                </div>
-                <div class="card_author">
-                  <div class="author-title">
-                    <div class="author-img">
-                      <img src="" alt="">
+                    <div class="card_content">
+                      <div class="card_info">
+                        <h3>
+                          Responsive Mobile APP
+                        </h3>
+                        <span>Site Template</span>
+                        <div class="price">$19</div>
+                      </div>
+                      <div class="card_author">
+                        <div class="author-title">
+                          <div class="author-img">
+                            <img src="" alt="">
+                          </div>
+                          <span>Radiustheme</span>
+                        </div>
+                        <div class="author-stars">
+                          <ul>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                            <li>(<span>05</span>)</li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
-                    <span>Radiustheme</span>
-                  </div>
-                  <div class="author-stars">
-                    <ul>
-                      <li><a href=""><i class="fas fa-star"></i></a></li>
-                      <li><a href=""><i class="fas fa-star"></i></a></li>
-                      <li><a href=""><i class="fas fa-star"></i></a></li>
-                      <li><a href=""><i class="fas fa-star"></i></a></li>
-                      <li><a href=""><i class="fas fa-star"></i></a></li>
-                      <li>(<span>05</span>)</li>
-                    </ul>
+      
                   </div>
                 </div>
+      
+      
+      
               </div>
-
             </div>
-          </div>
-
-
-
-        </div>
       </div>
-    </div>
+    </div> 
   </div>
     <!-- Why choose start -->
     <div class="why-choose">
