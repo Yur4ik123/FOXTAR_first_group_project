@@ -1,18 +1,119 @@
-.modal{
-  
-  .modal-content{
+.modal {
+
+  .modal-content {
     height: 484px;
     width: 729px;
     background-color: #8bc34a;
-    .modal-header{
+    align-items: center;
+    .modal-header {
+      border: 0;
+      position: absolute;
+      right: 0;
+    }
+
+    .close{
+      color: #fff;
+      font-size: 18px;
+    }
+
+    .modal-header {
       border: none;
     }
-    .modal-body{
+
+    .modal-body {
       display: flex;
+      justify-content: center;
+      width: 400px;
       flex-direction: column;
-      .modal-title{
-        
+      
+
+      .modal-title {
+        display: flex;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        font-size: 48px;
+        color: #fff;
+        justify-content: center;
+        text-transform: uppercase;
+        margin-bottom: 42px;
       }
+
+      .form {
+        form {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+
+          input {
+            &::-webkit-input-placeholder {
+
+              color: #fff;
+              font-size: 14px;
+            }
+
+            &::-moz-placeholder {
+
+              color: #fff;
+              font-size: 14px;
+            }
+
+            &:-ms-input-placeholder {
+
+              color: #fff;
+              font-size: 14px;
+            }
+
+            border: none;
+            width: 400px;
+            height: 45px;
+            margin-bottom: 8px;
+            background-color: #76ae36;
+            color: #fff;
+            font-size: 14px;
+            padding-left: 18px;
+          }
+          
+        }
+
+      }
+      .modal-btns{
+        display: flex;
+        justify-content: center;
+        button{
+          margin: 10px 0px;
+          background-color: #76ae36;
+          color: #fff;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 200;
+          font-size: 18px;
+        }
+        .submit-btn{
+          width: 140px;
+          height: 50px;
+          margin-right: 10px;
+        }
+        .create-btn{
+          width: 250px;
+          height: 50px;        
+        }  
+        button:hover{
+          background-color: #fff;
+          color:black;
+          font-family: 'Roboto', sans-serif;
+          font-weight: bold;
+          font-size: 14px;
+          box-shadow: 2px 4px 5px 0px rgba(83,149,31,1);
+        }      
+      }
+      a{
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        margin-top: 15px;
+      }
+
+
     }
   }
 }
