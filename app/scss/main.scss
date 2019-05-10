@@ -3,14 +3,8 @@
 @import "mixins";
 @import "custom/why_choose.scss";
 @import "custom/middle_section.scss";
-
 @import "custom/all_new_items_malyshko";
 @import "custom/modal.scss";
-@import "_variables";
-@import "_mixins";
-@import "why_choose.scss";
-@import "middle_section.scss";
-@import "modal.scss";
-@import "banner_author.scss";
-@import "prdct_dtls_top.scss";
-@import "prdct_dtls_main.scss";
+@import "custom/banner_author.scss";
+@import "custom/prdct_dtls_main.scss";
+@import "custom/prdct_dtls_top.scss";

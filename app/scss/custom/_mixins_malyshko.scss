@@ -37,6 +37,7 @@
   margin-bottom: 30px;
 }
 @mixin card () {
+  
   .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -45,6 +46,7 @@
   }
 
   .card {
+    
     flex-direction: column;
     height: 410px;
     max-width: 440px;
@@ -168,6 +170,7 @@
       }
     }
   }
+
 }
 @mixin h1-index (){
   h1 {
