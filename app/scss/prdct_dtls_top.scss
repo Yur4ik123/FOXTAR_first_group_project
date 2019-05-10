@@ -81,6 +81,7 @@
 
           &::after {
             content: "8";
+            font-family:'OpenSans Semibold',sans-serif;
             position: absolute;
             background: #fdd17a;
             color: $color-white;
@@ -105,6 +106,7 @@
     
             &::after {
               content: "5";
+              font-family:'OpenSans Semibold',sans-serif;
               position: absolute;
               background: #ef6c00;
               color: $color-white;
@@ -130,6 +132,7 @@
   
           &::after {
             content: "8";
+            font-family:'OpenSans Semibold', sans-serif;
             position: absolute;
             background: #95c85a;
             color: $color-white;
@@ -141,6 +144,7 @@
             align-items: center;
             top: -5px;
             right: -5px;
+            font-weight:600;
           }
   
         }
@@ -154,7 +158,7 @@
                 border-radius:50%;
                 width:35px;
                 height:35px;
-                background-color:#b5b5b5;
+                
                 margin:30px 17px 30px 10px;
             }
             .account-short-info{

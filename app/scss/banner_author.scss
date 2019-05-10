@@ -9,33 +9,33 @@
     text-align: center;
     
     .banner-grey-bg{
-        max-width:1105px;
+        
         background-color: #b5b5b5;
         padding:145px 227px;
         display: inline-block; 
-        margin-right: -0.25em; 
-        margin-top:113px;
-        margin-bottom:113px;
+        margin:113px auto 113px auto;
+        
+        -webkit-box-shadow: 0px 0px 50px -6px rgba(173,173,173,1);
+        -moz-box-shadow: 0px 0px 50px -6px rgba(173,173,173,1);
+        box-shadow: 0px 0px 50px -6px rgba(173,173,173,1);
 
         .banner-green-bg{
-            max-width:655px;
             background-color: #8bc34a;
             padding:70px 60px 85px 60px;
-
             .flex-container{
                 margin:0 auto;
-                @include flexible ();
+                display:flex;
                 justify-content: space-between;
 
                 .flex-item{
-                    
                     h3{
                         color:$w-color;
                         font-family:'Roboto regular',sans-serif;
                         font-size:30px;
                         text-align: left;
                         display: inline-block;
-                        line-height:45px;
+                        margin-right:45px;
+                        font-weight:bold;
 
                         .lighter{
                             font-weight:lighter;
@@ -50,11 +50,7 @@
                         font-family:'Roboto regular',sans-serif;
                         font-size:18px;
                         padding:30px 42px;
-                        max-width: 225px;
-                        margin-top:30px;
-                        margin-left:60px;
-                        display: inline-block;
-                        
+                        display: inline-block;    
                     }
                 }
             }
