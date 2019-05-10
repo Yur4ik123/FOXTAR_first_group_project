@@ -1,4 +1,4 @@
 node_modules
 package-lock.json
-app/css/
-lib/sprite.css
+app/css
+app/lib/sprite.css
