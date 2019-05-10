@@ -4,23 +4,38 @@
 .why-choose{
     background-color:#263238;
     min-width:100%;
-    position: absolute;
-    left:0;
+    
     .w-c-container{
         max-width:1170px;
         margin:0 auto;
+        padding:125px 0 125px 0;
+        
         h3{
             @include title-text();
-            margin-top: 125px;
+            
             margin-bottom:80px;
-            position:relative;
+            
         }
         .flex-container{
             margin:0 auto;
             @include flexible ();
+            
             .flex-item{
-                align-items:center;
+                align-items:space-around;
                 max-width:315px;
+                margin-right:90px;
+                &:hover{
+                    cursor:pointer;
+                    .item-title{
+                        color:$active-color; 
+                    }
+                    .item-description{
+                        color:#b0bec5;
+                    }
+                    .item-picture{
+                        background-color: #d4d4d4;
+                    }
+                }
                 .item-picture{
                     height:115px;
                     width:115px;
@@ -35,13 +50,10 @@
                     margin-top:33px;
                     margin-bottom:25px;
                     text-align: center;
-                &:hover{
-                    color:$active-color;
-                }
                 }
                 .item-description{
                     @include small-text();
-                    margin-bottom:120px;
+                    
                     text-align: center;
                 }
             }
