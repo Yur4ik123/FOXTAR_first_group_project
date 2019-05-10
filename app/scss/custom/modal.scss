@@ -23,7 +23,7 @@
     .modal-body {
       display: flex;
       justify-content: center;
-      width: 400px;
+      width: 435px;
       flex-direction: column;
       
 
@@ -43,34 +43,50 @@
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
-
+          div{ 
+            
+            color: #fff;
+            position: relative;
+            .fa-user{
+              position: absolute;
+              top: 12px;
+              left: 15px;
+            }
+            .fa-lock{
+              position: absolute;
+              top: 12px;
+              left: 15px;
+            }
           input {
-            &::-webkit-input-placeholder {
-
-              color: #fff;
-              font-size: 14px;
-            }
-
-            &::-moz-placeholder {
-
-              color: #fff;
-              font-size: 14px;
-            }
-
-            &:-ms-input-placeholder {
-
-              color: #fff;
-              font-size: 14px;
-            }
-
             border: none;
             width: 400px;
             height: 45px;
             margin-bottom: 8px;
             background-color: #76ae36;
-            color: #fff;
+            
+            
             font-size: 14px;
-            padding-left: 18px;
+            padding-left: 41px;
+            &::-webkit-input-placeholder {
+              
+              color: #fff;
+              font-size: 14px;
+            }
+
+            &::-moz-placeholder {
+              
+              color: #fff;
+              font-size: 14px;
+            }
+
+            &:-ms-input-placeholder {
+              
+              color: #fff;
+              font-size: 14px;
+            }
+
+            
+          }
           }
           
         }

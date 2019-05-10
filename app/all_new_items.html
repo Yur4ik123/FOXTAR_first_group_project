@@ -6,17 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>FOXTAR - market place</title>
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/allstyle.min.css">
+
   <link rel="stylesheet" type="text/css" href="js/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" />
+  <link rel="stylesheet" href="lib/ion.rangeSlider.css">
+  <link rel="stylesheet" href="css/allstyle.min.css">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
   </script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
   </script>
@@ -24,82 +29,21 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="js/slick/slick.min.js"></script>
-  <script>
-    $(function () {
-      $("#tabs-script").tabs();
-      $('.multiple-items').slick({
-        autoplay: true,
-        autoplaySpeed: 3000,
-        infinite: true,
-        dots: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        draggable: true,
-        pauseOnDotsHover: false
-      });
-
-    });
-  </script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
 </head>
 
 <body>
-
-  <div class="ponedilok">
-    <div class="top_bar">
-      <div class="container">
-        <div class="logo">
-          <a href=""><img src="img\logo.png" alt=""></a>
-        </div>
-        <div class="menu_register">
-          <p class="red_text">Need help?<span class="blu_text">Talk to an expert: +61 3 8376 6284</span></p>
-          <i class="fas fa-shopping-cart"></i>
-          <button class="btn grin_btn" data-toggle="modal" data-target="#exampleModal">Login</button>
-          <button class="btn red_btn">Register</button>
-        </div>
-
-      </div>
-    </div>
-    <div class="menu_naw">
-      <div class="container_fluid">
-        <div class="naw">
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">WordPress</a></li>
-            <li><a href="">Joomla</a></li>
-            <li><a href="">PSD</a></li>
-            <li><a href="">Plugins</a></li>
-            <li><a href="">Components</a></li>
-            <li><a href="">Pages</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">Help</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="banner">
-      <div class="container">
-        <h1 class="taitel_banner">Welcome To Foxtar Market Place!</h1>
-        <p class="default_text20">Premium WordPress Themes, Web Templates and Many More ...</p>
-        <form>
-          <input type="text" placeholder="Search Your Keywords . . .">
-          <button type="submit"><i class="fas fa-search"></i>
-          </button>
-        </form>
-      </div>
-    </div>
-  </div>
   <div class="container">
     <div class="nav-bar">
-     <a href="">Home</a>
-     <span>-</span>
-     <a href="" class="nav-active">Product Page</a>
+      <a href="index.html">Home</a>
+      <span>-</span>
+      <a href="" class="nav-active">Product Page</a>
     </div>
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-3 ">
         <div class="categories">
           <h3>Categories</h3>
           <a href=""><i class="fas fa-angle-right"></i> WordPress <span>(150)</span></a>
@@ -111,10 +55,8 @@
         <div class="price-range">
           <h3>Price Range</h3>
           <section class="range-slider">
+            <input type="text" class="js-range-slider" name="my_range" value="" />
 
-            <input value="0" min="0" max="1000" step="10" type="range">
-            <input value="1000" min="0" max="1000" step="10" type="range">
-            <span class="rangeValues"></span>
           </section>
 
           <div class="btn-price-range">
@@ -124,16 +66,136 @@
         <div class="top-10-sallers">
           <h3>Top 10 Sallers</h3>
           <div class="card-top">
+            <div class="card_img">
+              <img class="img-responsive" src="" alt="">
+            </div>
+            <div class="card_content">
+              <div class="card_info">
+                <h4>
+                  The Post Grid Pro
+                </h4>
+                <span>WordPress Plugin</span>
+                <div class="price">$40</div>
+              </div>
+              <div class="card_author">
+                <div class="author-title">
+                  <div class="author-img">
+                    <img src="" alt="">
+                  </div>
+                  <span>PsdBosS</span>
+                </div>
+                <div class="author-stars">
+                  <ul>
+                    <li><a href=""><i class="fas fa-star"></i></a></li>
+                    <li><a href=""><i class="fas fa-star"></i></a></li>
+                    <li><a href=""><i class="fas fa-star"></i></a></li>
+                    <li><a href=""><i class="fas fa-star"></i></a></li>
+                    <li><a href=""><i class="fas fa-star"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="card-top">
+            <div class="card_img">
+              <img src="" alt="">
+            </div>
+            <div class="card_content">
+              <div class="card_info">
+                <h4>
+                  The Post Grid Pro
+                </h4>
+                <span>WordPress Plugin</span>
+                <div class="price">$40</div>
+              </div>
+              <div class="card_author">
+                <div class="author-title">
+                  <div class="author-img">
+                    <img src="" alt="">
+                  </div>
+                  <span>PsdBosS</span>
+                </div>
+                <div class="author-stars">
+                  <ul>
+                    <li><a href=""><i class="fas fa-star"></i></a></li>
+                    <li><a href=""><i class="fas fa-star"></i></a></li>
+                    <li><a href=""><i class="fas fa-star"></i></a></li>
+                    <li><a href=""><i class="fas fa-star"></i></a></li>
+                    <li><a href=""><i class="fas fa-star"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="card-top">
+            <div class="card_img">
+              <img src="" alt="">
+            </div>
+            <div class="card_content">
+              <div class="card_info">
+                <h4>
+                  The Post Grid Pro
+                </h4>
+                <span>WordPress Plugin</span>
+                <div class="price">$40</div>
+              </div>
+              <div class="card_author">
+                <div class="author-title">
+                  <div class="author-img">
+                    <img src="" alt="">
+                  </div>
+                  <span>PsdBosS</span>
+                </div>
+                <div class="author-stars">
+                  <ul>
+                    <li><a href=""><i class="fas fa-star"></i></a></li>
+                    <li><a href=""><i class="fas fa-star"></i></a></li>
+                    <li><a href=""><i class="fas fa-star"></i></a></li>
+                    <li><a href=""><i class="fas fa-star"></i></a></li>
+                    <li><a href=""><i class="fas fa-star"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="btn-view-all">
+            <button>View All</button>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-9">
+        <div class="right-block">
+
+          <div class="filter">
+            <div class="sort">
+              <i class="fas fa-sort-amount-down"></i>
+              Sort by: New Items
+              <i class="fas fa-sort"></i>
+            </div>
+            <div class="display">
+              <i class="fa fa-th-large"></i>
+              <i class="fa fa-list"></i>
+            </div>
+          </div>
+          <!-- <div class="container-for-card">
+            <div class="card">
               <div class="card_img">
                 <img src="" alt="">
               </div>
               <div class="card_content">
                 <div class="card_info">
-                  <h4>
-                      The Post Grid Pro
-                  </h4>
-                  <span>WordPress Plugin</span>
-                  <div class="price">$40</div>
+                  <h3>
+                    Grand Ballet - Dance
+                  </h3>
+                  <span>Site Template</span>
+                  <div class="price">$19</div>
                 </div>
                 <div class="card_author">
                   <div class="author-title">
@@ -149,408 +211,1145 @@
                       <li><a href=""><i class="fas fa-star"></i></a></li>
                       <li><a href=""><i class="fas fa-star"></i></a></li>
                       <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li>(<span>05</span>)</li>
                     </ul>
                   </div>
                 </div>
               </div>
+
+            </div>
+            <div class="card">
+              <div class="card_img">
+                <img src="" alt="">
+              </div>
+              <div class="card_content">
+                <div class="card_info">
+                  <h3>
+                    Grand Ballet - Dance
+                  </h3>
+                  <span>Site Template</span>
+                  <div class="price">$19</div>
+                </div>
+                <div class="card_author">
+                  <div class="author-title">
+                    <div class="author-img">
+                      <img src="" alt="">
+                    </div>
+                    <span>PsdBosS</span>
+                  </div>
+                  <div class="author-stars">
+                    <ul>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li>(<span>05</span>)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="card">
+              <div class="card_img">
+                <img src="" alt="">
+              </div>
+              <div class="card_content">
+                <div class="card_info">
+                  <h3>
+                    Grand Ballet - Dance
+                  </h3>
+                  <span>Site Template</span>
+                  <div class="price">$19</div>
+                </div>
+                <div class="card_author">
+                  <div class="author-title">
+                    <div class="author-img">
+                      <img src="" alt="">
+                    </div>
+                    <span>PsdBosS</span>
+                  </div>
+                  <div class="author-stars">
+                    <ul>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li>(<span>05</span>)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="card">
+              <div class="card_img">
+                <img src="" alt="">
+              </div>
+              <div class="card_content">
+                <div class="card_info">
+                  <h3>
+                    Grand Ballet - Dance
+                  </h3>
+                  <span>Site Template</span>
+                  <div class="price">$19</div>
+                </div>
+                <div class="card_author">
+                  <div class="author-title">
+                    <div class="author-img">
+                      <img src="" alt="">
+                    </div>
+                    <span>PsdBosS</span>
+                  </div>
+                  <div class="author-stars">
+                    <ul>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li>(<span>05</span>)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="card">
+              <div class="card_img">
+                <img src="" alt="">
+              </div>
+              <div class="card_content">
+                <div class="card_info">
+                  <h3>
+                    Grand Ballet - Dance
+                  </h3>
+                  <span>Site Template</span>
+                  <div class="price">$19</div>
+                </div>
+                <div class="card_author">
+                  <div class="author-title">
+                    <div class="author-img">
+                      <img src="" alt="">
+                    </div>
+                    <span>PsdBosS</span>
+                  </div>
+                  <div class="author-stars">
+                    <ul>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li>(<span>05</span>)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="card">
+              <div class="card_img">
+                <img src="" alt="">
+              </div>
+              <div class="card_content">
+                <div class="card_info">
+                  <h3>
+                    Grand Ballet - Dance
+                  </h3>
+                  <span>Site Template</span>
+                  <div class="price">$19</div>
+                </div>
+                <div class="card_author">
+                  <div class="author-title">
+                    <div class="author-img">
+                      <img src="" alt="">
+                    </div>
+                    <span>PsdBosS</span>
+                  </div>
+                  <div class="author-stars">
+                    <ul>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li>(<span>05</span>)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="card">
+              <div class="card_img">
+                <img src="" alt="">
+              </div>
+              <div class="card_content">
+                <div class="card_info">
+                  <h3>
+                    Grand Ballet - Dance
+                  </h3>
+                  <span>Site Template</span>
+                  <div class="price">$19</div>
+                </div>
+                <div class="card_author">
+                  <div class="author-title">
+                    <div class="author-img">
+                      <img src="" alt="">
+                    </div>
+                    <span>PsdBosS</span>
+                  </div>
+                  <div class="author-stars">
+                    <ul>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li>(<span>05</span>)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="card">
+              <div class="card_img">
+                <img src="" alt="">
+              </div>
+              <div class="card_content">
+                <div class="card_info">
+                  <h3>
+                    Grand Ballet - Dance
+                  </h3>
+                  <span>Site Template</span>
+                  <div class="price">$19</div>
+                </div>
+                <div class="card_author">
+                  <div class="author-title">
+                    <div class="author-img">
+                      <img src="" alt="">
+                    </div>
+                    <span>PsdBosS</span>
+                  </div>
+                  <div class="author-stars">
+                    <ul>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li>(<span>05</span>)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="card">
+              <div class="card_img">
+                <img src="" alt="">
+              </div>
+              <div class="card_content">
+                <div class="card_info">
+                  <h3>
+                    Grand Ballet - Dance
+                  </h3>
+                  <span>Site Template</span>
+                  <div class="price">$19</div>
+                </div>
+                <div class="card_author">
+                  <div class="author-title">
+                    <div class="author-img">
+                      <img src="" alt="">
+                    </div>
+                    <span>PsdBosS</span>
+                  </div>
+                  <div class="author-stars">
+                    <ul>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li>(<span>05</span>)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="card">
+              <div class="card_img">
+                <img src="" alt="">
+              </div>
+              <div class="card_content">
+                <div class="card_info">
+                  <h3>
+                    Grand Ballet - Dance
+                  </h3>
+                  <span>Site Template</span>
+                  <div class="price">$19</div>
+                </div>
+                <div class="card_author">
+                  <div class="author-title">
+                    <div class="author-img">
+                      <img src="" alt="">
+                    </div>
+                    <span>PsdBosS</span>
+                  </div>
+                  <div class="author-stars">
+                    <ul>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li>(<span>05</span>)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="card">
+              <div class="card_img">
+                <img src="" alt="">
+              </div>
+              <div class="card_content">
+                <div class="card_info">
+                  <h3>
+                    Grand Ballet - Dance
+                  </h3>
+                  <span>Site Template</span>
+                  <div class="price">$19</div>
+                </div>
+                <div class="card_author">
+                  <div class="author-title">
+                    <div class="author-img">
+                      <img src="" alt="">
+                    </div>
+                    <span>PsdBosS</span>
+                  </div>
+                  <div class="author-stars">
+                    <ul>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li>(<span>05</span>)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="card">
+              <div class="card_img">
+                <img src="" alt="">
+              </div>
+              <div class="card_content">
+                <div class="card_info">
+                  <h3>
+                    Grand Ballet - Dance
+                  </h3>
+                  <span>Site Template</span>
+                  <div class="price">$19</div>
+                </div>
+                <div class="card_author">
+                  <div class="author-title">
+                    <div class="author-img">
+                      <img src="" alt="">
+                    </div>
+                    <span>PsdBosS</span>
+                  </div>
+                  <div class="author-stars">
+                    <ul>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                      <li>(<span>05</span>)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div> -->
+          <div class="container-for-card">
               
-  
-            </div>
-            <div class="card-top">
-                <div class="card_img">
-                  <img src="" alt="">
-                </div>
-                <div class="card_content">
-                  <div class="card_info">
-                    <h4>
-                        The Post Grid Pro
-                    </h4>
-                    <span>WordPress Plugin</span>
-                    <div class="price">$40</div>
-                  </div>
-                  <div class="card_author">
-                    <div class="author-title">
-                      <div class="author-img">
-                        <img src="" alt="">
-                      </div>
-                      <span>PsdBosS</span>
-                    </div>
-                    <div class="author-stars">
-                      <ul>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                
-    
-              </div>
-              <div class="card-top">
-                  <div class="card_img">
-                    <img src="" alt="">
-                  </div>
-                  <div class="card_content">
-                    <div class="card_info">
-                      <h4>
-                          The Post Grid Pro
-                      </h4>
-                      <span>WordPress Plugin</span>
-                      <div class="price">$40</div>
-                    </div>
-                    <div class="card_author">
-                      <div class="author-title">
-                        <div class="author-img">
-                          <img src="" alt="">
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="first-page" role="tabpanel" aria-labelledby="first-page-tab">
+                      <div class="card">
+                          <div class="card_img">
+                            <img src="" alt="">
+                          </div>
+                          <div class="card_content">
+                            <div class="card_info">
+                              <h3>
+                                Grand Ballet - Dance
+                              </h3>
+                              <span>Site Template</span>
+                              <div class="price">$19</div>
+                            </div>
+                            <div class="card_author">
+                              <div class="author-title">
+                                <div class="author-img">
+                                  <img src="" alt="">
+                                </div>
+                                <span>PsdBosS</span>
+                              </div>
+                              <div class="author-stars">
+                                <ul>
+                                  <li><a href=""><i class="fas fa-star"></i></a></li>
+                                  <li><a href=""><i class="fas fa-star"></i></a></li>
+                                  <li><a href=""><i class="fas fa-star"></i></a></li>
+                                  <li><a href=""><i class="fas fa-star"></i></a></li>
+                                  <li><a href=""><i class="fas fa-star"></i></a></li>
+                                  <li>(<span>05</span>)</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+            
                         </div>
-                        <span>PsdBosS</span>
-                      </div>
-                      <div class="author-stars">
-                        <ul>
-                          <li><a href=""><i class="fas fa-star"></i></a></li>
-                          <li><a href=""><i class="fas fa-star"></i></a></li>
-                          <li><a href=""><i class="fas fa-star"></i></a></li>
-                          <li><a href=""><i class="fas fa-star"></i></a></li>
-                          <li><a href=""><i class="fas fa-star"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+                        <div class="card">
+                            <div class="card_img">
+                              <img src="" alt="">
+                            </div>
+                            <div class="card_content">
+                              <div class="card_info">
+                                <h3>
+                                  Grand Ballet - Dance
+                                </h3>
+                                <span>Site Template</span>
+                                <div class="price">$19</div>
+                              </div>
+                              <div class="card_author">
+                                <div class="author-title">
+                                  <div class="author-img">
+                                    <img src="" alt="">
+                                  </div>
+                                  <span>PsdBosS</span>
+                                </div>
+                                <div class="author-stars">
+                                  <ul>
+                                    <li><a href=""><i class="fas fa-star"></i></a></li>
+                                    <li><a href=""><i class="fas fa-star"></i></a></li>
+                                    <li><a href=""><i class="fas fa-star"></i></a></li>
+                                    <li><a href=""><i class="fas fa-star"></i></a></li>
+                                    <li><a href=""><i class="fas fa-star"></i></a></li>
+                                    <li>(<span>05</span>)</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+              
+                          </div>
+                          <div class="card">
+                              <div class="card_img">
+                                <img src="" alt="">
+                              </div>
+                              <div class="card_content">
+                                <div class="card_info">
+                                  <h3>
+                                    Grand Ballet - Dance
+                                  </h3>
+                                  <span>Site Template</span>
+                                  <div class="price">$19</div>
+                                </div>
+                                <div class="card_author">
+                                  <div class="author-title">
+                                    <div class="author-img">
+                                      <img src="" alt="">
+                                    </div>
+                                    <span>PsdBosS</span>
+                                  </div>
+                                  <div class="author-stars">
+                                    <ul>
+                                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                                      <li>(<span>05</span>)</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                
+                            </div>
+                            <div class="card">
+                                <div class="card_img">
+                                  <img src="" alt="">
+                                </div>
+                                <div class="card_content">
+                                  <div class="card_info">
+                                    <h3>
+                                      Grand Ballet - Dance
+                                    </h3>
+                                    <span>Site Template</span>
+                                    <div class="price">$19</div>
+                                  </div>
+                                  <div class="card_author">
+                                    <div class="author-title">
+                                      <div class="author-img">
+                                        <img src="" alt="">
+                                      </div>
+                                      <span>PsdBosS</span>
+                                    </div>
+                                    <div class="author-stars">
+                                      <ul>
+                                        <li><a href=""><i class="fas fa-star"></i></a></li>
+                                        <li><a href=""><i class="fas fa-star"></i></a></li>
+                                        <li><a href=""><i class="fas fa-star"></i></a></li>
+                                        <li><a href=""><i class="fas fa-star"></i></a></li>
+                                        <li><a href=""><i class="fas fa-star"></i></a></li>
+                                        <li>(<span>05</span>)</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
                   
-      
+                              </div>
+                              <div class="card">
+                                  <div class="card_img">
+                                    <img src="" alt="">
+                                  </div>
+                                  <div class="card_content">
+                                    <div class="card_info">
+                                      <h3>
+                                        Grand Ballet - Dance
+                                      </h3>
+                                      <span>Site Template</span>
+                                      <div class="price">$19</div>
+                                    </div>
+                                    <div class="card_author">
+                                      <div class="author-title">
+                                        <div class="author-img">
+                                          <img src="" alt="">
+                                        </div>
+                                        <span>PsdBosS</span>
+                                      </div>
+                                      <div class="author-stars">
+                                        <ul>
+                                          <li><a href=""><i class="fas fa-star"></i></a></li>
+                                          <li><a href=""><i class="fas fa-star"></i></a></li>
+                                          <li><a href=""><i class="fas fa-star"></i></a></li>
+                                          <li><a href=""><i class="fas fa-star"></i></a></li>
+                                          <li><a href=""><i class="fas fa-star"></i></a></li>
+                                          <li>(<span>05</span>)</li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                    
+                                </div>
+                                <div class="card">
+                                    <div class="card_img">
+                                      <img src="" alt="">
+                                    </div>
+                                    <div class="card_content">
+                                      <div class="card_info">
+                                        <h3>
+                                          Grand Ballet - Dance
+                                        </h3>
+                                        <span>Site Template</span>
+                                        <div class="price">$19</div>
+                                      </div>
+                                      <div class="card_author">
+                                        <div class="author-title">
+                                          <div class="author-img">
+                                            <img src="" alt="">
+                                          </div>
+                                          <span>PsdBosS</span>
+                                        </div>
+                                        <div class="author-stars">
+                                          <ul>
+                                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                                            <li><a href=""><i class="fas fa-star"></i></a></li>
+                                            <li>(<span>05</span>)</li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                      
+                                  </div>
+                                  <div class="card">
+                                      <div class="card_img">
+                                        <img src="" alt="">
+                                      </div>
+                                      <div class="card_content">
+                                        <div class="card_info">
+                                          <h3>
+                                            Grand Ballet - Dance
+                                          </h3>
+                                          <span>Site Template</span>
+                                          <div class="price">$19</div>
+                                        </div>
+                                        <div class="card_author">
+                                          <div class="author-title">
+                                            <div class="author-img">
+                                              <img src="" alt="">
+                                            </div>
+                                            <span>PsdBosS</span>
+                                          </div>
+                                          <div class="author-stars">
+                                            <ul>
+                                              <li><a href=""><i class="fas fa-star"></i></a></li>
+                                              <li><a href=""><i class="fas fa-star"></i></a></li>
+                                              <li><a href=""><i class="fas fa-star"></i></a></li>
+                                              <li><a href=""><i class="fas fa-star"></i></a></li>
+                                              <li><a href=""><i class="fas fa-star"></i></a></li>
+                                              <li>(<span>05</span>)</li>
+                                            </ul>
+                                          </div>
+                                        </div>
+                                      </div>
+                        
+                                    </div>
+                                    <div class="card">
+                                        <div class="card_img">
+                                          <img src="" alt="">
+                                        </div>
+                                        <div class="card_content">
+                                          <div class="card_info">
+                                            <h3>
+                                              Grand Ballet - Dance
+                                            </h3>
+                                            <span>Site Template</span>
+                                            <div class="price">$19</div>
+                                          </div>
+                                          <div class="card_author">
+                                            <div class="author-title">
+                                              <div class="author-img">
+                                                <img src="" alt="">
+                                              </div>
+                                              <span>PsdBosS</span>
+                                            </div>
+                                            <div class="author-stars">
+                                              <ul>
+                                                <li><a href=""><i class="fas fa-star"></i></a></li>
+                                                <li><a href=""><i class="fas fa-star"></i></a></li>
+                                                <li><a href=""><i class="fas fa-star"></i></a></li>
+                                                <li><a href=""><i class="fas fa-star"></i></a></li>
+                                                <li><a href=""><i class="fas fa-star"></i></a></li>
+                                                <li>(<span>05</span>)</li>
+                                              </ul>
+                                            </div>
+                                          </div>
+                                        </div>
+                          
+                                      </div>
+                                      <div class="card">
+                                          <div class="card_img">
+                                            <img src="" alt="">
+                                          </div>
+                                          <div class="card_content">
+                                            <div class="card_info">
+                                              <h3>
+                                                Grand Ballet - Dance
+                                              </h3>
+                                              <span>Site Template</span>
+                                              <div class="price">$19</div>
+                                            </div>
+                                            <div class="card_author">
+                                              <div class="author-title">
+                                                <div class="author-img">
+                                                  <img src="" alt="">
+                                                </div>
+                                                <span>PsdBosS</span>
+                                              </div>
+                                              <div class="author-stars">
+                                                <ul>
+                                                  <li><a href=""><i class="fas fa-star"></i></a></li>
+                                                  <li><a href=""><i class="fas fa-star"></i></a></li>
+                                                  <li><a href=""><i class="fas fa-star"></i></a></li>
+                                                  <li><a href=""><i class="fas fa-star"></i></a></li>
+                                                  <li><a href=""><i class="fas fa-star"></i></a></li>
+                                                  <li>(<span>05</span>)</li>
+                                                </ul>
+                                              </div>
+                                            </div>
+                                          </div>
+                            
+                                        </div>
+                                        <div class="card">
+                                            <div class="card_img">
+                                              <img src="" alt="">
+                                            </div>
+                                            <div class="card_content">
+                                              <div class="card_info">
+                                                <h3>
+                                                  Grand Ballet - Dance
+                                                </h3>
+                                                <span>Site Template</span>
+                                                <div class="price">$19</div>
+                                              </div>
+                                              <div class="card_author">
+                                                <div class="author-title">
+                                                  <div class="author-img">
+                                                    <img src="" alt="">
+                                                  </div>
+                                                  <span>PsdBosS</span>
+                                                </div>
+                                                <div class="author-stars">
+                                                  <ul>
+                                                    <li><a href=""><i class="fas fa-star"></i></a></li>
+                                                    <li><a href=""><i class="fas fa-star"></i></a></li>
+                                                    <li><a href=""><i class="fas fa-star"></i></a></li>
+                                                    <li><a href=""><i class="fas fa-star"></i></a></li>
+                                                    <li><a href=""><i class="fas fa-star"></i></a></li>
+                                                    <li>(<span>05</span>)</li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                              
+                                          </div>
+                                          <div class="card">
+                                              <div class="card_img">
+                                                <img src="" alt="">
+                                              </div>
+                                              <div class="card_content">
+                                                <div class="card_info">
+                                                  <h3>
+                                                    Grand Ballet - Dance
+                                                  </h3>
+                                                  <span>Site Template</span>
+                                                  <div class="price">$19</div>
+                                                </div>
+                                                <div class="card_author">
+                                                  <div class="author-title">
+                                                    <div class="author-img">
+                                                      <img src="" alt="">
+                                                    </div>
+                                                    <span>PsdBosS</span>
+                                                  </div>
+                                                  <div class="author-stars">
+                                                    <ul>
+                                                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                                                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                                                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                                                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                                                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                                                      <li>(<span>05</span>)</li>
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                
+                                            </div>
+                                            <div class="card">
+                                                <div class="card_img">
+                                                  <img src="" alt="">
+                                                </div>
+                                                <div class="card_content">
+                                                  <div class="card_info">
+                                                    <h3>
+                                                      Grand Ballet - Dance
+                                                    </h3>
+                                                    <span>Site Template</span>
+                                                    <div class="price">$19</div>
+                                                  </div>
+                                                  <div class="card_author">
+                                                    <div class="author-title">
+                                                      <div class="author-img">
+                                                        <img src="" alt="">
+                                                      </div>
+                                                      <span>PsdBosS</span>
+                                                    </div>
+                                                    <div class="author-stars">
+                                                      <ul>
+                                                        <li><a href=""><i class="fas fa-star"></i></a></li>
+                                                        <li><a href=""><i class="fas fa-star"></i></a></li>
+                                                        <li><a href=""><i class="fas fa-star"></i></a></li>
+                                                        <li><a href=""><i class="fas fa-star"></i></a></li>
+                                                        <li><a href=""><i class="fas fa-star"></i></a></li>
+                                                        <li>(<span>05</span>)</li>
+                                                      </ul>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                  
+                                              </div>
+                  </div>
+                  <div class="tab-pane fade" id="second-page" role="tabpanel" aria-labelledby="second-page-tab">
+                      <div class="card">
+                          <div class="card_img">
+                            <img src="" alt="">
+                          </div>
+                          <div class="card_content">
+                            <div class="card_info">
+                              <h3>
+                                Grand Ballet - Dance
+                              </h3>
+                              <span>Site Template</span>
+                              <div class="price">$19</div>
+                            </div>
+                            <div class="card_author">
+                              <div class="author-title">
+                                <div class="author-img">
+                                  <img src="" alt="">
+                                </div>
+                                <span>PsdBosS</span>
+                              </div>
+                              <div class="author-stars">
+                                <ul>
+                                  <li><a href=""><i class="fas fa-star"></i></a></li>
+                                  <li><a href=""><i class="fas fa-star"></i></a></li>
+                                  <li><a href=""><i class="fas fa-star"></i></a></li>
+                                  <li><a href=""><i class="fas fa-star"></i></a></li>
+                                  <li><a href=""><i class="fas fa-star"></i></a></li>
+                                  <li>(<span>05</span>)</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+            
+                        </div>
+                        <div class="card">
+                            <div class="card_img">
+                              <img src="" alt="">
+                            </div>
+                            <div class="card_content">
+                              <div class="card_info">
+                                <h3>
+                                  Grand Ballet - Dance
+                                </h3>
+                                <span>Site Template</span>
+                                <div class="price">$19</div>
+                              </div>
+                              <div class="card_author">
+                                <div class="author-title">
+                                  <div class="author-img">
+                                    <img src="" alt="">
+                                  </div>
+                                  <span>PsdBosS</span>
+                                </div>
+                                <div class="author-stars">
+                                  <ul>
+                                    <li><a href=""><i class="fas fa-star"></i></a></li>
+                                    <li><a href=""><i class="fas fa-star"></i></a></li>
+                                    <li><a href=""><i class="fas fa-star"></i></a></li>
+                                    <li><a href=""><i class="fas fa-star"></i></a></li>
+                                    <li><a href=""><i class="fas fa-star"></i></a></li>
+                                    <li>(<span>05</span>)</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+              
+                          </div>
+                          <div class="card">
+                              <div class="card_img">
+                                <img src="" alt="">
+                              </div>
+                              <div class="card_content">
+                                <div class="card_info">
+                                  <h3>
+                                    Grand Ballet - Dance
+                                  </h3>
+                                  <span>Site Template</span>
+                                  <div class="price">$19</div>
+                                </div>
+                                <div class="card_author">
+                                  <div class="author-title">
+                                    <div class="author-img">
+                                      <img src="" alt="">
+                                    </div>
+                                    <span>PsdBosS</span>
+                                  </div>
+                                  <div class="author-stars">
+                                    <ul>
+                                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                                      <li>(<span>05</span>)</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                
+                            </div>
+                            <div class="card">
+                                <div class="card_img">
+                                  <img src="" alt="">
+                                </div>
+                                <div class="card_content">
+                                  <div class="card_info">
+                                    <h3>
+                                      Grand Ballet - Dance
+                                    </h3>
+                                    <span>Site Template</span>
+                                    <div class="price">$19</div>
+                                  </div>
+                                  <div class="card_author">
+                                    <div class="author-title">
+                                      <div class="author-img">
+                                        <img src="" alt="">
+                                      </div>
+                                      <span>PsdBosS</span>
+                                    </div>
+                                    <div class="author-stars">
+                                      <ul>
+                                        <li><a href=""><i class="fas fa-star"></i></a></li>
+                                        <li><a href=""><i class="fas fa-star"></i></a></li>
+                                        <li><a href=""><i class="fas fa-star"></i></a></li>
+                                        <li><a href=""><i class="fas fa-star"></i></a></li>
+                                        <li><a href=""><i class="fas fa-star"></i></a></li>
+                                        <li>(<span>05</span>)</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                  
+                              </div>
+                    </div>
+
+                  <div class="tab-pane fade" id="third-page" role="tabpanel" aria-labelledby="third-page-tab">
+                      <div class="card">
+                          <div class="card_img">
+                            <img src="" alt="">
+                          </div>
+                          <div class="card_content">
+                            <div class="card_info">
+                              <h3>
+                                Grand Ballet - Dance
+                              </h3>
+                              <span>Site Template</span>
+                              <div class="price">$19</div>
+                            </div>
+                            <div class="card_author">
+                              <div class="author-title">
+                                <div class="author-img">
+                                  <img src="" alt="">
+                                </div>
+                                <span>PsdBosS</span>
+                              </div>
+                              <div class="author-stars">
+                                <ul>
+                                  <li><a href=""><i class="fas fa-star"></i></a></li>
+                                  <li><a href=""><i class="fas fa-star"></i></a></li>
+                                  <li><a href=""><i class="fas fa-star"></i></a></li>
+                                  <li><a href=""><i class="fas fa-star"></i></a></li>
+                                  <li><a href=""><i class="fas fa-star"></i></a></li>
+                                  <li>(<span>05</span>)</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+            
+                        </div>
+                  </div>
+                  <div class="tab-pane fade" id="fourth-page" role="tabpanel" aria-labelledby="fourth-page-tab">
+                      <div class="card">
+                          <div class="card_img">
+                            <img src="" alt="">
+                          </div>
+                          <div class="card_content">
+                            <div class="card_info">
+                              <h3>
+                                Grand Ballet - Dance
+                              </h3>
+                              <span>Site Template</span>
+                              <div class="price">$19</div>
+                            </div>
+                            <div class="card_author">
+                              <div class="author-title">
+                                <div class="author-img">
+                                  <img src="" alt="">
+                                </div>
+                                <span>PsdBosS</span>
+                              </div>
+                              <div class="author-stars">
+                                <ul>
+                                  <li><a href=""><i class="fas fa-star"></i></a></li>
+                                  <li><a href=""><i class="fas fa-star"></i></a></li>
+                                  <li><a href=""><i class="fas fa-star"></i></a></li>
+                                  <li><a href=""><i class="fas fa-star"></i></a></li>
+                                  <li><a href=""><i class="fas fa-star"></i></a></li>
+                                  <li>(<span>05</span>)</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+            
+                        </div>
+                        <div class="card">
+                            <div class="card_img">
+                              <img src="" alt="">
+                            </div>
+                            <div class="card_content">
+                              <div class="card_info">
+                                <h3>
+                                  Grand Ballet - Dance
+                                </h3>
+                                <span>Site Template</span>
+                                <div class="price">$19</div>
+                              </div>
+                              <div class="card_author">
+                                <div class="author-title">
+                                  <div class="author-img">
+                                    <img src="" alt="">
+                                  </div>
+                                  <span>PsdBosS</span>
+                                </div>
+                                <div class="author-stars">
+                                  <ul>
+                                    <li><a href=""><i class="fas fa-star"></i></a></li>
+                                    <li><a href=""><i class="fas fa-star"></i></a></li>
+                                    <li><a href=""><i class="fas fa-star"></i></a></li>
+                                    <li><a href=""><i class="fas fa-star"></i></a></li>
+                                    <li><a href=""><i class="fas fa-star"></i></a></li>
+                                    <li>(<span>05</span>)</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+              
+                          </div>
+                          <div class="card">
+                              <div class="card_img">
+                                <img src="" alt="">
+                              </div>
+                              <div class="card_content">
+                                <div class="card_info">
+                                  <h3>
+                                    Grand Ballet - Dance
+                                  </h3>
+                                  <span>Site Template</span>
+                                  <div class="price">$19</div>
+                                </div>
+                                <div class="card_author">
+                                  <div class="author-title">
+                                    <div class="author-img">
+                                      <img src="" alt="">
+                                    </div>
+                                    <span>PsdBosS</span>
+                                  </div>
+                                  <div class="author-stars">
+                                    <ul>
+                                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                                      <li><a href=""><i class="fas fa-star"></i></a></li>
+                                      <li>(<span>05</span>)</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                
+                            </div>
+                            <div class="card">
+                                <div class="card_img">
+                                  <img src="" alt="">
+                                </div>
+                                <div class="card_content">
+                                  <div class="card_info">
+                                    <h3>
+                                      Grand Ballet - Dance
+                                    </h3>
+                                    <span>Site Template</span>
+                                    <div class="price">$19</div>
+                                  </div>
+                                  <div class="card_author">
+                                    <div class="author-title">
+                                      <div class="author-img">
+                                        <img src="" alt="">
+                                      </div>
+                                      <span>PsdBosS</span>
+                                    </div>
+                                    <div class="author-stars">
+                                      <ul>
+                                        <li><a href=""><i class="fas fa-star"></i></a></li>
+                                        <li><a href=""><i class="fas fa-star"></i></a></li>
+                                        <li><a href=""><i class="fas fa-star"></i></a></li>
+                                        <li><a href=""><i class="fas fa-star"></i></a></li>
+                                        <li><a href=""><i class="fas fa-star"></i></a></li>
+                                        <li>(<span>05</span>)</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                  
+                              </div>
+                              <div class="card">
+                                  <div class="card_img">
+                                    <img src="" alt="">
+                                  </div>
+                                  <div class="card_content">
+                                    <div class="card_info">
+                                      <h3>
+                                        Grand Ballet - Dance
+                                      </h3>
+                                      <span>Site Template</span>
+                                      <div class="price">$19</div>
+                                    </div>
+                                    <div class="card_author">
+                                      <div class="author-title">
+                                        <div class="author-img">
+                                          <img src="" alt="">
+                                        </div>
+                                        <span>PsdBosS</span>
+                                      </div>
+                                      <div class="author-stars">
+                                        <ul>
+                                          <li><a href=""><i class="fas fa-star"></i></a></li>
+                                          <li><a href=""><i class="fas fa-star"></i></a></li>
+                                          <li><a href=""><i class="fas fa-star"></i></a></li>
+                                          <li><a href=""><i class="fas fa-star"></i></a></li>
+                                          <li><a href=""><i class="fas fa-star"></i></a></li>
+                                          <li>(<span>05</span>)</li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                    
+                                </div>
+                  </div>
                 </div>
-            <div class="btn-view-all">
-                <button>View All</button>
-              </div>
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="first-padge" data-toggle="pill" href="#first-page" role="tab" aria-controls="pills-home" aria-selected="true">1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#second-page" role="tab" aria-controls="pills-home" aria-selected="true">2</a>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="third-page-tab" data-toggle="pill" href="#third-page" role="tab" aria-controls="pills-profile" aria-selected="false">3</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="fourth-page-tab" data-toggle="pill" href="#fourth-page" role="tab" aria-controls="pills-contact" aria-selected="false">4</a>
+                    </li>
+                  </ul>
+                
           </div>
-          
+         <!--  <div class="pages">
+            <a href="" class="active">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+          </div> -->
         </div>
-        <div class="col-md-9">
-            <div class="filter">
-              <div class="sort">
-                  <i class="fas fa-sort-amount-down"></i>
-                  Sort by: New Items 
-                  <i class="fas fa-sort"></i>
-              </div>
-              <div class="display">
-                <i class="fa fa-th-large"></i>
-                <i class="fa fa-list" ></i>
-              </div>
-            </div>
-            <div class="container-for-card">
-              <div class="card">
-                <div class="card_img">
-                  <img src="" alt="">
-                </div>
-                <div class="card_content">
-                  <div class="card_info">
-                    <h3>
-                      Grand Ballet - Dance
-                    </h3>
-                    <span>Site Template</span>
-                    <div class="price">$19</div>
-                  </div>
-                  <div class="card_author">
-                    <div class="author-title">
-                      <div class="author-img">
-                        <img src="" alt="">
-                      </div>
-                      <span>PsdBosS</span>
-                    </div>
-                    <div class="author-stars">
-                      <ul>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li>(<span>05</span>)</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-    
-              </div>
-              <div class="card">
-                <div class="card_img">
-                  <img src="" alt="">
-                </div>
-                <div class="card_content">
-                  <div class="card_info">
-                    <h3>
-                      Grand Ballet - Dance
-                    </h3>
-                    <span>Site Template</span>
-                    <div class="price">$19</div>
-                  </div>
-                  <div class="card_author">
-                    <div class="author-title">
-                      <div class="author-img">
-                        <img src="" alt="">
-                      </div>
-                      <span>PsdBosS</span>
-                    </div>
-                    <div class="author-stars">
-                      <ul>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li>(<span>05</span>)</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-    
-              </div>
-              <div class="card">
-                <div class="card_img">
-                  <img src="" alt="">
-                </div>
-                <div class="card_content">
-                  <div class="card_info">
-                    <h3>
-                      Grand Ballet - Dance
-                    </h3>
-                    <span>Site Template</span>
-                    <div class="price">$19</div>
-                  </div>
-                  <div class="card_author">
-                    <div class="author-title">
-                      <div class="author-img">
-                        <img src="" alt="">
-                      </div>
-                      <span>PsdBosS</span>
-                    </div>
-                    <div class="author-stars">
-                      <ul>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li>(<span>05</span>)</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-    
-              </div>
-              <div class="card">
-                <div class="card_img">
-                  <img src="" alt="">
-                </div>
-                <div class="card_content">
-                  <div class="card_info">
-                    <h3>
-                      Grand Ballet - Dance
-                    </h3>
-                    <span>Site Template</span>
-                    <div class="price">$19</div>
-                  </div>
-                  <div class="card_author">
-                    <div class="author-title">
-                      <div class="author-img">
-                        <img src="" alt="">
-                      </div>
-                      <span>PsdBosS</span>
-                    </div>
-                    <div class="author-stars">
-                      <ul>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li>(<span>05</span>)</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-    
-              </div>
-              <div class="card">
-                <div class="card_img">
-                  <img src="" alt="">
-                </div>
-                <div class="card_content">
-                  <div class="card_info">
-                    <h3>
-                      Grand Ballet - Dance
-                    </h3>
-                    <span>Site Template</span>
-                    <div class="price">$19</div>
-                  </div>
-                  <div class="card_author">
-                    <div class="author-title">
-                      <div class="author-img">
-                        <img src="" alt="">
-                      </div>
-                      <span>PsdBosS</span>
-                    </div>
-                    <div class="author-stars">
-                      <ul>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li>(<span>05</span>)</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-    
-              </div>
-              <div class="card">
-                <div class="card_img">
-                  <img src="" alt="">
-                </div>
-                <div class="card_content">
-                  <div class="card_info">
-                    <h3>
-                      Grand Ballet - Dance
-                    </h3>
-                    <span>Site Template</span>
-                    <div class="price">$19</div>
-                  </div>
-                  <div class="card_author">
-                    <div class="author-title">
-                      <div class="author-img">
-                        <img src="" alt="">
-                      </div>
-                      <span>PsdBosS</span>
-                    </div>
-                    <div class="author-stars">
-                      <ul>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li>(<span>05</span>)</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-    
-              </div>
-              <div class="card">
-                <div class="card_img">
-                  <img src="" alt="">
-                </div>
-                <div class="card_content">
-                  <div class="card_info">
-                    <h3>
-                      Grand Ballet - Dance
-                    </h3>
-                    <span>Site Template</span>
-                    <div class="price">$19</div>
-                  </div>
-                  <div class="card_author">
-                    <div class="author-title">
-                      <div class="author-img">
-                        <img src="" alt="">
-                      </div>
-                      <span>PsdBosS</span>
-                    </div>
-                    <div class="author-stars">
-                      <ul>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li>(<span>05</span>)</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-    
-              </div>
-             
-              <div class="card">
-                <div class="card_img">
-                  <img src="" alt="">
-                </div>
-                <div class="card_content">
-                  <div class="card_info">
-                    <h3>
-                      Grand Ballet - Dance
-                    </h3>
-                    <span>Site Template</span>
-                    <div class="price">$19</div>
-                  </div>
-                  <div class="card_author">
-                    <div class="author-title">
-                      <div class="author-img">
-                        <img src="" alt="">
-                      </div>
-                      <span>PsdBosS</span>
-                    </div>
-                    <div class="author-stars">
-                      <ul>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li>(<span>05</span>)</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-    
-              </div>
-              <div class="card">
-                <div class="card_img">
-                  <img src="" alt="">
-                </div>
-                <div class="card_content">
-                  <div class="card_info">
-                    <h3>
-                      Grand Ballet - Dance
-                    </h3>
-                    <span>Site Template</span>
-                    <div class="price">$19</div>
-                  </div>
-                  <div class="card_author">
-                    <div class="author-title">
-                      <div class="author-img">
-                        <img src="" alt="">
-                      </div>
-                      <span>PsdBosS</span>
-                    </div>
-                    <div class="author-stars">
-                      <ul>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                        <li>(<span>05</span>)</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-    
-              </div>
-            </div>
-            <div class="pages">
-              <a href="" class="active">1</a>
-              <a href="">2</a>
-              <a href="">3</a>
-              <a href="">4</a>
-            </div>
-          </div>
       </div>
-     
     </div>
-    </div>
+
+  </div>
+  </div>
 
   </div>
 
