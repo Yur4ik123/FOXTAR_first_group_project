@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FOXTAR - market place</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="js/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" />
+  <link rel="stylesheet" href="css/allstyle.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/slick/slick.min.js"></script>
+  <script>
+    $(function () {
+      $("#tabs-script").tabs();
+      $('.multiple-items').slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        infinite: true,
+        dots: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        draggable: true,
+        pauseOnDotsHover: false
+      });
+      
+    });
+   
+  </script>
+
+</head>
+
+<body>
+
+ <div class="ponedilok">
+  <div class="top_bar">
+    <div class="container">
+      <div class="logo">
+        <a href=""><img src="img\logo.png" alt=""></a>
+      </div>
+      <div class="menu_register">
+        <p class="red_text">Need help?<span class="blu_text">Talk to an expert: +61 3 8376 6284</span></p>
+        <div class="dropdown dropdown_bell">
+          <a class="" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="far fa-bell"></i>
+          </a>
+        
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+        <div class="dropdown dropdown_envelope">
+          <a class="" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="far fa-envelope"></i>
+          </a>
+        
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+        <div class="dropdown dropdown_shopping-cart">
+          <a class="" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+        
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">
+              <span class="product_img"></span>
+              <span class="diteils">
+                <div>Grand Ballet</div>
+                <div class="grin_text">WordPress</div>
+                <div>$59</div>
+              </span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <span class="product_img"></span>
+              <span class="diteils">
+                <div>Grand Ballet</div>
+                <div class="grin_text">Apple Device</div>
+                <div>$59</div>
+              </span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              
+            </a>
+          </div>
+        </div>
+        <div class="dropdown dropdown_Profile_menu">
+          <a class="" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+            <div class="Profile_menu">
+              <div class="avatar"></div>
+              <div>
+                <p class="name">Mike Hussy <i class="fas fa-chevron-down"></i></p>
+                <p class="money">$171.00</p>
+              </div>
+            </div>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#"><i class="fas fa-chevron-right"></i>Profile Page</a>
+            <a class="dropdown-item" href="#"><i class="fas fa-chevron-right"></i>Portfolio</a>
+            <a class="dropdown-item" href="#"><i class="fas fa-chevron-right"></i>Account Setting</a>
+            <a class="dropdown-item" href="#"><i class="fas fa-chevron-right"></i>Downloads</a>
+            <a class="dropdown-item" href="#"><i class="fas fa-chevron-right"></i>Wishlist</a>
+            <a class="dropdown-item" href="#"><i class="fas fa-chevron-right"></i>Upload Item            </a>
+            <a class="dropdown-item" href="#"><i class="fas fa-chevron-right"></i>Statement</a>
+            <a class="dropdown-item" href="#"><i class="fas fa-chevron-right"></i>Withdraws</a>
+          </div>
+        </div>
+        <button class="btn red_btn">Logout</button>
+      </div>
+    </div>
+  </div>
+  <div class="menu_naw">
+    <div class="container_fluid">
+      <div class="naw">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">WordPress</a></li>
+          <li><a href="">Joomla</a></li>
+          <li><a href="">PSD</a></li>
+          <li><a href="">Plugins</a></li>
+          <li><a href="">Components</a></li>
+          <li><a href="">Pages</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Help</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="banner">
+    <div class="container">
+      <h1 class="taitel_banner">Welcome To Foxtar Market Place!</h1>
+      <p class="default_text20">Premium WordPress Themes, Web Templates and Many More ...</p>
+      <form>
+          <input type="text" placeholder="Search Your Keywords . . .">
+          <button type="submit"><i class="fas fa-search"></i>
+          </button>
+      </form>
+    </div>
+  </div>
+  </div>
+  
+    <!-- /.Why choose -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="fas fa-times"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-title">Login</div>
+            <form action="">
+              <input type="text">
+              <input type="password">
+            </form>
+            <div class="modal-btns">
+              <button>Submit</button>
+              <button>Create an account</button>
+            </div>
+            <div><a href="">lost password?</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
