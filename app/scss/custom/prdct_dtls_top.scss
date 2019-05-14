@@ -1,0 +1,272 @@
+@import "_variables";
+@import "_mixins";
+@font-face {
+	font-family: 'MyriadPro';
+	src:url('../fonts/MyriadPro-Regular/MyriadPro-Regular.eot'),
+		url('../fonts/MyriadPro-Regular/MyriadPro-Regular.woff') format('woff'),
+		url('../fonts/MyriadPro-Regular/MyriadPro-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/* Reset start */
+*{
+  box-sizing: border-box;
+  
+  *:focus {
+    outline: none;
+  }
+  
+  body {
+  font-family: 'MyriadPro';
+  margin: 0;
+  padding: 0;
+  }
+  h1, h2, h3, h4, h5, h6, p{
+  margin: 0;
+  }
+  a{
+  color: inherit;
+  text-decoration: none;
+  }
+  a:hover, a:active{
+  text-decoration: none;
+  }
+  ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  }
+  img {
+  max-width: 100%;
+  }
+}
+/* Reset end */
+
+.prdct_dtls_top{
+    .top_bar{
+      .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+          a {
+            img{
+              padding: 26px 0;
+            }
+          }
+        }
+        width: 1170px;
+        margin: 0 auto;
+      }
+      .menu_register{
+        display: flex;
+        align-items: center;
+        .red_text{
+          color: $color-red;
+        }
+        .blu_text{
+          color: $color-blu;
+          margin-right:20px;
+        }
+        .fa-bell{
+            font-size: 14px;
+          color: $color-grayish-be;
+          background-color: $color-white-blue;
+          padding: 11px;
+          border-radius: 50%;
+          margin: 0 10px 0 10px;
+          position: relative;
+
+          &::after {
+            content: "8";
+            font-family:'OpenSans Semibold',sans-serif;
+            position: absolute;
+            background: #fdd17a;
+            color: $color-white;
+            border-radius: 50%;
+            width: 18px;
+            height: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: -5px;
+            right: -5px;
+          }
+        }
+          .fa-envelope{
+            font-size: 14px;
+            color: $color-grayish-be;
+            background-color: $color-white-blue;
+            padding: 11px;
+            border-radius: 50%;
+            margin: 0 10px 0 10px;
+            position: relative;
+    
+            &::after {
+              content: "5";
+              font-family:'OpenSans Semibold',sans-serif;
+              position: absolute;
+              background: #ef6c00;
+              color: $color-white;
+              border-radius: 50%;
+              width: 18px;
+              height: 18px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              top: -5px;
+              right: -5px;
+            }
+          }
+        
+        .fa-shopping-cart{
+          font-size: 14px;
+          color: $color-grayish-be;
+          background-color: $color-white-blue;
+          padding: 11px;
+          border-radius: 50%;
+          margin: 0 10px 0 10px;
+          position: relative;
+  
+          &::after {
+            content: "8";
+            font-family:'OpenSans Semibold', sans-serif;
+            position: absolute;
+            background: #95c85a;
+            color: $color-white;
+            border-radius: 50%;
+            width: 18px;
+            height: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: -5px;
+            right: -5px;
+            font-weight:600;
+          }
+  
+        }
+        .account-card{
+            margin-right:30px;
+          display:flex;
+          flex-direction: row;
+          align-items: center;
+            .img-area{
+             display: inline-block;
+                border-radius:50%;
+                width:35px;
+                height:35px;
+                
+                margin:30px 17px 30px 10px;
+            }
+            .account-short-info{
+                display:inline-block;
+
+                .client-name{
+                    display:block;
+                    font-family: 'Roboto medium',sans-serif;
+                    font-weight:bold;
+                    font-size:14px;
+                    color:#282828;
+                    line-height: 14px;
+                    .fa-angle-down{
+                        margin-left:10px;
+                        color:#b5b5b5;
+                        font-size:16px;
+                        line-height: 14px;
+                    }
+                    
+                }
+                .purchase{
+                    font-family:'Roboto bold', sans-serif;
+                    font-size:14px;
+                    color:#8bc34a;
+                    font-weight:bold;
+                }
+            }
+        }
+        .btn{
+          margin-left: 7px;
+          border: none;
+          border-radius: 3px;
+          height: 32px;
+          width: 72px;
+          color: $color-white;
+          font-size:12px;
+          font-family:'Roboto', sans-serif;
+        }
+        .grin_btn{
+          background-color: $color-grin;
+        }
+        .red_btn{
+          background-color: $color-red;
+        }
+      }
+    }
+    .menu_naw{
+      .container_fluid{
+        background-color:$color-hex;
+        .naw{
+          width: 1170px;
+          margin: 0 auto;
+        ul{
+          display: flex;
+            li{
+              padding: 26px 46px 26px 0;
+              a{
+                color: $color-white;
+              }
+            }
+          }
+        }    
+      }
+    }
+    .banner{
+        background: url(../img/Layer.png)center top / cover no-repeat;
+        .container{
+          padding: 60px 0 67px 0;
+          text-align: center;
+          .taitel_banner{
+            font-size: $size48;
+            color:$color-white;
+            letter-spacing: 4px;
+    
+          }
+          .default_text20{
+            font-size:$size20;
+            color:$color-white;
+            margin-top: 35px;
+          }
+          * {box-sizing: border-box;}
+              form {
+                position: relative;
+                width: 670px;
+                margin: 0 auto;
+                padding-top: 58px;
+              }
+              input, button {
+                border: none;
+                outline: none;
+                border-radius: 3px;
+              }
+              input {
+                box-shadow: 0 0 10px $color-pistachio;
+                width: 100%;
+                height: 42px;
+                padding-left: 26px;
+              }
+              button {
+                width: 42px;
+                height: 42px;
+                background: none;
+                border: none;
+                position: absolute;
+                top: 58px;
+                right: 0;
+                color: $color-grayish-blue;
+              }
+        }
+    }
+}

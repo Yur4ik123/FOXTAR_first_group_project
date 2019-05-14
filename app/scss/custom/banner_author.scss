@@ -1,0 +1,60 @@
+@import "_variables";
+@import "_mixins";
+
+.banner-author{
+    background-color: #f4f6f5;
+    min-width:100%;
+    
+    left:0;
+    text-align: center;
+    
+    .banner-grey-bg{
+        
+        background-color: #b5b5b5;
+        padding:145px 227px;
+        display: inline-block; 
+        margin:113px auto 113px auto;
+        
+        -webkit-box-shadow: 0px 0px 50px -6px rgba(173,173,173,1);
+        -moz-box-shadow: 0px 0px 50px -6px rgba(173,173,173,1);
+        box-shadow: 0px 0px 50px -6px rgba(173,173,173,1);
+
+        .banner-green-bg{
+            background-color: #8bc34a;
+            padding:70px 60px 85px 60px;
+            .flex-container{
+                margin:0 auto;
+                display:flex;
+                justify-content: space-between;
+
+                .flex-item{
+                    h3{
+                        color:$w-color;
+                        font-family:'Roboto regular',sans-serif;
+                        font-size:30px;
+                        text-align: left;
+                        display: inline-block;
+                        margin-right:45px;
+                        font-weight:bold;
+
+                        .lighter{
+                            font-weight:lighter;
+                        }  
+                    }
+
+                    a{
+                        
+                        text-decoration:none;
+                        background-color: $w-color;
+                        color:$default-color;
+                        font-family:'Roboto regular',sans-serif;
+                        font-size:18px;
+                        padding:30px 42px;
+                        display: inline-block;    
+                    }
+                }
+            }
+        }
+
+    }
+}

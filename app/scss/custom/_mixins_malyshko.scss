@@ -15,3 +15,170 @@
   padding: 14px 27px;
   background-color: #fff;
 }
+@mixin h3-items {
+  padding-bottom: 20px;
+      border-bottom: 2px solid #dde3e8;
+      margin-bottom: 15px;
+      font-weight: bold;
+      font-size: 20px;
+}
+@mixin left-block($height){
+  display: flex;
+  flex-direction: column;
+  height: $height;
+  width: 270px;
+  background-color: #fff;
+  border: 2px solid #dcdcdc;
+  padding: 25px;
+  color: #263238;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+@mixin card () {
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1920px;
+  }
+
+  .card {
+    
+    flex-direction: column;
+    height: 410px;
+    max-width: 440px;
+    min-width:  400px;
+    margin: 0 15px;
+    border: 2px solid #d9e0e3;
+    margin-bottom: 31px;
+
+    .card_content {
+      padding: 30px 32px;
+    }
+
+    .card_img {
+      background-color: #d4d4d4;
+      height: 250px;
+      width: 100%;
+      position: relative;
+
+      .bolt {
+        top: 0;
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: 60px solid #8bc34a;
+        border-right: 60px solid transparent;
+
+        i {
+          color: #ffffff;
+          font-size: 16px;
+          bottom: 30px;
+          left: 15px;
+          position: absolute;
+        }
+      }
+
+    }
+
+    .card_info {
+      border-bottom: 1px solid #e7ecf2;
+      position: relative;
+      padding-bottom: 17px;
+
+      h3 {
+        margin-bottom: 12px;
+        font: medium 18px 'Roboto', sans-serif;
+        color: #263238;
+      }
+
+      span {
+        font: medium 14px 'Roboto', sans-serif;
+        color: #8bc34a;
+      }
+
+      .price {
+        font: $price-font;
+        color: #263238;
+      }
+    }
+
+    .price {
+      position: absolute;
+      top: 20%;
+      right: 0;
+
+    }
+
+    .card_author {
+      display: flex;
+      justify-content: space-between;
+      line-height: 30px;
+      margin-top: 17px;
+      margin-bottom: 21px;
+
+      .author-img {
+        width: 30px;
+        height: 30px;
+        background-color: #b5b5b5;
+        border-radius: 50%;
+        margin-right: 14px;
+      }
+
+      .author-title {
+        display: flex;
+
+
+        img {
+          flex: 1;
+
+        }
+
+        span {
+          flex: 2;
+          font: medium 14px 'Roboto', sans-serif;
+          color: #546e7a;
+          line-height: 30px;
+        }
+      }
+
+      .author-stars {
+        text-align: right;
+        float: right;
+
+        ul {
+
+          display: flex;
+
+          li:last-child {
+            color: #d0d8dc;
+            margin: 0 13px;
+
+            span {
+              color: #263238;
+              font: regular 12px 'Roboto', sans-serif;
+            }
+          }
+
+          .fa-star {
+            color: #ffa726;
+          }
+        }
+      }
+    }
+  }
+
+}
+@mixin h1-index (){
+  h1 {
+    @include h1-mixin ();
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

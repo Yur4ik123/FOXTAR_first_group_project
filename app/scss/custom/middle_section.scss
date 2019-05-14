@@ -58,178 +58,56 @@ button {
 .middle_section {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  max-width: 100%;
   background-color: $middle_section_color;
   justify-content: center;
 
 
-  h1 {
-    @include h1-mixin ();
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
+  .crd-container {
 
-
-  .tabs {
-    width: 100%;
-    @include tabs-mixin ();
-
-
-    ul {
-      display: flex;
-      width: 100%;
-      justify-content: center;
-    }
-
-    li {
-      a {
-        @include tabs-li-mixin ();
-        justify-content: center;
-        font: $tabs-fonts;
-        color: #263238;
-        cursor: pointer;
-
-        &:hover {
-          background-color: #e74c3c;
-        }
-
-      }
-
-    }
-
-  }
-
-
-  .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     max-width: 1920px;
-  }
 
-  .card {
-    flex-direction: column;
-    height: 410px;
-    width: 440px;
-    margin: 0 15px;
-    border: 2px solid #d9e0e3;
-    margin-bottom: 31px;
+    @include card ();
 
-    .card_content {
-      padding: 30px 32px;
-    }
+    @include h1-index ();
 
-    .card_img {
-      background-color: #d4d4d4;
-      height: 250px;
-      width: 100%;
-      position: relative;
+    .nav {
 
-      .bolt {
-        top: 0;
-        position: absolute;
-        width: 0;
-        height: 0;
-        border-top: 60px solid #8bc34a;
-        border-right: 60px solid transparent;
-
-        i {
-          color: #ffffff;
-          font-size: 16px;
-          bottom: 30px;
-          left: 15px;
-          position: absolute;
-        }
-      }
-
-    }
-
-    .card_info {
-      border-bottom: 1px solid #e7ecf2;
-      position: relative;
-      padding-bottom: 17px;
-
-      h3 {
-        margin-bottom: 12px;
-        font: medium 18px 'Roboto', sans-serif;
-        color: #263238;
-      }
-
-      span {
-        font: medium 14px 'Roboto', sans-serif;
-        color: #8bc34a;
-      }
-
-      .price {
-        font: $price-font;
-        color: #263238;
-      }
-    }
-
-    .price {
-      position: absolute;
-      top: 20%;
-      right: 0;
-
-    }
-
-    .card_author {
       display: flex;
-      justify-content: space-between;
-      line-height: 30px;
-      margin-top: 17px;
-      margin-bottom: 21px;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding-left: 0;
+    }
 
-      .author-img {
-        width: 30px;
-        height: 30px;
-        background-color: #b5b5b5;
-        border-radius: 50%;
-        margin-right: 14px;
-      }
+    .nav-pills .nav-link {
+      font: medium 14px 'Roboto', sans-serif;
+      border-radius: 0;
+      background-color: #fff;
+      margin: 3px 3px;
+    }
 
-      .author-title {
+    .nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link {
+      color: #fff;
+      background-color: #e74c3c;
+      box-shadow: 0px 4px 5px 2px rgba(215, 224, 230, 1);
+    }
+
+    .tab-content {
+      margin-top: 43px;
+      display: flex;
+      justify-content: center;
+
+      .tab-pane {
         display: flex;
-
-
-        img {
-          flex: 1;
-
-        }
-
-        span {
-          flex: 2;
-          font: medium 14px 'Roboto', sans-serif;
-          color: #546e7a;
-          line-height: 30px;
-        }
-      }
-
-      .author-stars {
-        text-align: right;
-        float: right;
-
-        ul {
-
-          display: flex;
-
-          li:last-child {
-            color: #d0d8dc;
-            margin: 0 13px;
-
-            span {
-              color: #263238;
-              font: regular 12px 'Roboto', sans-serif;
-            }
-          }
-
-          .fa-star {
-            color: #ffa726;
-          }
-        }
+        flex-wrap: wrap;
+        justify-content: center;
       }
     }
+
+
+
+
   }
 
   .btn {
@@ -265,10 +143,24 @@ button {
   flex-wrap: wrap;
   background-color: #fff;
   padding-bottom: 120px;
+  overflow: hidden;
 
+  @include h1-index ();
+
+ .carousel-wrapper{
+   max-width: 1920px;
   .carusel {
-    max-width: 1920px;
+    max-width: 100%;
+
     justify-content: center;
+    @include card ();
+ 
+    
+    .slick-slider {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      box-sizing: border-box;
 
     .slick-dots li {
       width: 15px;
@@ -294,4 +186,6 @@ button {
 
 
   }
+}
+ }
 }

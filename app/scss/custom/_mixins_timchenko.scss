@@ -2,6 +2,10 @@
     display:flex;
     justify-content:center;
 }
+@mixin flexible-column(){
+    display:flex;
+    flex-direction:column;
+}
 @mixin title-text(){
     color:$w-color;
     font-family:'Roboto bold',sans-serif;
