@@ -41,46 +41,98 @@
 </head>
 
 <body>
-<!-- prdct-dtls_top -->
-<div class="prdct_dtls_top">
-<!-- top bar -->
-    <div class="top_bar">
-        <div class="container">
+    <div class="ponedilok">
+        <div class="top_bar">
+          <div class="container">
             <div class="logo">
-            <a href=""><img src="img\logo.png" alt=""></a>
+              <a href=""><img src="img\logo.png" alt=""></a>
             </div>
-
-        <div class="menu_register">
-            <p class="red_text">Need help? <span class="blu_text">Talk to an expert: +61 3 8376 6284</span></p>
-            <i class="far fa-bell"></i>
-            <i class="far fa-envelope"></i>
-            <i class="fas fa-shopping-cart"></i>
-
-            <div class="account-card">
-                <div class="img-area">
-                <a href="">
-                    <img src="./img/profile-img.png" alt="">
+            <div class="menu_register">
+              <p class="red_text">Need help?<span class="blu_text">Talk to an expert: +61 3 8376 6284</span></p>
+              <div class="dropdown dropdown_bell">
+                <a class="" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="far fa-bell"></i>
                 </a>
-              </div>
-                
-
-                <div class="account-short-info">
-                    <a href="" class="client-name">Mike Hussy <i class="fas fa-angle-down"></i> </a> 
-                    <span class="purchase">171.00$</span>
+              
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
                 </div>
+              </div>
+              <div class="dropdown dropdown_envelope">
+                <a class="" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="far fa-envelope"></i>
+                </a>
+              
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+              <div class="dropdown dropdown_shopping-cart">
+                <a class="" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-shopping-cart"></i>
+                </a>
+              
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">
+                    <span class="product_img"></span>
+                    <span class="diteils">
+                      <div>Grand Ballet</div>
+                      <div class="grin_text">WordPress</div>
+                      <div>$59</div>
+                    </span>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">
+                    <span class="product_img"></span>
+                    <span class="diteils">
+                      <div>Grand Ballet</div>
+                      <div class="grin_text">Apple Device</div>
+                      <div>$59</div>
+                    </span>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">
+                    
+                  </a>
+                </div>
+              </div>
+              <div class="dropdown dropdown_Profile_menu">
+                <a class="" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                  <div class="Profile_menu">
+                    <div class="avatar"></div>
+                    <div>
+                      <p class="name">Mike Hussy <i class="fas fa-chevron-down"></i></p>
+                      <p class="money">$171.00</p>
+                    </div>
+                  </div>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#"><i class="fas fa-chevron-right"></i>Profile Page</a>
+                  <a class="dropdown-item" href="#"><i class="fas fa-chevron-right"></i>Portfolio</a>
+                  <a class="dropdown-item" href="#"><i class="fas fa-chevron-right"></i>Account Setting</a>
+                  <a class="dropdown-item" href="#"><i class="fas fa-chevron-right"></i>Downloads</a>
+                  <a class="dropdown-item" href="#"><i class="fas fa-chevron-right"></i>Wishlist</a>
+                  <a class="dropdown-item" href="#"><i class="fas fa-chevron-right"></i>Upload Item            </a>
+                  <a class="dropdown-item" href="#"><i class="fas fa-chevron-right"></i>Statement</a>
+                  <a class="dropdown-item" href="#"><i class="fas fa-chevron-right"></i>Withdraws</a>
+                </div>
+              </div>
+              <button class="btn red_btn">Logout</button>
             </div>
-            <button class="btn red_btn">Logout</button>
+          </div>
         </div>
-        </div>
-  </div>
-
-
-    <div class="menu_naw">
-
-        <div class="container_fluid">
-
+        <div class="menu_naw">
+          <div class="container_fluid">
             <div class="naw">
-                <ul>
+              <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="">About</a></li>
                 <li><a href="">WordPress</a></li>
@@ -91,30 +143,22 @@
                 <li><a href="">Pages</a></li>
                 <li><a href="">Contact</a></li>
                 <li><a href="">Help</a></li>
-                </ul>
+              </ul>
             </div>
-
+          </div>
         </div>
-    </div>
-
-
-<!-- banner -->
-    <div class="banner">
-
-        <div class="container">
+        <div class="banner">
+          <div class="container">
+            <h1 class="taitel_banner">Welcome To Foxtar Market Place!</h1>
             <p class="default_text20">Premium WordPress Themes, Web Templates and Many More ...</p>
             <form>
-            <input type="text" placeholder="Search Your Keywords . . .">
-            <button type="submit"><i class="fas fa-search"></i>
-            </button>
+                <input type="text" placeholder="Search Your Keywords . . .">
+                <button type="submit"><i class="fas fa-search"></i>
+                </button>
             </form>
+          </div>
         </div>
-
-    </div>
-<!-- /.banner -->
-</div>
-<!-- /.prdct-dtls_top -->
-
+        </div>
 <!-- prdct-dtls-main -->
 <div class="prdct-dtls-main">
   <div class="container">
