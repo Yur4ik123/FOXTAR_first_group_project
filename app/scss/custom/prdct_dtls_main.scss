@@ -1,5 +1,5 @@
-@import "../_variables.scss";
-@import "../_mixins.scss";
+@import "variables_timchenko";
+@import "mixins_timchenko";
 .prdct-dtls-main{
     background-color: #f4f6f5;
         .container{
@@ -19,7 +19,7 @@
                         }
                         .product-page{
                             font-family:'Roboto Regular', sans-serif;
-                            @include font-sm();
+                            font-size:$font-sm;
                             
                             color:#b0bec5;
                             &::before{
@@ -33,7 +33,7 @@
                         }
                         .product{
                             font-family:'Roboto Regular', sans-serif;
-                            @include font-sm();
+                            font-size:$font-sm;
                             
                             color:#263238;
                             &::before{
@@ -57,8 +57,7 @@
                             max-width:870px;
                             max-height:460px;
                             background-color:#ffffff;
-                            @include grey-border();
-                            border: 1px solid #dfdfdf;
+                            border: $grey-border();
                             padding:16px 16px 16px 16px;
                             margin-bottom:40px;
                             
@@ -67,7 +66,7 @@
                             font-family:'Roboto medium', sans-serif;
                             font-size:30px;
                             color:#263238;
-                            @include txt-bold();
+                            font-weight: $txt-bold;
                            
                             margin-bottom:33px;
                         }
@@ -160,7 +159,7 @@
                                 }
                                 .btn-twitter{
                                     width:25%;
-                                    @include flexibleI();
+                                    @include flexible();
                                   
                                 align-items:center;
                                
@@ -225,7 +224,7 @@
                                                 border-bottom:3px solid #8bc34a;
                                                 font-family:'Roboto Medium', sans-serif;
                                                 font-size:16px;
-                                                @include txt-bold();
+                                                font-weight: $txt-bold;
                                                 
                                                 color:#263238;
                                             }
@@ -233,7 +232,7 @@
                                                 border-bottom:3px solid #8bc34a;
                                                 font-family:'Roboto Medium', sans-serif;
                                                 font-size:16px;
-                                                @include txt-bold();
+                                                font-weight: $txt-bold;
                                                 color:#263238;
                                             
                                             }
@@ -245,7 +244,7 @@
                                             .tab-content{
                                                 .tab-pane{
                                                     background-color: #ffffff;
-                                                    @include grey-border;
+                                                    border: $grey-border();
                                                     
                                                     padding:35px 0 0 35px;;
                                                     font-family:'Roboto Regular', sans-serif;
@@ -280,7 +279,7 @@
                         .more-items{
                            
                             background-color: #ffffff;
-                            @include grey-border();
+                            border:$grey-border;
                             
                             width:100%;
                             margin-bottom:20px;
@@ -301,7 +300,7 @@
                            a{
                             .more-items-card{
                                 background-color: #ffffff;
-                                @include grey-border();
+                                font-weight: $txt-bold;
                                 
                                 margin-bottom:30px;
                                 -webkit-box-shadow: 2px 2px 2px 0px rgba(199,197,199,1);
@@ -323,7 +322,7 @@
                                 .more-items-title{
                                     font-family:'Roboto Medium', sans-serif;
                                     font-size:14px;
-                                    @include txt-bold();
+                                    font-weight: $txt-bold;
                                     
                                     color:#263238;
                                     &:hover{
@@ -340,7 +339,7 @@
                                 .more-items-price{
                                     font-family:'Roboto Bold', sans-serif;
                                     font-size:18px;
-                                    @include txt-bold();
+                                    font-weight: $txt-bold;
                                    
                                     color:#263238;
                                     &:hover{
@@ -358,7 +357,7 @@
                         @include flexible-column;
                             .product-price-wrap{
                                 background-color: #ffffff;
-                                @include grey-border();
+                                font-weight: $txt-bold;
                                
                                 margin-bottom:30px;
                                 .product-price-card{
@@ -366,15 +365,15 @@
                                     width:270px;
                                     .card-title{
                                         font-family:'Roboto bold',sans-serif;
-                                        @include txt-bold();
+                                        font-weight: $txt-bold;
                                         font-size:20px;
-                                        @include grey-border();
+                                        
                                         
                                         padding-bottom:25px;
                                     }
                                     .product-price{
                                         font-family:'Roboto medium',sans-serif;
-                                        @include txt-bold();
+                                        font-weight: $txt-bold();
                                         font-size:22px;
                                         color:#e74c3c;
                                         margin-top:34px;
@@ -554,7 +553,7 @@
                     }
                     .sales-wrap{
                         background-color: #ffffff;
-                        @include grey-border();
+                        border: $grey-border();
                         
                         margin-bottom:30px;
                         .sales-card{
@@ -568,7 +567,7 @@
                                 color:263238;
                                 font-family:'Roboto bold',sans-serif;
                                 font-size:20px;
-                                @include txt-bold();
+                                font-weight: $txt-bold();
                                 margin-right:20px;
                             }
                             .text{
@@ -580,7 +579,7 @@
                     }
                     .product-info-wrap{
                         background-color: #ffffff;
-                        @include grey-border();
+                        border: $grey-border();
                        
                         margin-bottom:30px;
                         .sales-info-card{
@@ -589,8 +588,8 @@
                             .info-title{
                                         font-family:'Roboto bold',sans-serif;
                                         font-size:20px;
-                                        @include txt-bold();
-                                        @include grey-border();
+                                        font-weight: $txt-bold();
+                                        border: $grey-border();
                                         
                                         padding-bottom:25px;
 
@@ -602,7 +601,7 @@
                                     margin-top:25px;
                                     .bold-txt{
                                         font-family: 'Roboto medium', sans-serif;
-                                        @include txt-bold();
+                                        font-weight: $txt-bold();
                                         color:#263238;
                                     }
                                     .normal-txt{
