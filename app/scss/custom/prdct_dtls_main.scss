@@ -48,10 +48,10 @@
                
                 .main-container{
                     .row{
+                        flex-wrap:nowrap;
                         .col-md-9{
                             width:75%;
                             @include flexible-column;
-                            
                             padding-left:0px;
                         .img-wrapper{
                             max-width:870px;
@@ -79,7 +79,7 @@
                         .item-btn-row{
                         display:flex;
                         justify-content:space-between;
-                        margin-bottom:55px;
+                        margin-bottom:38px;
                         flex-wrap:wrap;
 
                         .operating-btns{
@@ -87,13 +87,11 @@
                             align-items:center;
                             justify-content: space-between;
                             width:490px;
-                            margin-bottom:5px;
+                            margin-bottom:17px;
                             .btn-live{
                                 width:33,333%;
-                                @include flexible();
-                                
+                                @include flexible(); 
                                 align-items:center;
-                                
                                 height:50px;
                                 color:#ffffff;
                                 font-family:'Roboto medium',sans-serif;
@@ -144,6 +142,7 @@
                             align-items:center;
                             justify-content: space-between;
                             width:225px;
+                            margin-bottom:17px;
                                 .btn-fb{
                                     width:25%;
                                     @include flexible();
@@ -205,20 +204,23 @@
                                     
                                     .nav-item{
                                         width:25%;
-                                        
+                                        &:last-child{
+                                            border-right:$grey-border;
+                                        }
 
                                         .nav-link{
                                             height:59px;
                                             background-color:#ffffff;
                                             border-radius:0px;
-                                            border:1px solid #dfdfdf;
+                                            border:$grey-border;
+                                            border-right:none;
                                             font-family:'Roboto Regular', sans-serif;
                                             font-size:16px;
                                             color:#70838d;
                                             @include flexible();
                                         overflow:hidden;
                                         align-items:center;
-                                          
+                                       
 
                                             &:focus{
                                                 border-bottom:3px solid #8bc34a;
@@ -245,8 +247,8 @@
                                                 .tab-pane{
                                                     background-color: #ffffff;
                                                     border: $grey-border();
-                                                    
-                                                    padding:35px 0 0 35px;;
+                                                    border-top:none;
+                                                    padding:35px 0 0 35px;
                                                     font-family:'Roboto Regular', sans-serif;
                                                     font-size:16px;
                                                     color:#707070;
@@ -277,10 +279,8 @@
                             }
                             
                         .more-items{
-                           
                             background-color: #ffffff;
                             border:$grey-border;
-                            
                             width:100%;
                             margin-bottom:20px;
                             h1{
@@ -353,22 +353,19 @@
                         }
                     }
                     .col-md-3{
-                        min-width:270px;
+                        min-width:330px;
                         @include flexible-column;
                             .product-price-wrap{
                                 background-color: #ffffff;
                                 font-weight: $txt-bold;
-                               
                                 margin-bottom:30px;
                                 .product-price-card{
                                     padding: 30px;
-                                    width:270px;
+                                    min-width:270px;
                                     .card-title{
                                         font-family:'Roboto bold',sans-serif;
                                         font-weight: $txt-bold;
-                                        font-size:20px;
-                                        
-                                        
+                                        font-size:20px; 
                                         padding-bottom:25px;
                                     }
                                     .product-price{
@@ -377,9 +374,7 @@
                                         font-size:22px;
                                         color:#e74c3c;
                                         margin-top:34px;
-                                        margin-bottom:34px;
-                                        
-                                        
+                                        margin-bottom:34px;    
                                     }
                                 }
                             }
@@ -387,7 +382,7 @@
                                 font-family:'Roboto regular', sans-serif;
                                 font-size:16px;
                                 float:right;
-                                 
+                                 margin-right:7px;
                                 .btn-secondary {
                                     color:  #6c757d;
                                     background-color:#fff;
@@ -455,7 +450,7 @@
                                     height:45px;
                                     background-color: #546e7a;
                                     color:#ffffff;
-                                   
+                                    margin-right:7px;
                                     font-family:'Roboto bold',sans-serif;
                                     
                                     font-size:16px;
@@ -469,8 +464,7 @@
                                 border:1px solid #dfdfdf;
                                 margin-bottom:30px;
                                 .product-author-card{
-                                    width:270px;
-         
+                                    min-width:270px;
                                     padding: 30px;
                                     .author-title{
                                         font-family:'Roboto bold',sans-serif;
@@ -485,12 +479,13 @@
                                         display: flex;
                                         align-items: center;
                                         flex-wrap:wrap;
+                                        justify-content: start;
                                         .author-img{
                                             background-color: #d4d4d4;
                                             min-width:73px;
                                             min-height:63px;
                                             display: inline-block;
-                                            margin-right:13px;
+                                           margin-right:13px;
                                         }
                                         .author-sub{
                                             display: inline-block;
@@ -516,8 +511,12 @@
                                     }
                                     .icons-row{
                                         margin-top:25px;
+                                       
                                         .icons-list{
+                                            display:flex;
+                                            justify-content:space-around;
                                             .icons{
+                                                
                                             list-style:none;
                                             margin:0;
                                             padding:0;
@@ -558,7 +557,7 @@
                         margin-bottom:30px;
                         .sales-card{
                             padding:20px 30px 20px 30px;
-                            width:270px;
+                            min-width:270px;
                             .fa-shopping-cart{
                                 color:#a6b5bb;
                                 margin-right:20px;
@@ -584,12 +583,12 @@
                         margin-bottom:30px;
                         .sales-info-card{
                             padding:30px 30px 5px 30px;
-                            width:270px;
+                            min-width:270px;
                             .info-title{
                                         font-family:'Roboto bold',sans-serif;
                                         font-size:20px;
                                         font-weight: $txt-bold();
-                                        border: $grey-border();
+                                        border-bottom: $grey-border();
                                         
                                         padding-bottom:25px;
 
@@ -617,5 +616,23 @@
             }       
         }
     
+        @media(max-width:576px){
+            .operating-btns{
+                flex-wrap:wrap;
+                .btn-live{
+                    margin-bottom:7px;
+                    width:100%;
+                }
+                .btn-screenshots{
+                    margin-bottom:7px;
+                    width:100%;
+                }
+                .btn-doc{
+                    margin-bottom:7px;
+                    width:100%;
+                    margin-right:18px;
+                }
+            }
+        }
 
     
