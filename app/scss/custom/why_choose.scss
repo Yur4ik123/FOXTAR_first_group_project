@@ -19,7 +19,7 @@
         .flex-container{
             margin:0 auto;
             @include flexible ();
-            
+           
             .flex-item{
                 align-items:space-around;
                 max-width:315px;
@@ -58,5 +58,10 @@
                 }
             }
         }
+    }
+}
+@media(max-width:576px){
+    .flex-container{
+        flex-wrap:wrap;
     }
 }
