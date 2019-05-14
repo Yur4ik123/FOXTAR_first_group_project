@@ -49,6 +49,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding:0;
       .logo{
         a {
           img{
@@ -56,32 +57,33 @@
           }
         }
       }
-      width: 1170px;
-      margin: 0 auto;
+
     }
     .menu_register{
       display: flex;
       align-items: center;
       .red_text{
         color: $color-red;
+        font-weight:$font-weight_bold;
       }
       .blu_text{
         color: $color-blu;
+        margin: 0 30px 0 5px;
       }
       
-      .fa-shopping-cart{
+      .fa-bell{
         font-size: 14px;
         color: $color-grayish-be;
         background-color: $color-white-blue;
         padding: 11px;
         border-radius: 50%;
-        margin: 0 26px 0 26px;
+        margin: 0 15px 0 0;
         position: relative;
 
         &::after {
           content: "8";
           position: absolute;
-          background: $color-red;
+          background: $color-yellow;
           color: $color-white;
           border-radius: 50%;
           width: 18px;
@@ -94,8 +96,99 @@
         }
 
       }
+      .fa-envelope{
+        font-size: 14px;
+        color: $color-grayish-be;
+        background-color: $color-white-blue;
+        padding: 11px;
+        border-radius: 50%;
+        margin: 0 15px 0 0;
+        position: relative;
+
+        &::after {
+          content: "5";
+          position: absolute;
+          background: $color-orang;
+          color: $color-white;
+          border-radius: 50%;
+          width: 18px;
+          height: 18px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          top: -5px;
+          right: -5px;
+        }
+      }
+      .fa-shopping-cart{
+        font-size: 14px;
+        color: $color-grayish-be;
+        background-color: $color-white-blue;
+        padding: 11px;
+        border-radius: 50%;
+        margin: 0 15px 0 0;
+        position: relative;
+
+        &::after {
+          content: "8";
+          position: absolute;
+          background: $color-pistachio;
+          color: $color-white;
+          border-radius: 50%;
+          width: 18px;
+          height: 18px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          top: -5px;
+          right: -5px;
+        }
+
+      }
+      .dropdown{
+        .dropdown-menu{
+          // border:0;
+          border-radius:0;
+          top: 84px;
+          padding: 0;
+          margin: 0;
+          transform: translate3d(0px, 62px, 0px);
+        }
+        .show{
+          transform: translate3d(0px, 62px, 0px);
+        }
+        .fa-chevron-right{
+          color:$color-grin;
+          margin-right: 20px;
+          line-height: 3;
+        }
+        .Profile_menu{
+          display: flex;
+          align-items: center;
+          line-height: 1;
+        .avatar{
+            background-color: $color-222;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            margin: 0 15px 0 0;
+            position: relative;
+          }
+          .name{
+            font-weight:$font-weight_bold;
+            color: $default-color;
+            .fa-chevron-down{
+              margin: 0 0 0 13px;
+              color: $color-222;
+            }
+          }
+          .money{
+            color: $color-grin;
+          }
+        }
+      }
       .btn{
-        margin-left: 7px;
+        margin-left: 29px;
         border: none;
         border-radius: 3px;
         height: 32px;
@@ -114,7 +207,7 @@
     .container_fluid{
       background-color:$color-hex;
       .naw{
-        width: 1170px;
+        // width: 1170px;
         margin: 0 auto;
       ul{
         display: flex;
@@ -128,6 +221,7 @@
       }    
     }
   }
+
 
   .banner{
     background: url(../img/Layer.png)center top / cover no-repeat;
@@ -175,6 +269,37 @@
           }
     }
   }
+
+  .ponedilok .top_bar .menu_register .dropdown .dropdown-menu {
+    transform: translate3d(0px, 62px, 0px);
+  }
+
+
+
+  @media screen and (max-width: 1199px) {
+
+    .ponedilok .top_bar .container {
+      justify-content: center;
+    }
+
+    .naw {
+      width: 100%;
+      padding: 0 20px;
+      justify-content: center;
+      display: flex;
+    }
+  }
+
+
+  @media screen and (max-width: 992px) {
+
+    .ponedilok .top_bar .container {
+      display: flex !important;
+      align-items: center !important;
+      flex-direction: column !important;
+    }
+  }
+
 
  
 
