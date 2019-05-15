@@ -68,6 +68,7 @@ button {
     max-width: 1920px;
 
     @include card ();
+  
 
     @include h1-index ();
 
@@ -102,9 +103,10 @@ button {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        
       }
     }
-
+  
 
 
 
@@ -193,4 +195,17 @@ button {
   }
 }
  }
+
+}
+.weekly_trending_products .carousel-wrapper .carusel .card .card_img {
+  background-color: #d4d4d4;
+  height: 205px;
+  width: 100%;
+  position: relative;
+}
+.middle_section .crd-container .card .card_img {
+  background-color: #d4d4d4;
+  height: 205px;
+  width: 100%;
+  position: relative;
 }
