@@ -60,7 +60,11 @@ body {
 
 .container {
   max-width: 1170px;
-
+ 
+.row{
+  @media (max-width:750px){
+    justify-content: center;
+  }
   .col-md-3 {
     width: 270px;
     .categories {
@@ -249,7 +253,12 @@ body {
     .right-block{
       display: flex;
       flex-direction: column;
-      
+      @media (max-width:1200px){
+        margin-left: 30px;
+      }
+      @media (max-width:900px){
+        margin-left: 65px;
+      }
       .nav{
         width: 100%;
         color: #263238;
@@ -283,7 +292,18 @@ body {
       font-weight: 400;
       font-size: 14px;
       color: #707070;
-
+      @media (max-width:990px){
+        margin-left: 50px;
+      }
+      @media (max-width:900px){
+        margin-left: 0px;
+      }
+      @media (max-width:858px){
+        margin-left: 30px;
+      }
+      @media (max-width:730px){
+        margin-left: 0px;
+      }
       .fa-sort-amount-down {
         letter-spacing: 10px;
 
@@ -335,7 +355,7 @@ body {
         }
 
         .card_content {
-          padding: 28px 27px;
+          padding: 15px;
         }
 
         .card_img {
@@ -474,7 +494,7 @@ body {
     }
 
   }
-
+}
   .nav-bar {
     margin: 50px 0;
     font: regular 15px 'Roboto', sans-serif;
