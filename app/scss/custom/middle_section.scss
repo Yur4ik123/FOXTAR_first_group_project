@@ -148,12 +148,17 @@ button {
   @include h1-index ();
 
  .carousel-wrapper{
-   max-width: 1920px;
+   width: 100%;
   .carusel {
     max-width: 100%;
 
     justify-content: center;
     @include card ();
+    @media (max-width:770px)
+    {.card{
+      min-width: 350px;
+    }
+    }
  
     
     .slick-slider {
