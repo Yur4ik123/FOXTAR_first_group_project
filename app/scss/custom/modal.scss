@@ -71,6 +71,10 @@
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
+          @media (max-width:765px)
+          {
+            justify-content: flex-start;
+          }
 
           div {
 
