@@ -1,2 +1,195 @@
 @import "../_variables.scss";
 @import "../_mixins.scss";
+
+.dropdown_bell{
+    
+    
+    .btnbell{
+        font-size: 14px;
+        color: $color-grayish-be;
+        background-color: $color-white-blue;
+        padding: 11px;
+        border-radius: 50%;
+        margin: 0 15px 0 0;
+        position: relative;
+
+        &::after {
+          font-family: 'OpenSans Semibold',sans-serif;
+          content: "8";
+          position: absolute;
+          background: $color-yellow;
+          color: $color-white;
+          border-radius: 50%;
+          width: 18px;
+          height: 18px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          top: -5px;
+          right: -5px;
+        }
+
+      }
+      
+      
+      .dropdown-menu{
+        width: 268px;
+        .dropdown-item{
+            display: flex;
+
+            .bell_img{
+                background: #b3b3b3;
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                margin: 0 15px 0 0;
+               
+            }
+            
+        }
+      }
+}
+
+
+
+.dropdown_envelope{
+    .btn_envelope{
+        font-size: 14px;
+        color: $color-grayish-be;
+        background-color: $color-white-blue;
+        padding: 11px;
+        border-radius: 50%;
+        margin: 0 15px 0 0;
+        position: relative;
+
+        &::after {
+            font-family: 'OpenSans Semibold',sans-serif;
+            content: "5";
+            position: absolute;
+            background: $color-orang;
+            color: $color-white;
+            border-radius: 50%;
+            width: 18px;
+            height: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: -5px;
+            right: -5px;
+        }
+    }
+
+    .dropdown-menu{
+        width: 268px;
+        .dropdown-item{
+            display: flex;
+
+            .bell_img{
+                background: #b3b3b3;
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                margin: 0 15px 0 0;
+               
+            }
+            
+        }
+      }
+}
+
+
+.dropdown_shopping-cart{
+    .btn_cart{
+        font-size: 14px;
+        color: $color-grayish-be;
+        background-color: $color-white-blue;
+        padding: 11px;
+        border-radius: 50%;
+        margin: 0 15px 0 0;
+        position: relative;
+
+        &::after {
+            font-family: 'OpenSans Semibold',sans-serif;
+            content: "8";
+            position: absolute;
+            background: $color-pistachio;
+            color: $color-white;
+            border-radius: 50%;
+            width: 18px;
+            height: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: -5px;
+            right: -5px;
+            font-weight: 400;
+        }
+
+        }
+        .dropdown-menu{
+            width: 268px;
+            .dropdown-item{
+                // padding: 19px 73px 23px 22px;
+                display: flex;
+                .product_img{
+                    width: 73px;
+                    height: 57px;
+                    background: #707070;
+                    margin: 0 15px 0 0;
+
+                }
+                &.footer-item{
+                    flex-direction: column;
+                    font-weight: 700;
+                    .total_cash{
+                        margin: 0px 0 15px 0;
+                    }
+                }
+            }
+        }
+}
+
+.dropdown_Profile_menu{
+    .Profile_menu{
+        display: flex;
+        align-items: center;
+        line-height: 1;
+        
+      .avatar{
+          background-color: $color-222;
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          margin: 0 15px 0 0;
+          position: relative;
+        }
+        .name{
+          font-weight:$font-weight_bold;
+          color: $default-color;
+          .fa-chevron-down{
+            margin: 0 0 0 13px;
+            color: $color-222;
+          }
+        }
+        .money{
+          color: $color-grin;
+        }
+      }
+      .show{
+        border-radius:0;
+        top: 84px;
+        padding: 0;
+        margin: 0;
+        transform: translate3d(0px, 60px, 0px);
+      }
+      .dropdown-menu{
+
+
+        
+        .fa-chevron-right{
+            color:$color-grin;
+            margin-right: 20px;
+            line-height: 3;
+          }
+      }
+}

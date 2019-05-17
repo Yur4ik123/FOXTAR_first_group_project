@@ -45,27 +45,255 @@
 }
 /* Reset end */
 
+
+
+
+
+
 // ponedilok   stails-------------------------------------------
-.container{
+.top_bar{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1170px;
+    .logo{
 
-
-
-    .top_bar {
-
-        .logo{
+        a {
+            img{
             padding: 26px 0;
-            a {
-                img{
-                padding: 26px 0;
-                }
             }
         }
-        .menu_register{
-            display: flex;
-            align-items: center;
+    }
+    .menu_register{
+        display: flex;
+        align-items: center;
+
+        .btn{
+          margin-left: 29px;
+          border: none;
+          border-radius: 3px;
+          height: 32px;
+          width: 72px;
+          color: $color-white;
+        }
+        .btnbig{
+          
+          border: none;
+          height: 35px;
+          width: 110px;
+          color: $color-white;
+        }
+        .grin_btn{
+          background-color: $color-grin;
+        }
+        .red_btn{
+          background-color: $color-red;
+        }
+        
+
+        .grin_text{
+          color:$color-grin;
         }
 
+        .red_text{
+            color: $color-red;
+            font-weight:$font-weight_bold;
+            }
+        .blu_text{
+        color: $color-blu;
+        margin: 0 30px 0 5px;
+        }
+        .bell_orang{
+          color: $color-orang;
+        }
+        
+      //   .fa-bell{
+      //   font-size: 14px;
+      //   color: $color-grayish-be;
+      //   background-color: $color-white-blue;
+      //   padding: 11px;
+      //   border-radius: 50%;
+      //   margin: 0 15px 0 0;
+      //   position: relative;
+
+      //   &::after {
+      //     content: "8";
+      //     position: absolute;
+      //     background: $color-yellow;
+      //     color: $color-white;
+      //     border-radius: 50%;
+      //     width: 18px;
+      //     height: 18px;
+      //     display: flex;
+      //     justify-content: center;
+      //     align-items: center;
+      //     top: -5px;
+      //     right: -5px;
+      //   }
+
+      // }
+      // .fa-envelope{
+      //   font-size: 14px;
+      //   color: $color-grayish-be;
+      //   background-color: $color-white-blue;
+      //   padding: 11px;
+      //   border-radius: 50%;
+      //   margin: 0 15px 0 0;
+      //   position: relative;
+
+      //   &::after {
+      //     content: "5";
+      //     position: absolute;
+      //     background: $color-orang;
+      //     color: $color-white;
+      //     border-radius: 50%;
+      //     width: 18px;
+      //     height: 18px;
+      //     display: flex;
+      //     justify-content: center;
+      //     align-items: center;
+      //     top: -5px;
+      //     right: -5px;
+      //   }
+      // }
+      // .fa-shopping-cart{
+      //   font-size: 14px;
+      //   color: $color-grayish-be;
+      //   background-color: $color-white-blue;
+      //   padding: 11px;
+      //   border-radius: 50%;
+      //   margin: 0 15px 0 0;
+      //   position: relative;
+
+      //   &::after {
+      //     content: "8";
+      //     position: absolute;
+      //     background: $color-pistachio;
+      //     color: $color-white;
+      //     border-radius: 50%;
+      //     width: 18px;
+      //     height: 18px;
+      //     display: flex;
+      //     justify-content: center;
+      //     align-items: center;
+      //     top: -5px;
+      //     right: -5px;
+      //   }
+
+      // }
     }
+
+
 }
+
+.menu_naw{
+    background-color:$color-hex;
+    // margin-right: auto;
+    // margin-left: auto;
+    .nav-item{
+        color: $color-white;
+        padding: 18px 46px 18px 0;
+
+    }
+    
+}
+.banner{
+    background: url(../img/Layer.png)center top / cover no-repeat;
+    padding: 85px 0 95px 0;
+    text-align: center;
+
+ 
+    .default_text20{
+    font-size:$size20;
+    color:$color-white;
+
+    }
+    * {box-sizing: border-box;}
+        form {
+        position: relative;
+        max-width: 670px;
+        margin: 0 auto;
+        padding-top: 58px;
+        }
+        input, button {
+        border: none;
+        outline: none;
+        border-radius: 3px;
+        }
+        input {
+        box-shadow: 0 0 10px $color-pistachio;
+        width: 100%;
+        height: 42px;
+        padding-left: 26px;
+        }
+        button {
+        width: 42px;
+        height: 42px;
+        background: none;
+        border: none;
+        position: absolute;
+        top: 58px;
+        right: 0;
+        color: $color-grayish-blue;
+        }
+  }
+
+
+@media screen and (max-width: 991px) {
+  .top_bar{
+    .logo{
+      justify-content: center;
+      display: flex;
+    }
+    .menu_register{
+      justify-content: center;
+    }
+  }
+  .menu_naw {
+    .row {
+      display: flex;
+      justify-content: center;
+
+      .navbar {
+        display: flex;
+        justify-content: center;
+
+        .navbar-nav{
+          display: flex;
+          align-items: center;
+
+          .nav-item {
+            padding: 3px 0;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+
+
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  form{
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .menu_register{
+    flex-direction: column;
+
+    .dr_menu{
+      padding: 15px 0;
+    }
+    .red_btn{
+      margin: 10px;
+    }
+  }
+
+}
+
 // /ponedilok stails-------------------------------------------------------------------
 
