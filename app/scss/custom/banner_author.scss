@@ -2,29 +2,39 @@
 @import "_mixins";
 
 .banner-author{
-    background-color: #f4f6f5;
+    background-color:$light-grey-bg-color; 
     min-width:100%;
-    
     left:0;
     text-align: center;
     
     .banner-grey-bg{
-        
-        background-color: #b5b5b5;
+        background-color:$medium-grey-bg-color;
         padding:145px 227px;
         display: inline-block; 
         margin:113px auto 113px auto;
-        @media (max-width:1000px){
-            padding:0;
-        }
-        
         -webkit-box-shadow: 0px 0px 50px -6px rgba(173,173,173,1);
         -moz-box-shadow: 0px 0px 50px -6px rgba(173,173,173,1);
         box-shadow: 0px 0px 50px -6px rgba(173,173,173,1);
+          /* adaptive */
+            @media(max-width:1105px){
+                padding:145px 100px;
+            }
+
+            @media(max-width:678px){
+                padding:50px 50px;
+            }
+             /* .adaptive */
 
         .banner-green-bg{
-            background-color: #8bc34a;
+            background-color: $active-color;
             padding:70px 60px 85px 60px;
+
+             /* adaptive */
+                @media(max-width:460px){
+                    padding:70px 30px 42px 60px;
+                }
+                 /* .adaptive */
+
             .flex-container{
                 margin:0 auto;
                 display:flex;
@@ -40,24 +50,36 @@
                         margin-right:45px;
                         font-weight:bold;
 
+                         /* adaptive */
+                        @media(max-width:895px){
+                            text-align:center ;
+                            margin:0;
+                        }
+                         /* .adaptive */
+
                         .lighter{
                             font-weight:lighter;
                         }  
                     }
 
                     a{
-                        
+                        width:225px;
                         text-decoration:none;
                         background-color: $w-color;
                         color:$default-color;
                         font-family:'Roboto regular',sans-serif;
                         font-size:18px;
-                        padding:30px 42px;
+                        padding:25px 0 25px 0;
                         display: inline-block;    
                     }
                 }
+                /* .flex-item */
             }
+            /* .flex-container */
         }
+        /* .banner-green-bg */
 
     }
+    /* .banner-grey-bg */
 }
+/* .banner-author */
