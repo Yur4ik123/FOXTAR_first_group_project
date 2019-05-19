@@ -2,7 +2,7 @@
 @import "../_mixins.scss";
 
 .why-choose{
-    background-color:#263238;
+    background-color:$admiral-blue;
     min-width:100%;
     
     .w-c-container{
@@ -17,30 +17,32 @@
             
         }
         .flex-container{
-            margin:0 auto;
-            @include flexible ();
+            
+           display:flex;
+           justify-content: space-around;
            
             .flex-item{
                 align-items:space-around;
                 max-width:315px;
-                margin-right:90px;
+                
                 &:hover{
                     cursor:pointer;
                     .item-title{
                         color:$active-color; 
                     }
                     .item-description{
-                        color:#b0bec5;
+                        color:$grey-descr-color;
                     }
                     .item-picture{
-                        background-color: #d4d4d4;
+                        background-color: $pic-bg-color;
                     }
                 }
+
                 .item-picture{
                     height:115px;
                     width:115px;
                     border-radius: 50%;
-                    background-color: #b5b5b5;
+                    background-color: $medium-grey-bg-color;
                     margin-bottom:33px;
                     margin:0 auto;
                     text-align: center;
@@ -57,11 +59,31 @@
                     text-align: center;
                 }
             }
+            /* .flex-item */
+        }
+        /* .flex-container */
+    }
+    /* .w-c-container */
+}
+/* .why-choose */
+
+
+/* adaptive */
+@media(max-width:947px){
+    .flex-container{
+        flex-direction:column;
+       
+        align-items: center;
+        
+    }
+    /* .container */
+    .flex-item{
+        margin-bottom:35px;
+        justify-content:center;
+        &:last-child{
+            margin-bottom: 0px;
         }
     }
+    /* .items */
 }
-@media(max-width:576px){
-    .flex-container{
-        flex-wrap:wrap;
-    }
-}
+/* .adaptive */
