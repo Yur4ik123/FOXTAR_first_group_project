@@ -314,7 +314,7 @@
                             margin-bottom:125px;
                            a{
                             .more-items-card{
-                                /* width:270px; */
+                                
                                 background-color: $w-color;
                                 font-weight: $txt-bold;
                                 margin-bottom:30px;
@@ -639,6 +639,21 @@
             }       
         }
     
+        @media (max-width: 870px){
+            .prdct-dtls-main{
+                .main-container{ 
+                    .prdct-dtls-row{
+                        .prdct-dtls-col-main{ 
+                            .more-items-container{
+                                justify-content: center;
+                            }
+                        }    
+                    }    
+                }
+            }
+        }
+
+
         @media (max-width: 740px){
             .operating-btns{
                 flex-wrap:wrap;
